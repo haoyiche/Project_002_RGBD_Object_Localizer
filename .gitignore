@@ -1,0 +1,51 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+
+# Large 3D / raw artifacts
+*.bag
+*.db3
+*.pcd
+*.ply
+*.obj
+*.stl
+
+# Temporary numeric dumps
+*.npy
+*.npz
+
+# Dataset contents
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Caches
+.cache/
+.pytest_cache/
+
+# Logs / temp
+*.log
+tmp/
+temp/
