@@ -5,7 +5,7 @@
 > **Learning Unit**：EXP028 · Target Mask → 3D Object Point Cloud
 > **前置**：EXP026 Camera Intrinsics & Pixel to 3D（COMPLETE）；EXP027 Depth Map → Point Cloud（COMPLETE）
 > **笔记整理日期**：2026-10-09（根据本 Project 已提供的实验日志与独立答题记录）
-> **当前状态**：**EXP028 CONTINUE**。知识验收 Q1～Q7 PASS；已报告全量回归 30/30 PASS；**Git commit、GitHub push、远端同步及最终本地笔记复核仍为 PENDING**。
+> **当前状态**：EXP028 最终封关。理论、实验和独立验收已通过；源码已同步 GitHub。本文档远端核验后正式 COMPLETE。
 
 > 记录说明：本笔记区分 **已提供的终端实测**、**已完成的独立预测/答题** 与 **尚未验证的事项**。示例代码是原理性复盘或已给出的教学实现，不把未提供日志的运行写成 PASS。本文综合整理 SOP 中的原理、参数、实验、源码阅读、预测验证、Debug、独立验收与 Git 工作流。
 
@@ -52,10 +52,10 @@ EXP028：RGB + Depth + Target Mask → Target Points + Colors + Select Mask
 | 自动化回归 | EXP026 7 + EXP027 12 + EXP028 11 | **30/30 PASS**（已提供日志） |
 | Open3D | 1500 个目标点，颜色正确，PLY 导出与读回 | PASS（已提供日志与截图） |
 | 个人理解/独立验收 | Explain / Shape / Calculate / Predict / Implement / Debug / Transfer | **Q1～Q7 PASS**（回答及批改已完成） |
-| Markdown 笔记 | 全面记录理论、代码、参数、实验与局限 | **本完整稿已生成，待替换本地并核对** |
-| Git commit、push、远端核验 | 只提交相关资产，HEAD 与 origin/master 一致 | **PENDING** |
+| Markdown 笔记 | 20 节完整学习记录 | PASS（已保存并核验） |
+| Git commit、push、远端核验 | 源码与笔记版本管理 | 源码 PASS；封关文档待核验 |
 
-学习闭环状态：**知识验收已过，工程封关未结束，因此 EXP028 仍为 CONTINUE**。
+学习闭环状态：知识与工程实验已通过；最终封关文档远端同步后 EXP028 COMPLETE。
 
 ---
 
@@ -840,7 +840,7 @@ experiments/EXP028_mask_to_pointcloud.md
 results/exp028/target_pointcloud_colored.ply
 ```
 
-当前最后一次用户提供的 `git status --short` 表明上述 **10 个 EXP028 源码、实验、测试与笔记文件未跟踪**，同时存在六个旧的 `ScreenCamera_*.json`、`ScreenCapture_*.png` 文件。该状态可能随本机后续操作变化，应以新一次 `git status` 为准。不要在未核对暂存内容时执行 `git add .`。
+Git 工程记录：10 个 EXP028 文件已提交并同步到 GitHub，源码 Commit 为 138bdc2。六个 ScreenCamera / ScreenCapture 临时文件未提交。
 
 ---
 
@@ -957,31 +957,36 @@ PLY Export / Reload                  PASS
 Independent Acceptance Q1-Q7        7/7 PASS
 ```
 
-### 20.2 尚待核实与封关项
+### 20.2 最终工程验收
 
-```text
-Revised Notes Saved in Project      PASS (20 sections verified)
-EXP028 Full Minimal Script Run       PASS
-Final Git File Audit                 PASS (10 selected files)
-Staged Whitespace Check             PASS
-Git Commit                          PENDING
-GitHub Push                         PENDING
-HEAD vs origin/master               PENDING
-Final Closure Record in Repository  PENDING
+| 验收项目 | 结果 |
+|---|---|
+| 最小实验 | PASS |
+| 主动修改 A/B/C | PASS |
+| Production API | PASS |
+| EXP028 专项测试 | 11/11 PASS |
+| 全量回归 | 30/30 PASS |
+| Open3D 可视化 | PASS |
+| PLY 导出与读回 | PASS |
+| 独立通关 Q1～Q7 | 7/7 PASS |
+| 完整实验笔记 | 20 节，PASS |
+| Git 文件审查 | 10 个文件，PASS |
+| Git Whitespace Check | PASS |
+| 源码 Commit | 138bdc2 |
+| 源码 GitHub 同步 | PASS |
 
-EXP028                             CONTINUE
-Level 2                            CONTINUE
-```
+源码 Commit：
 
-### 20.3 建议的提交质量检查（暂不要直接提交）
+138bdc279b5127edeb51efe55f22ae8685ca5f03
 
-- 仅选择 EXP028 的核心模块、6 个实验、2 个测试、完整笔记；
-- 根据现有 `.gitignore` 和实验可复现性决定 PLY 是否纳入版本库；
-- 六个历史截图/相机记录 JSON 不要误提交；
-- `git diff --cached --check` 清理尾随空格；
-- 全量回归再通过一次；
-- commit 后 push，比较 `git rev-parse HEAD` 与 `git rev-parse origin/master` 的哈希完全一致；
-- Git 完成后再将 `EXP028` 标记 `COMPLETE`，并在仓库笔记留最终提交哈希。
+### 20.3 最终封关规则
+
+- EXP028 的理论、实验、测试和独立能力验收已通过。
+- 源码、测试、实验与笔记已经完成第一次 GitHub 同步。
+- 本次封关笔记单独创建一个文档 Commit。
+- 此文档 Commit 推送到 GitHub 后，直接查询远端 master 的 SHA。
+- 只有远端 SHA 与本地 HEAD 一致，EXP028 才正式标记 COMPLETE。
+- 最终文档 Commit SHA 以 Git 历史为准，不在自身内容中循环引用。
 
 ### 20.4 下一阶段衔接（只做知识地图，不抢跑）
 
@@ -993,4 +998,4 @@ EXP028: Target Mask → Target Colored Point Cloud
 鲁棒统计 / 背景平面去除 / 目标簇选择 / 坐标变换
 ```
 
-**最终阶段结论**：EXP028 的概念、实现、主动修改、测试、可视化和独立知识验收已经有充分的实验与答题记录；正式工程封关仍需完成更新笔记、最终核验与 Git/GitHub。当前保持 **EXP028 CONTINUE、Level 2 CONTINUE**。
+**最终阶段结论**：EXP028 理论、实验、30/30 回归、7/7 独立验收和源码 GitHub 同步已通过。最终笔记的提交与远端核验完成后，EXP028 正式 COMPLETE。Level 2 继续。
