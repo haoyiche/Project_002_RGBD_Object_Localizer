@@ -1,0 +1,456 @@
+{
+  "experiment": "EXP034-D",
+  "frame_id": "camera_optical_frame",
+  "input_point_count": 16,
+  "input_cluster_counts": {
+    "A": 10,
+    "B": 5,
+    "noise": 1
+  },
+  "controlled_variable": "Only LocalizationGates changes across scenarios.",
+  "known_label_pollution": "P11 is incorrectly assigned to cluster 0 in every scenario.",
+  "warning": "VALID and OK are policy acceptance, not proof of geometric truth or safety.",
+  "scenarios": {
+    "D0_default": {
+      "gates": {
+        "min_points": 5,
+        "max_points": 20,
+        "max_extent_m": [
+          0.04,
+          0.04,
+          0.02
+        ],
+        "max_centroid_bbox_gap_m": 0.02
+      },
+      "frame_id": "camera_optical_frame",
+      "status": "PARTIAL_INVALID",
+      "objects": [
+        {
+          "cluster_label": 0,
+          "frame_id": "camera_optical_frame",
+          "status": "INVALID_CLUSTER",
+          "publishable": false,
+          "position_m": null,
+          "reasons": [
+            "EXTENT_EXCEEDED",
+            "CENTROID_BBOX_GAP"
+          ],
+          "diagnostics": {
+            "point_count": 10,
+            "centroid_m": [
+              0.099,
+              0.05900000000000001,
+              1.16
+            ],
+            "bbox_min_m": [
+              0.0,
+              0.0,
+              1.15
+            ],
+            "bbox_max_m": [
+              0.9,
+              0.5,
+              1.2
+            ],
+            "bbox_center_m": [
+              0.45,
+              0.25,
+              1.1749999999999998
+            ],
+            "extent_m": [
+              0.9,
+              0.5,
+              0.050000000000000044
+            ],
+            "centroid_bbox_distance_m": 0.3998837331025107
+          }
+        },
+        {
+          "cluster_label": 1,
+          "frame_id": "camera_optical_frame",
+          "status": "VALID",
+          "publishable": true,
+          "position_m": [
+            0.51,
+            0.01,
+            1.152
+          ],
+          "reasons": [],
+          "diagnostics": {
+            "point_count": 5,
+            "centroid_m": [
+              0.51,
+              0.01,
+              1.152
+            ],
+            "bbox_min_m": [
+              0.5,
+              0.0,
+              1.15
+            ],
+            "bbox_max_m": [
+              0.52,
+              0.02,
+              1.16
+            ],
+            "bbox_center_m": [
+              0.51,
+              0.01,
+              1.1549999999999998
+            ],
+            "extent_m": [
+              0.020000000000000018,
+              0.02,
+              0.010000000000000009
+            ],
+            "centroid_bbox_distance_m": 0.0029999999999998916
+          }
+        }
+      ],
+      "valid_count": 1,
+      "invalid_count": 1,
+      "noise_count": 1,
+      "published_positions": [
+        {
+          "cluster_label": 1,
+          "frame_id": "camera_optical_frame",
+          "position_m": [
+            0.51,
+            0.01,
+            1.152
+          ]
+        }
+      ]
+    },
+    "D1_strict_gap": {
+      "gates": {
+        "min_points": 5,
+        "max_points": 20,
+        "max_extent_m": [
+          0.04,
+          0.04,
+          0.02
+        ],
+        "max_centroid_bbox_gap_m": 0.002
+      },
+      "frame_id": "camera_optical_frame",
+      "status": "ALL_INVALID",
+      "objects": [
+        {
+          "cluster_label": 0,
+          "frame_id": "camera_optical_frame",
+          "status": "INVALID_CLUSTER",
+          "publishable": false,
+          "position_m": null,
+          "reasons": [
+            "EXTENT_EXCEEDED",
+            "CENTROID_BBOX_GAP"
+          ],
+          "diagnostics": {
+            "point_count": 10,
+            "centroid_m": [
+              0.099,
+              0.05900000000000001,
+              1.16
+            ],
+            "bbox_min_m": [
+              0.0,
+              0.0,
+              1.15
+            ],
+            "bbox_max_m": [
+              0.9,
+              0.5,
+              1.2
+            ],
+            "bbox_center_m": [
+              0.45,
+              0.25,
+              1.1749999999999998
+            ],
+            "extent_m": [
+              0.9,
+              0.5,
+              0.050000000000000044
+            ],
+            "centroid_bbox_distance_m": 0.3998837331025107
+          }
+        },
+        {
+          "cluster_label": 1,
+          "frame_id": "camera_optical_frame",
+          "status": "INVALID_CLUSTER",
+          "publishable": false,
+          "position_m": null,
+          "reasons": [
+            "CENTROID_BBOX_GAP"
+          ],
+          "diagnostics": {
+            "point_count": 5,
+            "centroid_m": [
+              0.51,
+              0.01,
+              1.152
+            ],
+            "bbox_min_m": [
+              0.5,
+              0.0,
+              1.15
+            ],
+            "bbox_max_m": [
+              0.52,
+              0.02,
+              1.16
+            ],
+            "bbox_center_m": [
+              0.51,
+              0.01,
+              1.1549999999999998
+            ],
+            "extent_m": [
+              0.020000000000000018,
+              0.02,
+              0.010000000000000009
+            ],
+            "centroid_bbox_distance_m": 0.0029999999999998916
+          }
+        }
+      ],
+      "valid_count": 0,
+      "invalid_count": 2,
+      "noise_count": 1,
+      "published_positions": []
+    },
+    "D2_relaxed_gap": {
+      "gates": {
+        "min_points": 5,
+        "max_points": 20,
+        "max_extent_m": [
+          0.04,
+          0.04,
+          0.02
+        ],
+        "max_centroid_bbox_gap_m": 0.5
+      },
+      "frame_id": "camera_optical_frame",
+      "status": "PARTIAL_INVALID",
+      "objects": [
+        {
+          "cluster_label": 0,
+          "frame_id": "camera_optical_frame",
+          "status": "INVALID_CLUSTER",
+          "publishable": false,
+          "position_m": null,
+          "reasons": [
+            "EXTENT_EXCEEDED"
+          ],
+          "diagnostics": {
+            "point_count": 10,
+            "centroid_m": [
+              0.099,
+              0.05900000000000001,
+              1.16
+            ],
+            "bbox_min_m": [
+              0.0,
+              0.0,
+              1.15
+            ],
+            "bbox_max_m": [
+              0.9,
+              0.5,
+              1.2
+            ],
+            "bbox_center_m": [
+              0.45,
+              0.25,
+              1.1749999999999998
+            ],
+            "extent_m": [
+              0.9,
+              0.5,
+              0.050000000000000044
+            ],
+            "centroid_bbox_distance_m": 0.3998837331025107
+          }
+        },
+        {
+          "cluster_label": 1,
+          "frame_id": "camera_optical_frame",
+          "status": "VALID",
+          "publishable": true,
+          "position_m": [
+            0.51,
+            0.01,
+            1.152
+          ],
+          "reasons": [],
+          "diagnostics": {
+            "point_count": 5,
+            "centroid_m": [
+              0.51,
+              0.01,
+              1.152
+            ],
+            "bbox_min_m": [
+              0.5,
+              0.0,
+              1.15
+            ],
+            "bbox_max_m": [
+              0.52,
+              0.02,
+              1.16
+            ],
+            "bbox_center_m": [
+              0.51,
+              0.01,
+              1.1549999999999998
+            ],
+            "extent_m": [
+              0.020000000000000018,
+              0.02,
+              0.010000000000000009
+            ],
+            "centroid_bbox_distance_m": 0.0029999999999998916
+          }
+        }
+      ],
+      "valid_count": 1,
+      "invalid_count": 1,
+      "noise_count": 1,
+      "published_positions": [
+        {
+          "cluster_label": 1,
+          "frame_id": "camera_optical_frame",
+          "position_m": [
+            0.51,
+            0.01,
+            1.152
+          ]
+        }
+      ]
+    },
+    "D3_relaxed_both": {
+      "gates": {
+        "min_points": 5,
+        "max_points": 20,
+        "max_extent_m": [
+          1.0,
+          1.0,
+          0.1
+        ],
+        "max_centroid_bbox_gap_m": 0.5
+      },
+      "frame_id": "camera_optical_frame",
+      "status": "OK",
+      "objects": [
+        {
+          "cluster_label": 0,
+          "frame_id": "camera_optical_frame",
+          "status": "VALID",
+          "publishable": true,
+          "position_m": [
+            0.099,
+            0.05900000000000001,
+            1.16
+          ],
+          "reasons": [],
+          "diagnostics": {
+            "point_count": 10,
+            "centroid_m": [
+              0.099,
+              0.05900000000000001,
+              1.16
+            ],
+            "bbox_min_m": [
+              0.0,
+              0.0,
+              1.15
+            ],
+            "bbox_max_m": [
+              0.9,
+              0.5,
+              1.2
+            ],
+            "bbox_center_m": [
+              0.45,
+              0.25,
+              1.1749999999999998
+            ],
+            "extent_m": [
+              0.9,
+              0.5,
+              0.050000000000000044
+            ],
+            "centroid_bbox_distance_m": 0.3998837331025107
+          }
+        },
+        {
+          "cluster_label": 1,
+          "frame_id": "camera_optical_frame",
+          "status": "VALID",
+          "publishable": true,
+          "position_m": [
+            0.51,
+            0.01,
+            1.152
+          ],
+          "reasons": [],
+          "diagnostics": {
+            "point_count": 5,
+            "centroid_m": [
+              0.51,
+              0.01,
+              1.152
+            ],
+            "bbox_min_m": [
+              0.5,
+              0.0,
+              1.15
+            ],
+            "bbox_max_m": [
+              0.52,
+              0.02,
+              1.16
+            ],
+            "bbox_center_m": [
+              0.51,
+              0.01,
+              1.1549999999999998
+            ],
+            "extent_m": [
+              0.020000000000000018,
+              0.02,
+              0.010000000000000009
+            ],
+            "centroid_bbox_distance_m": 0.0029999999999998916
+          }
+        }
+      ],
+      "valid_count": 2,
+      "invalid_count": 0,
+      "noise_count": 1,
+      "published_positions": [
+        {
+          "cluster_label": 0,
+          "frame_id": "camera_optical_frame",
+          "position_m": [
+            0.099,
+            0.05900000000000001,
+            1.16
+          ]
+        },
+        {
+          "cluster_label": 1,
+          "frame_id": "camera_optical_frame",
+          "position_m": [
+            0.51,
+            0.01,
+            1.152
+          ]
+        }
+      ]
+    }
+  }
+}

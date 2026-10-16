@@ -1,0 +1,135 @@
+{
+  "experiment": "EXP034-B1",
+  "note": "Fixed DBSCAN labels; only four repeated A points were added. Ground-truth solid center is unknown.",
+  "objects_before": [
+    {
+      "cluster_label": 0,
+      "frame_id": "camera_optical_frame",
+      "point_count": 5,
+      "centroid_m": [
+        0.01,
+        0.01,
+        1.152
+      ],
+      "bbox_min_m": [
+        0.0,
+        0.0,
+        1.15
+      ],
+      "bbox_max_m": [
+        0.02,
+        0.02,
+        1.16
+      ],
+      "bbox_center_m": [
+        0.01,
+        0.01,
+        1.1549999999999998
+      ],
+      "extent_m": [
+        0.02,
+        0.02,
+        0.010000000000000009
+      ]
+    },
+    {
+      "cluster_label": 1,
+      "frame_id": "camera_optical_frame",
+      "point_count": 5,
+      "centroid_m": [
+        0.51,
+        0.01,
+        1.152
+      ],
+      "bbox_min_m": [
+        0.5,
+        0.0,
+        1.15
+      ],
+      "bbox_max_m": [
+        0.52,
+        0.02,
+        1.16
+      ],
+      "bbox_center_m": [
+        0.51,
+        0.01,
+        1.1549999999999998
+      ],
+      "extent_m": [
+        0.020000000000000018,
+        0.02,
+        0.010000000000000009
+      ]
+    }
+  ],
+  "objects_after": [
+    {
+      "cluster_label": 0,
+      "frame_id": "camera_optical_frame",
+      "point_count": 9,
+      "centroid_m": [
+        0.01,
+        0.01,
+        1.1555555555555557
+      ],
+      "bbox_min_m": [
+        0.0,
+        0.0,
+        1.15
+      ],
+      "bbox_max_m": [
+        0.02,
+        0.02,
+        1.16
+      ],
+      "bbox_center_m": [
+        0.01,
+        0.01,
+        1.1549999999999998
+      ],
+      "extent_m": [
+        0.02,
+        0.02,
+        0.010000000000000009
+      ]
+    },
+    {
+      "cluster_label": 1,
+      "frame_id": "camera_optical_frame",
+      "point_count": 5,
+      "centroid_m": [
+        0.51,
+        0.01,
+        1.152
+      ],
+      "bbox_min_m": [
+        0.5,
+        0.0,
+        1.15
+      ],
+      "bbox_max_m": [
+        0.52,
+        0.02,
+        1.16
+      ],
+      "bbox_center_m": [
+        0.51,
+        0.01,
+        1.1549999999999998
+      ],
+      "extent_m": [
+        0.020000000000000018,
+        0.02,
+        0.010000000000000009
+      ]
+    }
+  ],
+  "noise_count_before": 2,
+  "noise_count_after": 2,
+  "A_centroid_shift_mm": [
+    0.0,
+    0.0,
+    3.555555555555756
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "experiment": "EXP034-B2",
+  "design": "B1 point set unchanged; ONLY P11 label -1 -> 0 (synthetic upstream label error).",
+  "caution": "Not a claim that DBSCAN would output this label; not a real-object-center accuracy test.",
+  "objects_before": [
+    {
+      "cluster_label": 0,
+      "frame_id": "camera_optical_frame",
+      "point_count": 9,
+      "centroid_m": [
+        0.01,
+        0.01,
+        1.1555555555555557
+      ],
+      "bbox_min_m": [
+        0.0,
+        0.0,
+        1.15
+      ],
+      "bbox_max_m": [
+        0.02,
+        0.02,
+        1.16
+      ],
+      "bbox_center_m": [
+        0.01,
+        0.01,
+        1.1549999999999998
+      ],
+      "extent_m": [
+        0.02,
+        0.02,
+        0.010000000000000009
+      ]
+    },
+    {
+      "cluster_label": 1,
+      "frame_id": "camera_optical_frame",
+      "point_count": 5,
+      "centroid_m": [
+        0.51,
+        0.01,
+        1.152
+      ],
+      "bbox_min_m": [
+        0.5,
+        0.0,
+        1.15
+      ],
+      "bbox_max_m": [
+        0.52,
+        0.02,
+        1.16
+      ],
+      "bbox_center_m": [
+        0.51,
+        0.01,
+        1.1549999999999998
+      ],
+      "extent_m": [
+        0.020000000000000018,
+        0.02,
+        0.010000000000000009
+      ]
+    }
+  ],
+  "objects_after": [
+    {
+      "cluster_label": 0,
+      "frame_id": "camera_optical_frame",
+      "point_count": 10,
+      "centroid_m": [
+        0.099,
+        0.05900000000000001,
+        1.16
+      ],
+      "bbox_min_m": [
+        0.0,
+        0.0,
+        1.15
+      ],
+      "bbox_max_m": [
+        0.9,
+        0.5,
+        1.2
+      ],
+      "bbox_center_m": [
+        0.45,
+        0.25,
+        1.1749999999999998
+      ],
+      "extent_m": [
+        0.9,
+        0.5,
+        0.050000000000000044
+      ]
+    },
+    {
+      "cluster_label": 1,
+      "frame_id": "camera_optical_frame",
+      "point_count": 5,
+      "centroid_m": [
+        0.51,
+        0.01,
+        1.152
+      ],
+      "bbox_min_m": [
+        0.5,
+        0.0,
+        1.15
+      ],
+      "bbox_max_m": [
+        0.52,
+        0.02,
+        1.16
+      ],
+      "bbox_center_m": [
+        0.51,
+        0.01,
+        1.1549999999999998
+      ],
+      "extent_m": [
+        0.020000000000000018,
+        0.02,
+        0.010000000000000009
+      ]
+    }
+  ],
+  "noise_count_before": 2,
+  "noise_count_after": 1,
+  "A_centroid_shift_mm": [
+    89.00000000000001,
+    49.00000000000001,
+    4.444444444444251
+  ],
+  "A_extent_inflation_factors": [
+    45.0,
+    25.0,
+    5.0
+  ],
+  "gates_before": {
+    "point_count_gate_5_to_20_pass": true,
+    "extent_gate_max_twice_B1_pass": true,
+    "centroid_bbox_distance_gate_0p02m_pass": true,
+    "centroid_to_bbox_center_distance_m": 0.0005555555555558644,
+    "disclaimer": "Illustrative thresholds only; real thresholds require validation on known objects and failure cases."
+  },
+  "gates_after": {
+    "point_count_gate_5_to_20_pass": true,
+    "extent_gate_max_twice_B1_pass": false,
+    "centroid_bbox_distance_gate_0p02m_pass": false,
+    "centroid_to_bbox_center_distance_m": 0.3998837331025107,
+    "disclaimer": "Illustrative thresholds only; real thresholds require validation on known objects and failure cases."
+  }
+}
