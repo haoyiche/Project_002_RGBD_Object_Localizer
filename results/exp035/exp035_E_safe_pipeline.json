@@ -1,0 +1,224 @@
+{
+  "experiment": "EXP035-E",
+  "source_report": "results/exp034/exp034_C_validated_localization.json",
+  "source_cluster_label": 1,
+  "source_invalid_cluster_label": 0,
+  "open3d_comparison": "PASS",
+  "scenarios": {
+    "E2_unverified_base": {
+      "experiment": "EXP035-E",
+      "source_frame_id": "camera_optical_frame",
+      "target_frame_id": "robot_base",
+      "unit": "m",
+      "source_report_status": "PARTIAL_INVALID",
+      "source_valid_count": 1,
+      "source_invalid_count": 1,
+      "cache_audit": "VERIFIED_AGAINST_OBJECTS",
+      "status": "BLOCKED_UNCALIBRATED",
+      "publishable": false,
+      "published_positions": [],
+      "candidate_count": 1,
+      "rejected_source_cluster_labels": [
+        0
+      ],
+      "transform_chain": [
+        {
+          "source_frame_id": "camera_optical_frame",
+          "target_frame_id": "robot_base",
+          "calibration_verified_claim": false,
+          "trusted_calibration_record_available": false
+        }
+      ],
+      "objects": [
+        {
+          "cluster_label": 1,
+          "source_frame_id": "camera_optical_frame",
+          "target_frame_id": "robot_base",
+          "status": "BLOCKED_UNCALIBRATED",
+          "publishable": false,
+          "position_m": null,
+          "reasons": [
+            "UNVERIFIED_EXTRINSIC",
+            "UNVERIFIED_TRANSFORM: camera_optical_frame -> robot_base"
+          ],
+          "diagnostics": {
+            "p_source_m": [
+              0.51,
+              0.01,
+              1.152
+            ],
+            "p_target_demo_m": [
+              0.29,
+              0.41000000000000003,
+              1.3519999999999999
+            ],
+            "steps": [
+              {
+                "source_frame_id": "camera_optical_frame",
+                "target_frame_id": "robot_base",
+                "p_target_demo_m": [
+                  0.29,
+                  0.41000000000000003,
+                  1.3519999999999999
+                ],
+                "calibration_verified_claim": false,
+                "numeric_status": "BLOCKED_UNCALIBRATED"
+              }
+            ],
+            "demo_only": true
+          }
+        }
+      ],
+      "note": "DIAGNOSTIC ONLY. No authenticated calibration verifier exists. Never forward p_target_demo_m as a robot position."
+    },
+    "E3_claimed_base": {
+      "experiment": "EXP035-E",
+      "source_frame_id": "camera_optical_frame",
+      "target_frame_id": "robot_base",
+      "unit": "m",
+      "source_report_status": "PARTIAL_INVALID",
+      "source_valid_count": 1,
+      "source_invalid_count": 1,
+      "cache_audit": "VERIFIED_AGAINST_OBJECTS",
+      "status": "READY_FOR_GLOBAL_VALIDATION",
+      "publishable": false,
+      "published_positions": [],
+      "candidate_count": 1,
+      "rejected_source_cluster_labels": [
+        0
+      ],
+      "transform_chain": [
+        {
+          "source_frame_id": "camera_optical_frame",
+          "target_frame_id": "robot_base",
+          "calibration_verified_claim": true,
+          "trusted_calibration_record_available": false
+        }
+      ],
+      "objects": [
+        {
+          "cluster_label": 1,
+          "source_frame_id": "camera_optical_frame",
+          "target_frame_id": "robot_base",
+          "status": "READY_FOR_GLOBAL_VALIDATION",
+          "publishable": false,
+          "position_m": null,
+          "reasons": [
+            "GLOBAL_VALIDATION_REQUIRED"
+          ],
+          "diagnostics": {
+            "p_source_m": [
+              0.51,
+              0.01,
+              1.152
+            ],
+            "p_target_demo_m": [
+              0.29,
+              0.41000000000000003,
+              1.3519999999999999
+            ],
+            "steps": [
+              {
+                "source_frame_id": "camera_optical_frame",
+                "target_frame_id": "robot_base",
+                "p_target_demo_m": [
+                  0.29,
+                  0.41000000000000003,
+                  1.3519999999999999
+                ],
+                "calibration_verified_claim": true,
+                "numeric_status": "READY_FOR_GLOBAL_VALIDATION"
+              }
+            ],
+            "demo_only": true
+          }
+        }
+      ],
+      "note": "DIAGNOSTIC ONLY. No authenticated calibration verifier exists. Never forward p_target_demo_m as a robot position."
+    },
+    "E5_partial_chain": {
+      "experiment": "EXP035-E",
+      "source_frame_id": "camera_optical_frame",
+      "target_frame_id": "world",
+      "unit": "m",
+      "source_report_status": "PARTIAL_INVALID",
+      "source_valid_count": 1,
+      "source_invalid_count": 1,
+      "cache_audit": "VERIFIED_AGAINST_OBJECTS",
+      "status": "BLOCKED_UNCALIBRATED",
+      "publishable": false,
+      "published_positions": [],
+      "candidate_count": 1,
+      "rejected_source_cluster_labels": [
+        0
+      ],
+      "transform_chain": [
+        {
+          "source_frame_id": "camera_optical_frame",
+          "target_frame_id": "robot_base",
+          "calibration_verified_claim": true,
+          "trusted_calibration_record_available": false
+        },
+        {
+          "source_frame_id": "robot_base",
+          "target_frame_id": "world",
+          "calibration_verified_claim": false,
+          "trusted_calibration_record_available": false
+        }
+      ],
+      "objects": [
+        {
+          "cluster_label": 1,
+          "source_frame_id": "camera_optical_frame",
+          "target_frame_id": "world",
+          "status": "BLOCKED_UNCALIBRATED",
+          "publishable": false,
+          "position_m": null,
+          "reasons": [
+            "UNVERIFIED_EXTRINSIC",
+            "UNVERIFIED_TRANSFORM: robot_base -> world"
+          ],
+          "diagnostics": {
+            "p_source_m": [
+              0.51,
+              0.01,
+              1.152
+            ],
+            "p_target_demo_m": [
+              -0.6100000000000001,
+              0.69,
+              1.3519999999999999
+            ],
+            "steps": [
+              {
+                "source_frame_id": "camera_optical_frame",
+                "target_frame_id": "robot_base",
+                "p_target_demo_m": [
+                  0.29,
+                  0.41000000000000003,
+                  1.3519999999999999
+                ],
+                "calibration_verified_claim": true,
+                "numeric_status": "READY_FOR_GLOBAL_VALIDATION"
+              },
+              {
+                "source_frame_id": "robot_base",
+                "target_frame_id": "world",
+                "p_target_demo_m": [
+                  -0.6100000000000001,
+                  0.69,
+                  1.3519999999999999
+                ],
+                "calibration_verified_claim": false,
+                "numeric_status": "BLOCKED_UNCALIBRATED"
+              }
+            ],
+            "demo_only": true
+          }
+        }
+      ],
+      "note": "DIAGNOSTIC ONLY. No authenticated calibration verifier exists. Never forward p_target_demo_m as a robot position."
+    }
+  },
+  "conclusion": "Even an all-True calibration claim is not authenticated evidence. No transformed robot position is published."
+}

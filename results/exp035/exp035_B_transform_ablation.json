@@ -1,0 +1,132 @@
+{
+  "experiment": "EXP035-B",
+  "source_report": "results/exp034/exp034_C_validated_localization.json",
+  "source_cluster_label": 1,
+  "unit": "m",
+  "source_frame_id": "camera_optical_frame",
+  "demo_target_frame_ids": [
+    "robot_base",
+    "world"
+  ],
+  "calibration_verified": false,
+  "publishable": false,
+  "position_m": null,
+  "warning": "SYNTHETIC TRANSFORMS: numeric demonstration only, not verified physical robot poses.",
+  "B0_baseline": {
+    "p_base_demo_m": [
+      0.29,
+      0.41000000000000003,
+      1.3519999999999999
+    ]
+  },
+  "B1_translation_only": {
+    "p_base_demo_m": [
+      0.81,
+      -0.09000000000000001,
+      1.3519999999999999
+    ],
+    "delta_vs_A_m": [
+      0.52,
+      -0.5,
+      0.0
+    ],
+    "p_camera_roundtrip_m": [
+      0.51,
+      0.009999999999999995,
+      1.152
+    ]
+  },
+  "B2_rotation_only": {
+    "p_base_demo_m": [
+      -0.01,
+      0.51,
+      1.152
+    ],
+    "norm_camera_m": 1.2598825342070585,
+    "norm_rotated_m": 1.2598825342070585,
+    "norm_squared_m2": 1.5873039999999998,
+    "p_camera_roundtrip_m": [
+      0.51,
+      0.01,
+      1.152
+    ]
+  },
+  "B3_two_stage": {
+    "p_base_demo_m": [
+      0.29,
+      0.41000000000000003,
+      1.3519999999999999
+    ],
+    "p_world_sequential_demo_m": [
+      -0.6100000000000001,
+      0.69,
+      1.3519999999999999
+    ],
+    "p_world_composed_demo_m": [
+      -0.61,
+      0.69,
+      1.3519999999999999
+    ],
+    "p_world_homogeneous_demo_m": [
+      -0.61,
+      0.69,
+      1.3519999999999999
+    ],
+    "R_world_from_camera": [
+      [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "t_world_from_camera_m": [
+      -0.1,
+      0.7,
+      0.2
+    ],
+    "p_reversed_wrong_demo_m": [
+      -0.6100000000000001,
+      -0.31000000000000005,
+      1.3519999999999999
+    ],
+    "p_camera_roundtrip_m": [
+      0.5100000000000001,
+      0.010000000000000009,
+      1.152
+    ]
+  },
+  "B5_hypothetical_chain": {
+    "note": "HYPOTHETICAL ONLY: suppose first edge verified; second edge unverified.",
+    "transforms": [
+      {
+        "source_frame_id": "camera_optical_frame",
+        "target_frame_id": "robot_base",
+        "verified": true
+      },
+      {
+        "source_frame_id": "robot_base",
+        "target_frame_id": "world",
+        "verified": false
+      }
+    ],
+    "target_frame_id": "world",
+    "status": "BLOCKED_UNCALIBRATED",
+    "publishable": false,
+    "position_m": null,
+    "reasons": [
+      "UNVERIFIED_TRANSFORM: robot_base -> world"
+    ]
+  },
+  "note": "B0-B3 actual synthetic transforms are ALL unverified; B5 is a separate hypothetical example.",
+  "open3d_comparison": "PASS"
+}

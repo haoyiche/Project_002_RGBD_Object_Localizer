@@ -1,0 +1,77 @@
+{
+  "experiment": "EXP035-C",
+  "source_cluster_label": 1,
+  "source_frame_id": "camera_optical_frame",
+  "target_frame_id": "world",
+  "unit": "m",
+  "transform_chain": [
+    {
+      "from": "camera_optical_frame",
+      "to": "robot_base",
+      "calibration_verified": false
+    },
+    {
+      "from": "robot_base",
+      "to": "world",
+      "calibration_verified": false
+    }
+  ],
+  "p_camera_m": [
+    0.51,
+    0.01,
+    1.152
+  ],
+  "p_base_demo_m": [
+    0.29,
+    0.41000000000000003,
+    1.3519999999999999
+  ],
+  "p_world_demo_m": [
+    -0.61,
+    0.69,
+    1.3519999999999999
+  ],
+  "R_world_from_camera": [
+    [
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "t_world_from_camera_m": [
+    -0.1,
+    0.7,
+    0.2
+  ],
+  "publication_report": {
+    "source_frame_id": "camera_optical_frame",
+    "target_frame_id": "world",
+    "status": "BLOCKED_UNCALIBRATED",
+    "publishable": false,
+    "position_m": null,
+    "reasons": [
+      "UNVERIFIED_EXTRINSIC"
+    ],
+    "diagnostics": {
+      "p_target_demo_m": [
+        -0.61,
+        0.69,
+        1.3519999999999999
+      ],
+      "calibration_verified_claim": false,
+      "demo_only": true
+    }
+  },
+  "open3d_comparison": "PASS",
+  "warning": "Synthetic R/t are NOT physical extrinsics. Never publish as robot coordinates."
+}
