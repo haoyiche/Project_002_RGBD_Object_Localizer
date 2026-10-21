@@ -1,0 +1,249 @@
+{
+  "experiment": "EXP036-B",
+  "data_kind": "synthetic_controlled_experiment",
+  "reference_kind": "synthetic_gt",
+  "calibration_verified": false,
+  "publishable": false,
+  "published_positions": [],
+  "units": {
+    "pixel_intrinsics": "px",
+    "xyz_translation_depth": "m",
+    "signed_difference_and_error": "mm"
+  },
+  "assumptions": [
+    "Rectified pinhole camera, optical-axis depth Z",
+    "Every estimate and reference compared in matching frames",
+    "Independent deterministic controlled perturbations, no random sampling"
+  ],
+  "B1": {
+    "frame_id": "camera_optical_frame",
+    "pixel_uv": [
+      380.0,
+      270.0
+    ],
+    "synthetic_gt_m": [
+      0.1,
+      0.05,
+      1.0
+    ],
+    "samples": [
+      {
+        "perturbation": "plus_10mm",
+        "optical_z_m": 1.01,
+        "estimate_m": [
+          0.101,
+          0.0505,
+          1.01
+        ],
+        "signed_delta_mm": [
+          1.0000000000000009,
+          0.5000000000000004,
+          10.000000000000009
+        ],
+        "euclidean_error_mm": 10.062305898749063
+      },
+      {
+        "perturbation": "minus_10mm",
+        "optical_z_m": 0.99,
+        "estimate_m": [
+          0.09899999999999999,
+          0.049499999999999995,
+          0.99
+        ],
+        "signed_delta_mm": [
+          -1.0000000000000147,
+          -0.5000000000000073,
+          -10.000000000000009
+        ],
+        "euclidean_error_mm": 10.062305898749065
+      }
+    ],
+    "mean_signed_delta_mm": [
+      -6.8833827526759706e-15,
+      -3.4416913763379853e-15,
+      0.0
+    ],
+    "mean_euclidean_error_mm": 10.062305898749063,
+    "fixed_plus_bias_illustration": {
+      "repeats": 2,
+      "signed_delta_mean_mm": [
+        1.0000000000000009,
+        0.5000000000000004,
+        10.000000000000009
+      ],
+      "mean_euclidean_error_mm": 10.062305898749063,
+      "note": "Repeated deterministic offset is not a noise-distribution estimate"
+    },
+    "note": "Zero mean signed error is not zero mean Euclidean error"
+  },
+  "B2": {
+    "frame_id": "camera_optical_frame",
+    "fx_correct_px": 600.0,
+    "fx_wrong_px": 630.0,
+    "fy_px": 600.0,
+    "optical_z_m": 1.0,
+    "samples": [
+      {
+        "sample_id": "P1",
+        "u_px": 320.0,
+        "synthetic_gt_m": [
+          0.0,
+          0.05,
+          1.0
+        ],
+        "estimate_m": [
+          0.0,
+          0.05,
+          1.0
+        ],
+        "signed_delta_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "euclidean_error_mm": 0.0
+      },
+      {
+        "sample_id": "P2",
+        "u_px": 380.0,
+        "synthetic_gt_m": [
+          0.1,
+          0.05,
+          1.0
+        ],
+        "estimate_m": [
+          0.09523809523809523,
+          0.05,
+          1.0
+        ],
+        "signed_delta_mm": [
+          -4.7619047619047725,
+          0.0,
+          0.0
+        ],
+        "euclidean_error_mm": 4.7619047619047725
+      },
+      {
+        "sample_id": "P3",
+        "u_px": 500.0,
+        "synthetic_gt_m": [
+          0.3,
+          0.05,
+          1.0
+        ],
+        "estimate_m": [
+          0.2857142857142857,
+          0.05,
+          1.0
+        ],
+        "signed_delta_mm": [
+          -14.28571428571429,
+          0.0,
+          0.0
+        ],
+        "euclidean_error_mm": 14.28571428571429
+      }
+    ],
+    "note": "Center gives zero error for this fx-only perturbation, NOT for every calibration error"
+  },
+  "B3": {
+    "frame_id": "robot_base",
+    "source_frame_id": "camera_optical_frame",
+    "rotation": "identity synthetic example",
+    "t_correct_m": [
+      0.3,
+      -0.1,
+      0.2
+    ],
+    "t_wrong_m": [
+      0.31,
+      -0.1,
+      0.2
+    ],
+    "sample_kind": "different_spatial_positions_not_repeat_measurements",
+    "samples": [
+      {
+        "sample_id": "P1",
+        "camera_m": [
+          0.1,
+          0.05,
+          1.0
+        ],
+        "synthetic_gt_base_m": [
+          0.4,
+          -0.05,
+          1.2
+        ],
+        "estimate_base_m": [
+          0.41000000000000003,
+          -0.05,
+          1.2
+        ],
+        "signed_delta_mm": [
+          10.000000000000009,
+          0.0,
+          0.0
+        ],
+        "euclidean_error_mm": 10.000000000000009
+      },
+      {
+        "sample_id": "P2",
+        "camera_m": [
+          -0.2,
+          0.1,
+          0.8
+        ],
+        "synthetic_gt_base_m": [
+          0.09999999999999998,
+          0.0,
+          1.0
+        ],
+        "estimate_base_m": [
+          0.10999999999999999,
+          0.0,
+          1.0
+        ],
+        "signed_delta_mm": [
+          10.000000000000009,
+          0.0,
+          0.0
+        ],
+        "euclidean_error_mm": 10.000000000000009
+      },
+      {
+        "sample_id": "P3",
+        "camera_m": [
+          0.3,
+          -0.1,
+          1.2
+        ],
+        "synthetic_gt_base_m": [
+          0.6,
+          -0.2,
+          1.4
+        ],
+        "estimate_base_m": [
+          0.61,
+          -0.2,
+          1.4
+        ],
+        "signed_delta_mm": [
+          10.000000000000009,
+          0.0,
+          0.0
+        ],
+        "euclidean_error_mm": 10.000000000000009
+      }
+    ],
+    "statistics": {
+      "count": 3,
+      "mean_mm": 10.000000000000009,
+      "median_mm": 10.000000000000009,
+      "p95_mm": 10.000000000000009,
+      "max_mm": 10.000000000000009,
+      "percentile_method": "linear"
+    },
+    "note": "Identical fixed bias across targets does not measure repeatability"
+  },
+  "warning": "SYNTHETIC_GT ONLY: not a claim about real-device accuracy or repeatability"
+}

@@ -1,0 +1,420 @@
+{
+  "experiment": "EXP036-E",
+  "reference_kind": "synthetic_gt",
+  "E1_E2": {
+    "experiment": "EXP036-E",
+    "reference_kind": "synthetic_gt",
+    "data_kind": "synthetic_diagnostic_only",
+    "report_sample_id": "FRAME_DEMO_001",
+    "source_frame_id": "camera_optical_frame",
+    "final_frame_id": "camera_optical_frame",
+    "transform_calibration_claims_all_true": false,
+    "calibration_authenticated": false,
+    "publishable": false,
+    "published_positions": [],
+    "comparison_rows": [
+      {
+        "sample_id": "FRAME_DEMO_001:cluster:2",
+        "cluster_label": 2,
+        "evaluated": true,
+        "error_mm": 20.124611797498122,
+        "reason": null,
+        "gt_source": "independent_synthetic_design"
+      },
+      {
+        "sample_id": "FRAME_DEMO_001:cluster:7",
+        "cluster_label": 7,
+        "evaluated": false,
+        "error_mm": null,
+        "reason": "INVALID_CLUSTER",
+        "cluster_reasons": [
+          "EXTENT_EXCEEDED",
+          "CENTROID_BBOX_GAP"
+        ]
+      }
+    ],
+    "input_cluster_count": 2,
+    "evaluated_count": 1,
+    "excluded_count": 1,
+    "synthetic_statistics": {
+      "count": 1,
+      "mean_mm": 20.124611797498122,
+      "median_mm": 20.124611797498122,
+      "p95_mm": 20.124611797498122,
+      "max_mm": 20.124611797498122,
+      "percentile_method": "linear"
+    },
+    "synthetic_evaluation": {
+      "reference_kind": "synthetic_gt",
+      "data_kind": "synthetic_deterministic",
+      "frame_id": "camera_optical_frame",
+      "input_sample_count": 1,
+      "valid_count": 1,
+      "rejected_count": 0,
+      "valid_samples": [
+        {
+          "sample_id": "FRAME_DEMO_001:cluster:2",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.1,
+            0.05,
+            1.0
+          ],
+          "estimate_m": [
+            0.102,
+            0.051,
+            1.02
+          ],
+          "signed_delta_xyz_mm": [
+            1.999999999999988,
+            0.999999999999994,
+            20.000000000000018
+          ],
+          "signed_delta_x_mm": 1.999999999999988,
+          "euclidean_error_mm": 20.124611797498122,
+          "injected_outlier": false
+        }
+      ],
+      "rejected_samples": [],
+      "statistics": {
+        "count": 1,
+        "mean_mm": 20.124611797498122,
+        "median_mm": 20.124611797498122,
+        "p95_mm": 20.124611797498122,
+        "max_mm": 20.124611797498122,
+        "percentile_method": "linear"
+      },
+      "mean_signed_delta_xyz_mm": [
+        1.999999999999988,
+        0.999999999999994,
+        20.000000000000018
+      ],
+      "signed_delta_x_mean_mm": 1.999999999999988,
+      "shapes": {
+        "gt_points": [
+          1,
+          3
+        ],
+        "estimate_points": [
+          1,
+          3
+        ],
+        "signed_delta_xyz_mm": [
+          1,
+          3
+        ],
+        "signed_delta_x_mm": [
+          1
+        ],
+        "euclidean_errors_mm": [
+          1
+        ]
+      },
+      "outlier_policy": "retain all valid samples in official statistics",
+      "publishable": false,
+      "published_positions": []
+    },
+    "transform_diagnostics": [
+      {
+        "cluster_label": 2,
+        "source_frame_id": "camera_optical_frame",
+        "final_frame_id": "camera_optical_frame",
+        "final_position_m": [
+          0.102,
+          0.051,
+          1.02
+        ],
+        "steps": [
+          {
+            "step": 0,
+            "source_frame_id": "camera_optical_frame",
+            "target_frame_id": "camera_optical_frame",
+            "position_m": [
+              0.102,
+              0.051,
+              1.02
+            ]
+          }
+        ]
+      }
+    ],
+    "warning": "EXP034/035 audited synthetic code diagnostics ONLY; no authenticated calibration or real accuracy claim"
+  },
+  "E3": {
+    "experiment": "EXP036-E",
+    "reference_kind": "synthetic_gt",
+    "data_kind": "synthetic_diagnostic_only",
+    "report_sample_id": "FRAME_DEMO_001",
+    "source_frame_id": "camera_optical_frame",
+    "final_frame_id": "robot_base",
+    "transform_calibration_claims_all_true": false,
+    "calibration_authenticated": false,
+    "publishable": false,
+    "published_positions": [],
+    "comparison_rows": [
+      {
+        "sample_id": "FRAME_DEMO_001:cluster:2",
+        "cluster_label": 2,
+        "evaluated": false,
+        "error_mm": null,
+        "reason": "UNVERIFIED_TRANSFORM_FOR_CROSS_FRAME_GT",
+        "demo_only_position_m": [
+          0.4,
+          -0.05,
+          1.2
+        ]
+      },
+      {
+        "sample_id": "FRAME_DEMO_001:cluster:7",
+        "cluster_label": 7,
+        "evaluated": false,
+        "error_mm": null,
+        "reason": "INVALID_CLUSTER",
+        "cluster_reasons": [
+          "EXTENT_EXCEEDED",
+          "CENTROID_BBOX_GAP"
+        ]
+      }
+    ],
+    "input_cluster_count": 2,
+    "evaluated_count": 0,
+    "excluded_count": 2,
+    "synthetic_statistics": null,
+    "synthetic_evaluation": null,
+    "transform_diagnostics": [
+      {
+        "cluster_label": 2,
+        "source_frame_id": "camera_optical_frame",
+        "final_frame_id": "robot_base",
+        "final_position_m": [
+          0.4,
+          -0.05,
+          1.2
+        ],
+        "steps": [
+          {
+            "step": 0,
+            "source_frame_id": "camera_optical_frame",
+            "target_frame_id": "robot_base",
+            "position_m": [
+              0.4,
+              -0.05,
+              1.2
+            ]
+          }
+        ]
+      }
+    ],
+    "warning": "EXP034/035 audited synthetic code diagnostics ONLY; no authenticated calibration or real accuracy claim"
+  },
+  "E4": {
+    "experiment": "EXP036-E",
+    "reference_kind": "synthetic_gt",
+    "data_kind": "synthetic_diagnostic_only",
+    "report_sample_id": "FRAME_DEMO_001",
+    "source_frame_id": "camera_optical_frame",
+    "final_frame_id": "robot_base",
+    "transform_calibration_claims_all_true": true,
+    "calibration_authenticated": false,
+    "publishable": false,
+    "published_positions": [],
+    "comparison_rows": [
+      {
+        "sample_id": "FRAME_DEMO_001:cluster:2",
+        "cluster_label": 2,
+        "evaluated": true,
+        "error_mm": 0.0,
+        "reason": null,
+        "gt_source": "independent_synthetic_design"
+      },
+      {
+        "sample_id": "FRAME_DEMO_001:cluster:7",
+        "cluster_label": 7,
+        "evaluated": false,
+        "error_mm": null,
+        "reason": "INVALID_CLUSTER",
+        "cluster_reasons": [
+          "EXTENT_EXCEEDED",
+          "CENTROID_BBOX_GAP"
+        ]
+      }
+    ],
+    "input_cluster_count": 2,
+    "evaluated_count": 1,
+    "excluded_count": 1,
+    "synthetic_statistics": {
+      "count": 1,
+      "mean_mm": 0.0,
+      "median_mm": 0.0,
+      "p95_mm": 0.0,
+      "max_mm": 0.0,
+      "percentile_method": "linear"
+    },
+    "synthetic_evaluation": {
+      "reference_kind": "synthetic_gt",
+      "data_kind": "synthetic_deterministic",
+      "frame_id": "robot_base",
+      "input_sample_count": 1,
+      "valid_count": 1,
+      "rejected_count": 0,
+      "valid_samples": [
+        {
+          "sample_id": "FRAME_DEMO_001:cluster:2",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "robot_base",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.4,
+            -0.05,
+            1.2
+          ],
+          "estimate_m": [
+            0.4,
+            -0.05,
+            1.2
+          ],
+          "signed_delta_xyz_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 0.0,
+          "euclidean_error_mm": 0.0,
+          "injected_outlier": false
+        }
+      ],
+      "rejected_samples": [],
+      "statistics": {
+        "count": 1,
+        "mean_mm": 0.0,
+        "median_mm": 0.0,
+        "p95_mm": 0.0,
+        "max_mm": 0.0,
+        "percentile_method": "linear"
+      },
+      "mean_signed_delta_xyz_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "signed_delta_x_mean_mm": 0.0,
+      "shapes": {
+        "gt_points": [
+          1,
+          3
+        ],
+        "estimate_points": [
+          1,
+          3
+        ],
+        "signed_delta_xyz_mm": [
+          1,
+          3
+        ],
+        "signed_delta_x_mm": [
+          1
+        ],
+        "euclidean_errors_mm": [
+          1
+        ]
+      },
+      "outlier_policy": "retain all valid samples in official statistics",
+      "publishable": false,
+      "published_positions": []
+    },
+    "transform_diagnostics": [
+      {
+        "cluster_label": 2,
+        "source_frame_id": "camera_optical_frame",
+        "final_frame_id": "robot_base",
+        "final_position_m": [
+          0.4,
+          -0.05,
+          1.2
+        ],
+        "steps": [
+          {
+            "step": 0,
+            "source_frame_id": "camera_optical_frame",
+            "target_frame_id": "robot_base",
+            "position_m": [
+              0.4,
+              -0.05,
+              1.2
+            ]
+          }
+        ]
+      }
+    ],
+    "warning": "EXP034/035 audited synthetic code diagnostics ONLY; no authenticated calibration or real accuracy claim"
+  },
+  "E5": {
+    "experiment": "EXP036-E",
+    "reference_kind": "synthetic_gt",
+    "data_kind": "synthetic_diagnostic_only",
+    "report_sample_id": "FRAME_DEMO_001",
+    "source_frame_id": "camera_optical_frame",
+    "final_frame_id": "robot_base",
+    "transform_calibration_claims_all_true": false,
+    "calibration_authenticated": false,
+    "publishable": false,
+    "published_positions": [],
+    "comparison_rows": [
+      {
+        "sample_id": "FRAME_DEMO_001:cluster:2",
+        "cluster_label": 2,
+        "evaluated": false,
+        "error_mm": null,
+        "reason": "SELF_DERIVED_REFERENCE",
+        "gt_source": "derived_from_estimate_pipeline",
+        "demo_numerical_error_mm": 0.0
+      },
+      {
+        "sample_id": "FRAME_DEMO_001:cluster:7",
+        "cluster_label": 7,
+        "evaluated": false,
+        "error_mm": null,
+        "reason": "INVALID_CLUSTER",
+        "cluster_reasons": [
+          "EXTENT_EXCEEDED",
+          "CENTROID_BBOX_GAP"
+        ]
+      }
+    ],
+    "input_cluster_count": 2,
+    "evaluated_count": 0,
+    "excluded_count": 2,
+    "synthetic_statistics": null,
+    "synthetic_evaluation": null,
+    "transform_diagnostics": [
+      {
+        "cluster_label": 2,
+        "source_frame_id": "camera_optical_frame",
+        "final_frame_id": "robot_base",
+        "final_position_m": [
+          0.4,
+          -0.05,
+          1.2
+        ],
+        "steps": [
+          {
+            "step": 0,
+            "source_frame_id": "camera_optical_frame",
+            "target_frame_id": "robot_base",
+            "position_m": [
+              0.4,
+              -0.05,
+              1.2
+            ]
+          }
+        ]
+      }
+    ],
+    "warning": "EXP034/035 audited synthetic code diagnostics ONLY; no authenticated calibration or real accuracy claim"
+  },
+  "publishable": false,
+  "published_positions": [],
+  "physical_accuracy_verified": false
+}

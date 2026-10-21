@@ -1,0 +1,70 @@
+{
+  "experiment": "EXP036-D",
+  "data_kind": "synthetic_deterministic",
+  "baseline": {
+    "count": 20,
+    "mean_mm": 8.150000000000002,
+    "median_mm": 5.500000000000005,
+    "p95_mm": 12.000000000000037,
+    "max_mm": 50.0
+  },
+  "D1_signed_mean_bug": {
+    "RED_incorrect_mean_mm": 2.05,
+    "GREEN_correct_mean_mm": 8.150000000000002,
+    "underestimate_mm": 6.100000000000002,
+    "red_observed": true,
+    "green_verified": true
+  },
+  "D2_percentile_method_bug": {
+    "RED_higher_p95_mm": 50.0,
+    "GREEN_linear_p95_mm": 12.000000000000037,
+    "method_difference_mm": 37.999999999999964,
+    "red_observed": true,
+    "green_verified": true
+  },
+  "D3_hidden_outlier_bug": {
+    "RED_filtered": {
+      "count": 19,
+      "mean_mm": 5.947368421052633,
+      "median_mm": 5.000000000000004,
+      "p95_mm": 10.000000000000009,
+      "max_mm": 10.000000000000009
+    },
+    "GREEN_full": {
+      "count": 20,
+      "mean_mm": 8.150000000000002,
+      "median_mm": 5.500000000000005,
+      "p95_mm": 12.000000000000037,
+      "max_mm": 50.0
+    },
+    "removed_sample_ids": [
+      "S19"
+    ],
+    "red_observed": true,
+    "green_verified": true
+  },
+  "D4_misaligned_estimates_bug": {
+    "RED_S00_euclidean_mm": 7.999999999999993,
+    "RED_S01_euclidean_mm": 8.999999999999995,
+    "RED_mean_mm": 8.85,
+    "RED_signed_bias_mm": -2.05,
+    "GREEN_provenance_mismatch_rejected": true,
+    "caution": "record IDs alone do not prove estimates came from the claimed samples",
+    "red_observed": true,
+    "green_verified": true
+  },
+  "D5_missing_gt_zero_fill_bug": {
+    "RED_count": 21,
+    "RED_mean_mm": 7.761904761904764,
+    "RED_max_mm": 50.0,
+    "GREEN_input_count": 21,
+    "GREEN_evaluated_count": 20,
+    "GREEN_missing_gt_count": 1,
+    "GREEN_missing_gt_reason": "MISSING_GROUND_TRUTH",
+    "red_observed": true,
+    "green_verified": true
+  },
+  "publishable": false,
+  "published_positions": [],
+  "caution": "Synthetic metric-debug experiment only; no physical sensor-accuracy claim"
+}

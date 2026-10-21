@@ -1,0 +1,1100 @@
+{
+  "experiment": "EXP036-C",
+  "data_kind": "synthetic_deterministic",
+  "reference_kind": "synthetic_gt",
+  "rng_used": false,
+  "random_seed": null,
+  "frame_id": "camera_optical_frame",
+  "units": {
+    "xyz": "m",
+    "signed_delta_and_error": "mm"
+  },
+  "injected_model": "X-direction signed offsets (mm) from FIXED 20-entry list",
+  "signed_x_injection_mm": [
+    1,
+    -2,
+    3,
+    -4,
+    5,
+    -2,
+    4,
+    -6,
+    8,
+    -10,
+    10,
+    -10,
+    10,
+    -10,
+    10,
+    -3,
+    4,
+    -5,
+    6,
+    -50
+  ],
+  "full_20_sample_benchmark": {
+    "reference_kind": "synthetic_gt",
+    "data_kind": "synthetic_deterministic",
+    "frame_id": "camera_optical_frame",
+    "input_sample_count": 20,
+    "valid_count": 20,
+    "rejected_count": 0,
+    "valid_samples": [
+      {
+        "sample_id": "S00",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.1,
+          0.05,
+          1.0
+        ],
+        "estimate_m": [
+          0.101,
+          0.05,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          1.0000000000000009,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 1.0000000000000009,
+        "euclidean_error_mm": 1.0000000000000009,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S01",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.11,
+          0.05,
+          1.0
+        ],
+        "estimate_m": [
+          0.108,
+          0.05,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -2.0000000000000018,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -2.0000000000000018,
+        "euclidean_error_mm": 2.0000000000000018,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S02",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.12000000000000001,
+          0.05,
+          1.0
+        ],
+        "estimate_m": [
+          0.12300000000000001,
+          0.05,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          3.0000000000000027,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 3.0000000000000027,
+        "euclidean_error_mm": 3.0000000000000027,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S03",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.13,
+          0.05,
+          1.0
+        ],
+        "estimate_m": [
+          0.126,
+          0.05,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -4.0000000000000036,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -4.0000000000000036,
+        "euclidean_error_mm": 4.0000000000000036,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S04",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.14,
+          0.05,
+          1.0
+        ],
+        "estimate_m": [
+          0.14500000000000002,
+          0.05,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          5.000000000000004,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 5.000000000000004,
+        "euclidean_error_mm": 5.000000000000004,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S05",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.1,
+          0.060000000000000005,
+          1.0
+        ],
+        "estimate_m": [
+          0.098,
+          0.060000000000000005,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -2.0000000000000018,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -2.0000000000000018,
+        "euclidean_error_mm": 2.0000000000000018,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S06",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.11,
+          0.060000000000000005,
+          1.0
+        ],
+        "estimate_m": [
+          0.114,
+          0.060000000000000005,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          4.0000000000000036,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 4.0000000000000036,
+        "euclidean_error_mm": 4.0000000000000036,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S07",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.12000000000000001,
+          0.060000000000000005,
+          1.0
+        ],
+        "estimate_m": [
+          0.114,
+          0.060000000000000005,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -6.000000000000005,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -6.000000000000005,
+        "euclidean_error_mm": 6.000000000000005,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S08",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.13,
+          0.060000000000000005,
+          1.0
+        ],
+        "estimate_m": [
+          0.138,
+          0.060000000000000005,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          8.000000000000007,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 8.000000000000007,
+        "euclidean_error_mm": 8.000000000000007,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S09",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.14,
+          0.060000000000000005,
+          1.0
+        ],
+        "estimate_m": [
+          0.13,
+          0.060000000000000005,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -10.000000000000009,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -10.000000000000009,
+        "euclidean_error_mm": 10.000000000000009,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S10",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.1,
+          0.07,
+          1.0
+        ],
+        "estimate_m": [
+          0.11,
+          0.07,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          9.999999999999995,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 9.999999999999995,
+        "euclidean_error_mm": 9.999999999999995,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S11",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.11,
+          0.07,
+          1.0
+        ],
+        "estimate_m": [
+          0.1,
+          0.07,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -9.999999999999995,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -9.999999999999995,
+        "euclidean_error_mm": 9.999999999999995,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S12",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.12000000000000001,
+          0.07,
+          1.0
+        ],
+        "estimate_m": [
+          0.13,
+          0.07,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          9.999999999999995,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 9.999999999999995,
+        "euclidean_error_mm": 9.999999999999995,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S13",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.13,
+          0.07,
+          1.0
+        ],
+        "estimate_m": [
+          0.12000000000000001,
+          0.07,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -9.999999999999995,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -9.999999999999995,
+        "euclidean_error_mm": 9.999999999999995,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S14",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.14,
+          0.07,
+          1.0
+        ],
+        "estimate_m": [
+          0.15000000000000002,
+          0.07,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          10.000000000000009,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 10.000000000000009,
+        "euclidean_error_mm": 10.000000000000009,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S15",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.1,
+          0.08,
+          1.0
+        ],
+        "estimate_m": [
+          0.097,
+          0.08,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -3.0000000000000027,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -3.0000000000000027,
+        "euclidean_error_mm": 3.0000000000000027,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S16",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.11,
+          0.08,
+          1.0
+        ],
+        "estimate_m": [
+          0.114,
+          0.08,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          4.0000000000000036,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 4.0000000000000036,
+        "euclidean_error_mm": 4.0000000000000036,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S17",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.12000000000000001,
+          0.08,
+          1.0
+        ],
+        "estimate_m": [
+          0.115,
+          0.08,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -5.000000000000004,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -5.000000000000004,
+        "euclidean_error_mm": 5.000000000000004,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S18",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.13,
+          0.08,
+          1.0
+        ],
+        "estimate_m": [
+          0.136,
+          0.08,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          6.000000000000005,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": 6.000000000000005,
+        "euclidean_error_mm": 6.000000000000005,
+        "injected_outlier": false
+      },
+      {
+        "sample_id": "S19",
+        "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+        "frame_id": "camera_optical_frame",
+        "reference_kind": "synthetic_gt",
+        "synthetic_gt_m": [
+          0.14,
+          0.08,
+          1.0
+        ],
+        "estimate_m": [
+          0.09000000000000001,
+          0.08,
+          1.0
+        ],
+        "signed_delta_xyz_mm": [
+          -50.0,
+          0.0,
+          0.0
+        ],
+        "signed_delta_x_mm": -50.0,
+        "euclidean_error_mm": 50.0,
+        "injected_outlier": true
+      }
+    ],
+    "rejected_samples": [],
+    "statistics": {
+      "count": 20,
+      "mean_mm": 8.150000000000002,
+      "median_mm": 5.500000000000005,
+      "p95_mm": 12.000000000000037,
+      "max_mm": 50.0,
+      "percentile_method": "linear"
+    },
+    "mean_signed_delta_xyz_mm": [
+      -2.05,
+      0.0,
+      0.0
+    ],
+    "signed_delta_x_mean_mm": -2.05,
+    "shapes": {
+      "gt_points": [
+        20,
+        3
+      ],
+      "estimate_points": [
+        20,
+        3
+      ],
+      "signed_delta_xyz_mm": [
+        20,
+        3
+      ],
+      "signed_delta_x_mm": [
+        20
+      ],
+      "euclidean_errors_mm": [
+        20
+      ]
+    },
+    "outlier_policy": "retain all valid samples in official statistics",
+    "publishable": false,
+    "published_positions": []
+  },
+  "sensitivity_without_S19": {
+    "excluded_sample_id": "S19",
+    "purpose": "outlier sensitivity only; not a replacement for full statistics",
+    "benchmark": {
+      "reference_kind": "synthetic_gt",
+      "data_kind": "synthetic_deterministic",
+      "frame_id": "camera_optical_frame",
+      "input_sample_count": 19,
+      "valid_count": 19,
+      "rejected_count": 0,
+      "valid_samples": [
+        {
+          "sample_id": "S00",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.1,
+            0.05,
+            1.0
+          ],
+          "estimate_m": [
+            0.101,
+            0.05,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            1.0000000000000009,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 1.0000000000000009,
+          "euclidean_error_mm": 1.0000000000000009,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S01",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.11,
+            0.05,
+            1.0
+          ],
+          "estimate_m": [
+            0.108,
+            0.05,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            -2.0000000000000018,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": -2.0000000000000018,
+          "euclidean_error_mm": 2.0000000000000018,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S02",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.12000000000000001,
+            0.05,
+            1.0
+          ],
+          "estimate_m": [
+            0.12300000000000001,
+            0.05,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            3.0000000000000027,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 3.0000000000000027,
+          "euclidean_error_mm": 3.0000000000000027,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S03",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.13,
+            0.05,
+            1.0
+          ],
+          "estimate_m": [
+            0.126,
+            0.05,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            -4.0000000000000036,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": -4.0000000000000036,
+          "euclidean_error_mm": 4.0000000000000036,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S04",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.14,
+            0.05,
+            1.0
+          ],
+          "estimate_m": [
+            0.14500000000000002,
+            0.05,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            5.000000000000004,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 5.000000000000004,
+          "euclidean_error_mm": 5.000000000000004,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S05",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.1,
+            0.060000000000000005,
+            1.0
+          ],
+          "estimate_m": [
+            0.098,
+            0.060000000000000005,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            -2.0000000000000018,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": -2.0000000000000018,
+          "euclidean_error_mm": 2.0000000000000018,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S06",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.11,
+            0.060000000000000005,
+            1.0
+          ],
+          "estimate_m": [
+            0.114,
+            0.060000000000000005,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            4.0000000000000036,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 4.0000000000000036,
+          "euclidean_error_mm": 4.0000000000000036,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S07",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.12000000000000001,
+            0.060000000000000005,
+            1.0
+          ],
+          "estimate_m": [
+            0.114,
+            0.060000000000000005,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            -6.000000000000005,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": -6.000000000000005,
+          "euclidean_error_mm": 6.000000000000005,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S08",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.13,
+            0.060000000000000005,
+            1.0
+          ],
+          "estimate_m": [
+            0.138,
+            0.060000000000000005,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            8.000000000000007,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 8.000000000000007,
+          "euclidean_error_mm": 8.000000000000007,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S09",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.14,
+            0.060000000000000005,
+            1.0
+          ],
+          "estimate_m": [
+            0.13,
+            0.060000000000000005,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            -10.000000000000009,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": -10.000000000000009,
+          "euclidean_error_mm": 10.000000000000009,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S10",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.1,
+            0.07,
+            1.0
+          ],
+          "estimate_m": [
+            0.11,
+            0.07,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            9.999999999999995,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 9.999999999999995,
+          "euclidean_error_mm": 9.999999999999995,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S11",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.11,
+            0.07,
+            1.0
+          ],
+          "estimate_m": [
+            0.1,
+            0.07,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            -9.999999999999995,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": -9.999999999999995,
+          "euclidean_error_mm": 9.999999999999995,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S12",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.12000000000000001,
+            0.07,
+            1.0
+          ],
+          "estimate_m": [
+            0.13,
+            0.07,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            9.999999999999995,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 9.999999999999995,
+          "euclidean_error_mm": 9.999999999999995,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S13",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.13,
+            0.07,
+            1.0
+          ],
+          "estimate_m": [
+            0.12000000000000001,
+            0.07,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            -9.999999999999995,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": -9.999999999999995,
+          "euclidean_error_mm": 9.999999999999995,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S14",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.14,
+            0.07,
+            1.0
+          ],
+          "estimate_m": [
+            0.15000000000000002,
+            0.07,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            10.000000000000009,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 10.000000000000009,
+          "euclidean_error_mm": 10.000000000000009,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S15",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.1,
+            0.08,
+            1.0
+          ],
+          "estimate_m": [
+            0.097,
+            0.08,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            -3.0000000000000027,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": -3.0000000000000027,
+          "euclidean_error_mm": 3.0000000000000027,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S16",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.11,
+            0.08,
+            1.0
+          ],
+          "estimate_m": [
+            0.114,
+            0.08,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            4.0000000000000036,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 4.0000000000000036,
+          "euclidean_error_mm": 4.0000000000000036,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S17",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.12000000000000001,
+            0.08,
+            1.0
+          ],
+          "estimate_m": [
+            0.115,
+            0.08,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            -5.000000000000004,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": -5.000000000000004,
+          "euclidean_error_mm": 5.000000000000004,
+          "injected_outlier": false
+        },
+        {
+          "sample_id": "S18",
+          "status": "VALID_FOR_SYNTHETIC_EVALUATION",
+          "frame_id": "camera_optical_frame",
+          "reference_kind": "synthetic_gt",
+          "synthetic_gt_m": [
+            0.13,
+            0.08,
+            1.0
+          ],
+          "estimate_m": [
+            0.136,
+            0.08,
+            1.0
+          ],
+          "signed_delta_xyz_mm": [
+            6.000000000000005,
+            0.0,
+            0.0
+          ],
+          "signed_delta_x_mm": 6.000000000000005,
+          "euclidean_error_mm": 6.000000000000005,
+          "injected_outlier": false
+        }
+      ],
+      "rejected_samples": [],
+      "statistics": {
+        "count": 19,
+        "mean_mm": 5.947368421052633,
+        "median_mm": 5.000000000000004,
+        "p95_mm": 10.000000000000009,
+        "max_mm": 10.000000000000009,
+        "percentile_method": "linear"
+      },
+      "mean_signed_delta_xyz_mm": [
+        0.47368421052631615,
+        0.0,
+        0.0
+      ],
+      "signed_delta_x_mean_mm": 0.47368421052631615,
+      "shapes": {
+        "gt_points": [
+          19,
+          3
+        ],
+        "estimate_points": [
+          19,
+          3
+        ],
+        "signed_delta_xyz_mm": [
+          19,
+          3
+        ],
+        "signed_delta_x_mm": [
+          19
+        ],
+        "euclidean_errors_mm": [
+          19
+        ]
+      },
+      "outlier_policy": "retain all valid samples in official statistics",
+      "publishable": false,
+      "published_positions": []
+    }
+  },
+  "invalid_sample_diagnostics_demo": {
+    "note": "Frame mismatch and missing GT are excluded; neither gets zero error",
+    "valid_count": 1,
+    "rejected_count": 2,
+    "rejected_samples": [
+      {
+        "sample_id": "FRAME_BAD",
+        "status": "EXCLUDED_FROM_METRICS",
+        "reason": "FRAME_MISMATCH",
+        "gt_frame_id": "camera_optical_frame",
+        "estimate_frame_id": "robot_base",
+        "gt_present": true,
+        "estimate_present": true
+      },
+      {
+        "sample_id": "GT_MISSING",
+        "status": "EXCLUDED_FROM_METRICS",
+        "reason": "MISSING_GROUND_TRUTH",
+        "gt_frame_id": "camera_optical_frame",
+        "estimate_frame_id": "camera_optical_frame",
+        "gt_present": false,
+        "estimate_present": true
+      }
+    ]
+  },
+  "calibration_verified": false,
+  "publishable": false,
+  "published_positions": [],
+  "warning": "SYNTHETIC_GT ONLY. n=20 and synthetic P95 do not establish real-device accuracy or tail reliability."
+}
