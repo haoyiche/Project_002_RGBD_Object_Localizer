@@ -49,3 +49,7 @@ data/processed/*
 *.log
 tmp/
 temp/
+
+# Temporary backup files
+*.bak
+*.bak_*
