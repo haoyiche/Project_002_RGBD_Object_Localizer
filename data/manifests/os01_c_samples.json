@@ -1,0 +1,532 @@
+{
+  "schema_version": "os01_c2_v1",
+  "description": "Deterministic synthetic inputs; no independent physical ground truth",
+  "samples": [
+    {
+      "sample_id": "OS01_C_001",
+      "source_kind": "synthetic",
+      "scenario_group": "normal_geometry",
+      "generation_params": {
+        "z": 0.88,
+        "dv": 0,
+        "du": 0
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_001.npz",
+      "input_sha256": "7d91fbe6ab0fc65abc9c649b70e113f1d475a2960763172562b74af2e5b1b082",
+      "content_sha256": "8e2ed072d0d2143eb578359aa97530f7f441011c2b688ca9ebe0bdaea070afde",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.0044,
+        0.0,
+        0.88
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.00968,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.00968,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_002",
+      "source_kind": "synthetic",
+      "scenario_group": "normal_geometry",
+      "generation_params": {
+        "z": 0.92,
+        "dv": 0,
+        "du": 1
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_002.npz",
+      "input_sha256": "75465693e61c6df87055c1d1ea8768027ee9c4682914e9e0a5c2bf65addcb160",
+      "content_sha256": "10889830d202368c93f0225751aa48a0cc17cda7ce18d1f0a663235552ce8d81",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.013800000000000002,
+        0.0,
+        0.92
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.01012,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.01012,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_003",
+      "source_kind": "synthetic",
+      "scenario_group": "normal_geometry",
+      "generation_params": {
+        "z": 0.96,
+        "dv": 0,
+        "du": -1
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_003.npz",
+      "input_sha256": "029ad46e096e4f788525dac96545e440905d4b6175ec3a2f166a1279a72e8372",
+      "content_sha256": "f46dec09db660bda4c2e2b29bea08f4b13e2badb55f8f98a48578b8590400e0f",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        -0.0048,
+        0.0,
+        0.96
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.01056,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.01056,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_004",
+      "source_kind": "synthetic",
+      "scenario_group": "normal_geometry",
+      "generation_params": {
+        "z": 1.04,
+        "dv": 1,
+        "du": 0
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_004.npz",
+      "input_sha256": "33885663413a59a106e0d586902083a2f621b70ca8c689a5176aabcd024f14e1",
+      "content_sha256": "b398cb1a6b533f2a1ba7cf4fe6746ee31deed2d5670cdcd6ac8a463c89808814",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.0052,
+        0.0104,
+        1.04
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.01144,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.01144,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_005",
+      "source_kind": "synthetic",
+      "scenario_group": "normal_geometry",
+      "generation_params": {
+        "z": 1.08,
+        "dv": -1,
+        "du": 0
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_005.npz",
+      "input_sha256": "b33900251f47fb4dca53c8e0d33dfc09b679c75738a648ce66cf56c363f2f0ca",
+      "content_sha256": "37cb9a6918fce28865a43d430242dcc461ad8198481b12ecdf7f11ed9f4414fe",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.0054,
+        -0.0108,
+        1.08
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.01188,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.01188,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_006",
+      "source_kind": "synthetic",
+      "scenario_group": "normal_geometry",
+      "generation_params": {
+        "z": 1.12,
+        "dv": 1,
+        "du": 1
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_006.npz",
+      "input_sha256": "0340f98e9be8470c4950273fb22565cbda1a009767d224859351c489445c9c7e",
+      "content_sha256": "e23330f80849d8c182646865ec68ab454c37f1623d2ef8abe5fb3c518d71b519",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.016800000000000002,
+        0.011200000000000002,
+        1.12
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.01232,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.01232,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_007",
+      "source_kind": "synthetic",
+      "scenario_group": "mask_perturbation",
+      "generation_params": {
+        "drop": [
+          2,
+          4
+        ]
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_007.npz",
+      "input_sha256": "606aff8f3f22602d3eddc41ff2552a1f8e6b3d6875fa4c9bf173ccd70227fb9c",
+      "content_sha256": "b74cc23b182574d145751ec80a9184654ba57a31d81f2e16813e38e010c94190",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.005,
+        0.0,
+        1.0
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_008",
+      "source_kind": "synthetic",
+      "scenario_group": "mask_perturbation",
+      "generation_params": {
+        "drop": [
+          2,
+          5
+        ]
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_008.npz",
+      "input_sha256": "6c4ff01737b8154e20b701cb78ed8001073a0020b58b3cd422134231a42c9f38",
+      "content_sha256": "c9d791263483be0fa14d1c6027565442e759c0c5cacd9754ed854b03d333ca8d",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.005,
+        0.0,
+        1.0
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_009",
+      "source_kind": "synthetic",
+      "scenario_group": "mask_perturbation",
+      "generation_params": {
+        "drop": [
+          3,
+          3
+        ]
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_009.npz",
+      "input_sha256": "c76696ad180ba07745803411a24a587878f81df17e1b44eb6abc3b30958dae35",
+      "content_sha256": "1c76caf09ec7e81cce961a36bd7bedf3cdf84d32c9cf09fb5caa986adc594371",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.005,
+        0.0,
+        1.0
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_010",
+      "source_kind": "synthetic",
+      "scenario_group": "mask_perturbation",
+      "generation_params": {
+        "drop": "empty"
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_010.npz",
+      "input_sha256": "0f8915d2b01ccdc34857e6553e4cdb2da029f93dee195353f12edd16ed2a8f14",
+      "content_sha256": "bb10e4afb33b0d0210a3748b31969472a98e9c18013a8380ef373278b473861e",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.005,
+        0.0,
+        1.0
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_011",
+      "source_kind": "synthetic",
+      "scenario_group": "depth_anomaly",
+      "generation_params": {
+        "mode": "extra_zero"
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_011.npz",
+      "input_sha256": "33f5d929436523aec359bc4563319b53d92cb5e4b0b69334d401df3e1171525d",
+      "content_sha256": "4375eddc174db099a1b12f4e364a057b7e1914147992b715096edac2a426ff21",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.005,
+        0.0,
+        1.0
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_012",
+      "source_kind": "synthetic",
+      "scenario_group": "depth_anomaly",
+      "generation_params": {
+        "mode": "nan"
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_012.npz",
+      "input_sha256": "6bf8d702dfbb24f394f3009b55dfe820470900b7f6335a2a4924247c5f4d61bf",
+      "content_sha256": "54b9e96068d36e5b0c77a7df9f12b1b173d1612aae3d23de40baeb2b13580b58",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.005,
+        0.0,
+        1.0
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_013",
+      "source_kind": "synthetic",
+      "scenario_group": "depth_anomaly",
+      "generation_params": {
+        "mode": "inf"
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_013.npz",
+      "input_sha256": "67097ecc5224c5ea81e60ec804d81ae04d8f988fd239099b715afbd5991b35e7",
+      "content_sha256": "e647fec6909b6da5e06af14af2468fb8bb6035482625f640d6d947bf89aa0d3a",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.005,
+        0.0,
+        1.0
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_014",
+      "source_kind": "synthetic",
+      "scenario_group": "depth_anomaly",
+      "generation_params": {
+        "mode": "all_zero"
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_014.npz",
+      "input_sha256": "0042705669601706c3c6b8a24c8e40568f17938ea8bb74f2b0b103d74923958d",
+      "content_sha256": "e8c13fdc3dd50c26f61e9faf59a9ce54e015a5c099f679faa69e8e1ac123da47",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.005,
+        0.0,
+        1.0
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_015",
+      "source_kind": "synthetic",
+      "scenario_group": "cluster_gate_pressure",
+      "generation_params": {
+        "z": 1.0,
+        "mode": "filter_all"
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_015.npz",
+      "input_sha256": "4d559d5ddf99ee2403ca5c302487fd7a7e6bf6e4726d39d19da8696155891b7e",
+      "content_sha256": "c7ec4cb6a3d56b96a6be424b622377745ca882fd84bad9609e88ef569b98b4df",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.005,
+        0.0,
+        1.0
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 4,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_016",
+      "source_kind": "synthetic",
+      "scenario_group": "cluster_gate_pressure",
+      "generation_params": {
+        "z": 1.01,
+        "mode": "all_noise"
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_016.npz",
+      "input_sha256": "badd1eb44c3b55f561f3fbe752097078291f994fa4c43b0d4c94e48d9511df45",
+      "content_sha256": "75eddab706502ca0257a514704bd6028a890b2db810fd7fd078bfc90f63323db",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.00505,
+        0.0,
+        1.01
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 6
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_017",
+      "source_kind": "synthetic",
+      "scenario_group": "cluster_gate_pressure",
+      "generation_params": {
+        "z": 1.02,
+        "mode": "gate_reject"
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_017.npz",
+      "input_sha256": "f74231769e6b68eab384c020c7bc97e8bd3deb376bf7c49de52ecfefefcd8e47",
+      "content_sha256": "57476d3270d3c21586e7357fe22aa808a203a3033b4c8528051f7b798dd68f95",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.0051,
+        0.0,
+        1.02
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": {
+        "min_points": 6,
+        "max_points": 20,
+        "max_extent_m": [
+          0.04,
+          0.04,
+          0.02
+        ],
+        "max_centroid_bbox_gap_m": 0.02
+      }
+    },
+    {
+      "sample_id": "OS01_C_018",
+      "source_kind": "synthetic",
+      "scenario_group": "cluster_gate_pressure",
+      "generation_params": {
+        "z": 1.03,
+        "mode": "filter_four"
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_018.npz",
+      "input_sha256": "c91f4c66df34752df836ddcfda7b394fff56d32404545be8f072a18b7361e05f",
+      "content_sha256": "1002bc96d218f29f7ce78a31bdfec29a73f45e291024cf92dfa9d22e268c8a80",
+      "reference_kind": "synthetic_nominal_patch_center",
+      "reference_position_m": [
+        0.00515,
+        0.0,
+        1.03
+      ],
+      "reference_frame_id": "camera_optical_frame",
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 2,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_019",
+      "source_kind": "synthetic",
+      "scenario_group": "missing_reference",
+      "generation_params": {
+        "z": 1.07
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_019.npz",
+      "input_sha256": "b81a12c95ee6cf0983651937b759f59cffa8f551d8d00efbc1778b10f5ec7fa4",
+      "content_sha256": "ae68d1517376b184707e85fc0b89f3ea0f5603512f31a77ba0f92320439a60e7",
+      "reference_kind": "none",
+      "reference_position_m": null,
+      "reference_frame_id": null,
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    },
+    {
+      "sample_id": "OS01_C_020",
+      "source_kind": "synthetic",
+      "scenario_group": "missing_reference",
+      "generation_params": {
+        "z": 1.09
+      },
+      "input_path": "data/raw/synthetic/os01_c/OS01_C_020.npz",
+      "input_sha256": "ae5408875437c7a61a20f3e267ca85a24ecd2e4ef21760087ea3f4eda7700f5a",
+      "content_sha256": "7345ea482986d8d484779c55c2d2ef9b98e4e53dfccaa5598c5378e2ae6f8610",
+      "reference_kind": "none",
+      "reference_position_m": null,
+      "reference_frame_id": null,
+      "pipeline_params": {
+        "radius_m": 0.011,
+        "min_neighbors": 1,
+        "dbscan_eps_m": 0.011,
+        "dbscan_min_points": 3
+      },
+      "gate_params": null
+    }
+  ]
+}

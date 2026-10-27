@@ -1,0 +1,48 @@
+{
+  "schema_version": "os01_c2_evaluation_v1",
+  "metric_name": "synthetic_nominal_reference_discrepancy_mm",
+  "physical_accuracy_claimed": false,
+  "source_manifest_schema": "os01_c2_v1",
+  "manifest_sha256": "bee298097544f41ab20fefb409a7aba69134769b32de4faa9c6c3995bb088daa",
+  "code_sha256": {
+    "generator": "4fbc635601f7570e9019954903d731cb6d70a761b78a4318b6e24ff6abb66802",
+    "batch_evaluator": "bde8e7c8fedfe199c9f48412a43eae0387caae81c988e5330e4519087fa292dd",
+    "c1_evaluator": "bca6c2812da2c43bf917805cce1e8f103e5c6964ee64455a72cef259843f6aec",
+    "pipeline": "ba0becbf58eb0be1a87c92b773bb9e96ed0f3e173da78611ba4c1657f1f9a93a"
+  },
+  "total_samples": 20,
+  "geometry_pass_count": 8,
+  "geometry_pass_rate": 0.4,
+  "geometry_nonpass_count": 12,
+  "evaluable_count": 6,
+  "evaluable_rate": 0.3,
+  "excluded_count": 14,
+  "missing_reference_count": 2,
+  "pipeline_status_counts": {
+    "DIAGNOSTIC_ONLY": 8,
+    "GEOMETRY_GATE_REJECTED": 8,
+    "NO_CLUSTERS": 1,
+    "NO_OBJECTS": 1,
+    "NO_POINTS_AFTER_FILTER": 1,
+    "NO_VALID_DEPTH": 1
+  },
+  "exclusion_reason_counts": {
+    "MISSING_REFERENCE": 2,
+    "PIPELINE_REJECTED": 12
+  },
+  "scenario_counts": {
+    "cluster_gate_pressure": 4,
+    "depth_anomaly": 4,
+    "mask_perturbation": 4,
+    "missing_reference": 2,
+    "normal_geometry": 6
+  },
+  "error_stats_mm": {
+    "mean": 2.23606797749979,
+    "median": 2.2360679774997907,
+    "p95": 2.482035455024765,
+    "max": 2.504396134799763
+  },
+  "percentile_method": "numpy.percentile(method='linear')",
+  "note": "Metrics describe deterministic synthetic nominal-reference differences among eligible cases only. Missing/rejected cases are excluded, not zero. No independent physical ground truth or robot authorization."
+}
