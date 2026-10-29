@@ -1,0 +1,41 @@
+{
+  "schema_version": "os01_level2_final2_cases_v1",
+  "purpose": "Deterministic synthetic diagnostic and fail-closed case audit; not physical calibration",
+  "cases": [
+    {
+      "case_id": "L2F2_001",
+      "scenario": "baseline",
+      "expected_status": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "case_id": "L2F2_002",
+      "scenario": "different_frame_uid",
+      "expected_status": "FRAME_UID_MISMATCH"
+    },
+    {
+      "case_id": "L2F2_003",
+      "scenario": "modified_depth_same_uid",
+      "expected_status": "INPUT_DATA_HASH_MISMATCH"
+    },
+    {
+      "case_id": "L2F2_004",
+      "scenario": "expired_validation",
+      "expected_status": "STALE_VALIDATION_TICKET"
+    },
+    {
+      "case_id": "L2F2_005",
+      "scenario": "swapped_target_background_equal_counts",
+      "expected_status": "UPSTREAM_REJECTED"
+    },
+    {
+      "case_id": "L2F2_006",
+      "scenario": "inverse_transform",
+      "expected_status": "FRAME_MISMATCH"
+    },
+    {
+      "case_id": "L2F2_007",
+      "scenario": "calibration_claim_true",
+      "expected_status": "DIAGNOSTIC_ONLY"
+    }
+  ]
+}

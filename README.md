@@ -22,20 +22,18 @@ P02 / OS-01 — RGB-D Object Localizer
   OS-01-A: COMPLETE — RGB-D input contract (e35ff69)
   OS-01-B: COMPLETE — single-sample diagnostic pipeline (bc7e3ff)
   OS-01-C: COMPLETE — 20-sample traceable synthetic evaluation (41a69c5)
-  OS-01-D: ENGINEERING + BOSS PASS; Git/GitHub closure pending
-           D1 Open3D / NumPy / Voxel
-           D2 Background Plane and Target Membership
-           D3 Synthetic Camera → World Demo Transform
-           D4 Same-Capture Validation Contract
+  OS-01-D: COMPLETE — Open3D, RANSAC, SE(3), same-capture validation (78b57fd)
+  Level2 Final-1: TESTS + BOSS PASS — same-capture geometry / AABB report
+  Level2 Final-2: TESTS + BOSS PASS — 7-case failure audit
 
 Current Learning Unit:
-  OS-01-D — Learning note, final regression, Git/GitHub closure
+  Level2-Final — final documentation / diagram / GitHub closure pending
 
 Next:
-  Level 2 gap review: real data / calibration / physical validation
+  Review final files → Git commit → GitHub push → confirm exact SHA
 ```
 
-**验收边界：** OS-01-D 已完成运行前预测、主动参数修改、故障注入、综合 Boss 和全仓回归，**尚未 Commit/Push**，不得提前标记 `COMPLETE`。真实机器人定位和独立物理精度未通过验收，整个 Level 2 仍为 `CONTINUE`。
+**验收边界：** OS-01-D 已于 Commit `78b57fd` 完成 Git/GitHub 闭环。Level2 Final-1/2 及最终综合 Boss 已通过，本关笔记与 GitHub 仍待闭环；因此 **Level 2 仍为 CONTINUE**。真实机器人定位、独立物理准确性及 T1 80 分职业级要求均不在本次完成声明内。
 
 ---
 
@@ -88,7 +86,7 @@ Level 2 最终目标仍包括：
 - 至少一次坐标方向错误注入与故障定位验证。
 - 可复现实验、测试、学习笔记以及 Git commit / GitHub push。
 
-**注意：**OS-01-C 已完成合成样本上的 20 样本评估，OS-01-D 已完成 Open3D 与合成坐标链诊断，但不代表所有 Level 2 Boss 条件均已完成；真实物理定位精度与坐标链验证必须单独验收。
+**注意：**OS-01-C 已完成 20 样本合成统计，OS-01-D 已完成 Open3D 与合成坐标链诊断，Level2 Final-1/2 与最终 Boss 理解验收亦已通过。**Level 2 基础合成 3D 位置基线只待 Git/GitHub 闭环**。真实物理定位准确性和 T1 80 分（6D Pose、≥50 样本）仍属独立后续验收，不能因基础关完成而宣称通过。
 
 ---
 
@@ -108,8 +106,10 @@ Level 2 最终目标仍包括：
 | OS-01-D2 | RANSAC 背景平面、Mask 身份检查与等量身份交换 | PASS · 2 tests |
 | OS-01-D3 | 合成 Camera → World 变换、反向外参/上游阻断 | PASS · 4 tests |
 | OS-01-D4 | 同帧快照、UID/哈希/有效期、故障注入 | PASS · 7 tests |
-| OS-01-D | 综合 Boss、全仓回归，笔记与 GitHub 闭环 | **Engineering/Boss PASS；Git pending** |
-| Level 2 最终 Boss | Open3D / 坐标链 / 真实数据迁移等剩余验收 | **CONTINUE** |
+| OS-01-D | Open3D、SE(3)、同帧快照、综合 Boss / GitHub | **COMPLETE · `78b57fd`** |
+| Level2 Final-1 | 同帧几何质心、两坐标系 AABB、报告及故障测试 | **PASS · 5 tests** |
+| Level2 Final-2 | 7 案例审计、预期状态漂移与配置哈希 | **PASS · 5 tests** |
+| Level 2 最终 Boss | 理论、推导、故障定位、统计审计、迁移 | **PASS；笔记 / Git pending** |
 
 ---
 
@@ -376,10 +376,10 @@ python -m pytest tests/test_os01_d4_same_capture.py -v
 python -m pytest -q
 ```
 
-**最近一次完整回归记录（2026-10-29，OS-01-D4 之后）：**
+**最近一次完整回归记录（2026-10-29，Level2 Final-2 之后）：**
 
 ```text
-732 passed, 106 subtests passed in 6.41s
+742 passed, 106 subtests passed in 3.42s
 ```
 
 以上为一次实测快照，不代表未来修改后仍自动通过。
@@ -395,7 +395,7 @@ python -m pytest -q
 - **Computation:** 当前 NumPy DBSCAN 采用两两距离矩阵，存储量 O(N²)，大规模点云需要优化邻域搜索或限制规模。
 - **Broader Level 2:** 已完成 Open3D 与合成 SE(3) 单元集成；下一阶段重点是实际数据、可信内外参、真实物理参考值、空间覆盖和时间同步的差距盘点。FoundationPose / 6D Pose 依主路线进阶。
 - **D4 trust boundary:** 防御性快照与 SHA-256 不能单独防止整个验证票据及数据被联合伪造，且票据内部的数组/字典不具备严格不可变保证。
-- **Git closure:** OS-01-C 已于 `41a69c5` 完成 GitHub 闭环；OS-01-D 当前仅完成功能、Boss 与回归，待文档入库、逐文件暂存、Commit/Push、`HEAD == origin/master` 验证。
+- **Git closure:** OS-01-D 已于 `78b57fd` 完成 GitHub 闭环；Final-1/2 + 最终 Boss 尚待文档审查、逐文件暂存、Commit/Push、`HEAD == origin/master` 验证。
 
 ---
 
@@ -408,6 +408,70 @@ python -m pytest -q
 - **OS-01-A reference commit:** `e35ff69`。
 - **OS-01-B completed commit:** `bc7e3ff`。
 - **OS-01-C completed commit:** `41a69c5`。
-- **OS-01-D commit:** pending；完成 Push 并核对远端 SHA 后再标记 COMPLETE。
+- **OS-01-D completed commit:** `78b57fd`。
+- **Level2-Final commit:** pending，完成 Push 并核对远端 SHA 后再标记 Level 2 基础 Boss `LEVEL COMPLETE`。
 
-**Level 2: CONTINUE**。代码测试通过并非整个 Level 或 Learning Unit 的最终通关证据；还需要 SOP 要求的理解、预测、主动实验、笔记、Boss 和 Git/GitHub 记录。
+**Level 2: CONTINUE**，Final 阶段待 Git/GitHub 闭环。
+
+
+---
+
+## 13. Level2 Final — Single-Entry Demonstration and Failure Audit
+
+**Scope:** Deterministic synthetic **3D position baseline** only. No physical pose accuracy, real robot/world calibration or robot publication. T1 80-point professional track (≥50 traceable samples + 6D Pose) is separate.
+
+### 13.1 Call Contract and Coordinates
+
+```text
+Final-1 build_demo_report()
+  └─ D4 validate_capture()
+      └─ D2 analyze_scene() on the SAME snapshot
+  └─ D4 analyze_validated_capture(): UID / SHA-256 / time / frame gates
+  └─ Camera-frame centroid + AABB; transform points into world_demo
+  └─ outputs/level2_final/demo_report.json
+
+Final-2 run_audit(): independent calls to Final-1 for 7 configured cases
+  └─ outputs/level2_final/failure_cases.json
+```
+
+See `figures/level2_coordinate_chain.svg` for the geometric frame illustration; `world_demo` is synthetic and **object centroid is a point, not a defined object_frame / 6D Pose**.
+
+### 13.2 Baseline Evidence (2026-10-29, user's Windows environment)
+
+| Observable | Measured | Units |
+| --- | --- | --- |
+| Valid target points | 1,500 | points |
+| Camera centroid | `[0.004, 0.004, 1.2]` | m |
+| Camera AABB extent | `[0.468, 0.468, 0]` | m |
+| `world_demo` centroid | `[0.096, -0.196, 1.5]` | m |
+| `world_demo` AABB extent | `[0.468, 0.468, 0]` | m |
+| Final-1 tests | 5 passed | tests |
+| Final-2 audit | 7 cases: 2 diagnostic, 5 rejected, 0 publishable | cases |
+| Final-2 tests | 5 passed | tests |
+| Complete regression | **742 passed, 106 subtests passed** | tests |
+
+`DIAGNOSTIC_ONLY` authorizes *diagnostics only*, never robot motion; `position_m=null`, `publishable=false`, `physical_accuracy_claimed=false`. The OS-01-C discrepancy P95 `2.4820 mm` was calculated on 6 eligible **synthetic** cases, not an independent physical reference.
+
+### 13.3 Commands (PowerShell, from repository root)
+
+```powershell
+python -m src.pipeline.os01_final1_demo_report
+python -m src.pipeline.os01_final2_failure_audit
+python -m pytest tests/test_os01_final1_demo_report.py -v
+python -m pytest tests/test_os01_final2_failure_audit.py -v
+python -m pytest -q
+Get-Content .\outputs\level2_final\demo_report.json -Encoding UTF8
+Get-Content .\outputs\level2_final\failure_cases.json -Encoding UTF8
+```
+
+Assets: `configs/level2_final_cases.json`, `failure_cases/Level2_final_failures.md`, `src/pipeline/os01_final1_demo_report.py`, `src/pipeline/os01_final2_failure_audit.py`, two matching test modules, `outputs/level2_final/`, `figures/level2_coordinate_chain.svg`, `experiments/Level2_Final_Boss_and_delivery.md`.
+
+### 13.4 Explicit Boundaries / Outstanding Work
+
+- D4 validation is within one Python process. SHA-256 detects data changes, **not issuer authenticity**; no trusted digital signature or trusted clock is present.
+- `world_demo` is an artificial reference frame, not calibrated `robot_base`.
+- No `requirements.txt` / `environment.yml` was found in the completed GitHub tree as of the `78b57fd` baseline; fresh-environment reinstallation has not been independently verified. For now, reproducibility is evidenced only in the configured Windows `ai_3d` environment.
+- OS-01-C satisfies the **20-sample synthetic baseline**; T1 80-point track requires ≥50 traceable RGB-D samples and a defensible 6D Pose baseline, not yet done.
+- Final stage's documentation/diagram, two generated reports and the new code/tests must be reviewed, committed and pushed before **Level 2 basic Boss** may be marked `LEVEL COMPLETE`.
+
+**Level 2 currently CONTINUE; final Boss understanding and implementation PASS, Git/GitHub closure pending.**

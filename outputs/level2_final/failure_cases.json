@@ -1,0 +1,187 @@
+{
+  "schema_version": "os01_level2_final2_audit_v1",
+  "reference_kind": "deterministic_synthetic_demo",
+  "physical_accuracy_claimed": false,
+  "config_path": "configs/level2_final_cases.json",
+  "config_sha256": "40140f81b83904e274497b8372d280e4bc6dc05160dc87571b8ac8925bab5c2c",
+  "case_count": 7,
+  "diagnostic_count": 2,
+  "rejected_count": 5,
+  "status_counts": {
+    "DIAGNOSTIC_ONLY": 2,
+    "FRAME_MISMATCH": 1,
+    "FRAME_UID_MISMATCH": 1,
+    "INPUT_DATA_HASH_MISMATCH": 1,
+    "STALE_VALIDATION_TICKET": 1,
+    "UPSTREAM_REJECTED": 1
+  },
+  "all_cases_passed": true,
+  "cases": [
+    {
+      "case_id": "L2F2_001",
+      "scenario": "baseline",
+      "expected_status": "DIAGNOSTIC_ONLY",
+      "observed_status": "DIAGNOSTIC_ONLY",
+      "passed": true,
+      "reasons": [
+        "SYNTHETIC_DEMO_NOT_PHYSICAL_VALIDATION",
+        "UNVERIFIED_EXTRINSIC"
+      ],
+      "frame_uid": "level2-final-demo-frame-0001",
+      "input_sha256": "40f7f3fbdcd5704367375cf922caf8f0056147fb48067268f70e3bdf950c15ae",
+      "target_point_count": 1500,
+      "centroid_camera_m": [
+        0.003999999999999999,
+        0.0039999999999999316,
+        1.2000000000000302
+      ],
+      "centroid_world_demo_m": [
+        0.0959999999999947,
+        -0.19600000000000126,
+        1.5
+      ],
+      "bbox_extent_camera_m": [
+        0.46799999999999997,
+        0.46799999999999997,
+        0.0
+      ],
+      "bbox_extent_world_demo_m": [
+        0.46799999999999997,
+        0.46799999999999997,
+        0.0
+      ],
+      "position_m": null,
+      "publishable": false
+    },
+    {
+      "case_id": "L2F2_002",
+      "scenario": "different_frame_uid",
+      "expected_status": "FRAME_UID_MISMATCH",
+      "observed_status": "FRAME_UID_MISMATCH",
+      "passed": true,
+      "reasons": [
+        "VALIDATED_FRAME_UID_REQUIRED"
+      ],
+      "frame_uid": "level2-final-demo-frame-0001",
+      "input_sha256": "40f7f3fbdcd5704367375cf922caf8f0056147fb48067268f70e3bdf950c15ae",
+      "target_point_count": null,
+      "centroid_camera_m": null,
+      "centroid_world_demo_m": null,
+      "bbox_extent_camera_m": null,
+      "bbox_extent_world_demo_m": null,
+      "position_m": null,
+      "publishable": false
+    },
+    {
+      "case_id": "L2F2_003",
+      "scenario": "modified_depth_same_uid",
+      "expected_status": "INPUT_DATA_HASH_MISMATCH",
+      "observed_status": "INPUT_DATA_HASH_MISMATCH",
+      "passed": true,
+      "reasons": [
+        "CAPTURE_CONTENT_CHANGED"
+      ],
+      "frame_uid": "level2-final-demo-frame-0001",
+      "input_sha256": "40f7f3fbdcd5704367375cf922caf8f0056147fb48067268f70e3bdf950c15ae",
+      "target_point_count": null,
+      "centroid_camera_m": null,
+      "centroid_world_demo_m": null,
+      "bbox_extent_camera_m": null,
+      "bbox_extent_world_demo_m": null,
+      "position_m": null,
+      "publishable": false
+    },
+    {
+      "case_id": "L2F2_004",
+      "scenario": "expired_validation",
+      "expected_status": "STALE_VALIDATION_TICKET",
+      "observed_status": "STALE_VALIDATION_TICKET",
+      "passed": true,
+      "reasons": [
+        "VALIDATION_WINDOW_EXPIRED"
+      ],
+      "frame_uid": "level2-final-demo-frame-0001",
+      "input_sha256": "40f7f3fbdcd5704367375cf922caf8f0056147fb48067268f70e3bdf950c15ae",
+      "target_point_count": null,
+      "centroid_camera_m": null,
+      "centroid_world_demo_m": null,
+      "bbox_extent_camera_m": null,
+      "bbox_extent_world_demo_m": null,
+      "position_m": null,
+      "publishable": false
+    },
+    {
+      "case_id": "L2F2_005",
+      "scenario": "swapped_target_background_equal_counts",
+      "expected_status": "UPSTREAM_REJECTED",
+      "observed_status": "UPSTREAM_REJECTED",
+      "passed": true,
+      "reasons": [
+        "D2_SEGMENTATION_NOT_VERIFIED"
+      ],
+      "frame_uid": "level2-final-demo-frame-0001",
+      "input_sha256": "20e1904e42f19878c88cc68437a9e52405fa50d9674a9946f93291518c9e94ab",
+      "target_point_count": null,
+      "centroid_camera_m": null,
+      "centroid_world_demo_m": null,
+      "bbox_extent_camera_m": null,
+      "bbox_extent_world_demo_m": null,
+      "position_m": null,
+      "publishable": false
+    },
+    {
+      "case_id": "L2F2_006",
+      "scenario": "inverse_transform",
+      "expected_status": "FRAME_MISMATCH",
+      "observed_status": "FRAME_MISMATCH",
+      "passed": true,
+      "reasons": [
+        "TRANSFORM_DIRECTION_OR_FRAME_MISMATCH"
+      ],
+      "frame_uid": "level2-final-demo-frame-0001",
+      "input_sha256": "40f7f3fbdcd5704367375cf922caf8f0056147fb48067268f70e3bdf950c15ae",
+      "target_point_count": null,
+      "centroid_camera_m": null,
+      "centroid_world_demo_m": null,
+      "bbox_extent_camera_m": null,
+      "bbox_extent_world_demo_m": null,
+      "position_m": null,
+      "publishable": false
+    },
+    {
+      "case_id": "L2F2_007",
+      "scenario": "calibration_claim_true",
+      "expected_status": "DIAGNOSTIC_ONLY",
+      "observed_status": "DIAGNOSTIC_ONLY",
+      "passed": true,
+      "reasons": [
+        "SYNTHETIC_DEMO_NOT_PHYSICAL_VALIDATION"
+      ],
+      "frame_uid": "level2-final-demo-frame-0001",
+      "input_sha256": "40f7f3fbdcd5704367375cf922caf8f0056147fb48067268f70e3bdf950c15ae",
+      "target_point_count": 1500,
+      "centroid_camera_m": [
+        0.003999999999999999,
+        0.0039999999999999316,
+        1.2000000000000302
+      ],
+      "centroid_world_demo_m": [
+        0.0959999999999947,
+        -0.19600000000000126,
+        1.5
+      ],
+      "bbox_extent_camera_m": [
+        0.46799999999999997,
+        0.46799999999999997,
+        0.0
+      ],
+      "bbox_extent_world_demo_m": [
+        0.46799999999999997,
+        0.46799999999999997,
+        0.0
+      ],
+      "position_m": null,
+      "publishable": false
+    }
+  ]
+}
