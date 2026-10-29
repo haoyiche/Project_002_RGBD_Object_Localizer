@@ -8,7 +8,7 @@
 
 目标是将 RGB、深度及目标 Mask 转换为相机坐标系下的三维几何诊断结果，并逐步建立定位评估与可信坐标变换能力。
 
-> **当前安全边界：**OS-01-A/B/C 使用确定性合成 RGB-D 数据验证输入契约、单样本 Pipeline 和多样本评估；尚无真实相机独立物理真值验证，也不输出可供机器人执行的坐标。
+> **当前安全边界：**OS-01-A/B/C/D 均基于确定性合成 RGB-D 数据验证输入契约、诊断 Pipeline、批量评估、Open3D/SE(3) 和同帧一致性。尚无可信的真实相机物理精度与外参验证；所有集成报告均保持 `publishable=False`、`position_m=None`。
 
 ---
 
@@ -19,21 +19,23 @@ Level 1: COMPLETE
 Level 2: CONTINUE
 
 P02 / OS-01 — RGB-D Object Localizer
-  OS-01-A: COMPLETE — RGB-D input contract
-  OS-01-B: COMPLETE — single-sample diagnostic pipeline
-           GitHub commit: bc7e3ff
-  OS-01-C: TESTS + BOSS PASS — 20-sample synthetic evaluation
-           Learning notes saved; Git commit / GitHub push pending
+  OS-01-A: COMPLETE — RGB-D input contract (e35ff69)
+  OS-01-B: COMPLETE — single-sample diagnostic pipeline (bc7e3ff)
+  OS-01-C: COMPLETE — 20-sample traceable synthetic evaluation (41a69c5)
+  OS-01-D: ENGINEERING + BOSS PASS; Git/GitHub closure pending
+           D1 Open3D / NumPy / Voxel
+           D2 Background Plane and Target Membership
+           D3 Synthetic Camera → World Demo Transform
+           D4 Same-Capture Validation Contract
 
 Current Learning Unit:
-  OS-01-C — Multi-Sample Traceable Evaluation (closure)
+  OS-01-D — Learning note, final regression, Git/GitHub closure
 
-Next after closure:
-  Level 2 remaining verification: Open3D integration,
-  coordinate-chain / direction-error injection, and physical validation planning
+Next:
+  Level 2 gap review: real data / calibration / physical validation
 ```
 
-**状态说明：**OS-01-C 已完成代码、预测、20 样本评估、综合 Boss 和全仓回归；直到本关的 Git commit / GitHub push 与远端 SHA 对齐，才将其标为 `COMPLETE`。整个 Level 2 的最终 Boss 仍未完成。
+**验收边界：** OS-01-D 已完成运行前预测、主动参数修改、故障注入、综合 Boss 和全仓回归，**尚未 Commit/Push**，不得提前标记 `COMPLETE`。真实机器人定位和独立物理精度未通过验收，整个 Level 2 仍为 `CONTINUE`。
 
 ---
 
@@ -52,7 +54,7 @@ RGB + Depth
 → Error Evaluation
 ```
 
-以上为 **Level 2 总体路线**，不是 OS-01-C 已经完成的功能清单。例如，真实相机标定、真实坐标变换链、物理精度和机器人发布尚未通过验收；Plane Removal 也不应在仅有五点共面的目标点云上无条件执行。
+以上为 **Level 2 总体路线**，不是 OS-01-D 已经完成的功能清单。例如，真实相机标定、真实坐标变换链、物理精度和机器人发布尚未通过验收；Plane Removal 也不应在仅有五点共面的目标点云上无条件执行。
 
 ---
 
@@ -69,6 +71,8 @@ RGB + Depth
 - Coordinate Frames and Transformation Validation
 - Synthetic Reference Discrepancy / Error Analysis
 - Traceable Evaluation, SHA-256, CSV / JSON Reporting
+- Open3D Voxel, RANSAC Background Plane, Mask Membership Verification
+- SE(3) Transform Direction, Frame-Bound Capture Snapshot and Fail-Closed
 - ICP / Global Registration and 3D Position / 6D Pose (Level 2 broader topics)
 
 ---
@@ -84,7 +88,7 @@ Level 2 最终目标仍包括：
 - 至少一次坐标方向错误注入与故障定位验证。
 - 可复现实验、测试、学习笔记以及 Git commit / GitHub push。
 
-**注意：**OS-01-C 已完成合成样本上的 20 样本评估，不代表所有 Level 2 Boss 条件均已完成；真实物理定位精度与坐标链验证必须单独验收。
+**注意：**OS-01-C 已完成合成样本上的 20 样本评估，OS-01-D 已完成 Open3D 与合成坐标链诊断，但不代表所有 Level 2 Boss 条件均已完成；真实物理定位精度与坐标链验证必须单独验收。
 
 ---
 
@@ -99,7 +103,12 @@ Level 2 最终目标仍包括：
 | OS-01-B | 单样本工程集成、综合 Boss、笔记及 GitHub | **COMPLETE · `bc7e3ff`** |
 | OS-01-C1 | 单样本误差评估、资格判定、异常与真实 Pipeline 集成 | PASS · 10 tests |
 | OS-01-C2 | 20 个不同合成输入、Manifest、批量评估与分组审计 | PASS · 4 tests |
-| OS-01-C | 综合 Boss、笔记、全仓回归 | **Tests/Boss PASS；Git/GitHub pending** |
+| OS-01-C | 综合 Boss、笔记、全仓回归与 GitHub | **COMPLETE · `41a69c5`** |
+| OS-01-D1 | NumPy/Open3D 对照、Voxel 主动修改、质心偏移 | PASS · 2 tests |
+| OS-01-D2 | RANSAC 背景平面、Mask 身份检查与等量身份交换 | PASS · 2 tests |
+| OS-01-D3 | 合成 Camera → World 变换、反向外参/上游阻断 | PASS · 4 tests |
+| OS-01-D4 | 同帧快照、UID/哈希/有效期、故障注入 | PASS · 7 tests |
+| OS-01-D | 综合 Boss、全仓回归，笔记与 GitHub 闭环 | **Engineering/Boss PASS；Git pending** |
 | Level 2 最终 Boss | Open3D / 坐标链 / 真实数据迁移等剩余验收 | **CONTINUE** |
 
 ---
@@ -272,7 +281,64 @@ Synthetic discrepancy_mm = sqrt(5) * Z
 
 ---
 
-## 9. How to Reproduce
+## 9. OS-01-D — Open3D / Coordinate Chain / Same-Capture Contract
+
+### 9.1 D1 — Open3D Baseline and Voxel Ablation
+
+从 OS-01-A 五点目标点云出发，NumPy 与 Open3D DBSCAN 在 `eps=0.011 m, min_points=3` 下均得到 **1 簇、0 Noise**。`voxel_size=0.005 m` 保留五点；改为 `0.020 m` 后得到三个体素代表点。
+
+| 比较项 | 数值 |
+| --- | --- |
+| 原始质心 | `[0.007,0.001,1.0] m` |
+| 20 mm 体素代表点等权质心 | `[0.005,0.0016667,1.0] m` |
+| 质心位移 | 约 `2.1082 mm` |
+
+**含义：** Voxel 改变采样密度与统计权重。若在 DBSCAN 之前下采样，邻居数可能从 `[3,3,2,4,3]` 变为 `[2,1,2]`，导致全 Noise。
+
+### 9.2 D2 — Full-Scene RANSAC and Target Identity
+
+复用 EXP028 的固定合成场景：80×100 像素、100 个无效深度、7900 个有效 3D 点；背景 `Z=2.0 m`，目标 `Z=1.2 m`。RANSAC 找到 6400 个背景内点并保留 1500 个目标点，逐点身份/XYZ/RGB 均匹配。
+
+故障注入将一个目标深度与一个背景深度交换，**6400/1500 的数量维持不变**，但身份/XYZ/RGB 均不匹配，返回 `SEGMENTATION_MISMATCH`、`publishable=False`。
+
+D2 的更新接口允许 `analyze_scene(scene=(depth_m,rgb,target_mask))`，以便后续验证同一采集快照；默认仍可运行固定合成演示。
+
+### 9.3 D3 — Synthetic Camera to World-Demo
+
+合成旋转 `Rz(+90°)`，平移 `[0.10,-0.20,0.30] m`：
+
+```text
+centroid_camera_m     = [0.004, 0.004, 1.2]
+centroid_world_demo_m = [0.096,-0.196, 1.5]
+```
+
+Round-trip 误差约 `5.06e-15 mm`，**只能证明数值自洽**。误用逆向外参返回 `FRAME_MISMATCH`；D2 拒绝则返回 `UPSTREAM_REJECTED`；人为填写 `calibration_verified=True` 仍不允许发布。
+
+### 9.4 D4 — Same-Capture Consistency
+
+`Capture` 携带 `frame_uid`、`frame_id`、`capture_timestamp_ns` 和 RGB/Depth/Mask；`validate_capture()` 拷贝快照、调用 D2、记录 SHA-256 与时效信息；`analyze_validated_capture()` 在校验通过后，仅使用该 D2 验证过的快照进行数值变换。
+
+七个专项测试覆盖：正常同帧、跨帧 UID、同 UID 数据修改、过期、D2 上游失败、逆向外参以及伪造标定声明。**7 passed**。此外 D1/D2/D3 专项分别为 **2/2/4 passed**。
+
+**限制：** 本接口是同进程的教学一致性检查，不是带可信签名的生产票据；`now_ns` 来自调用方，不能替代可信时间同步；`@dataclass(frozen=True)` 并不让数组/字典的内部内容自动不可变。
+
+### 9.5 Files and Diagnostics
+
+- `src/pipeline/os01_d_open3d_compare.py`
+- `src/pipeline/os01_d2_plane_background.py`
+- `src/pipeline/os01_d3_coordinate_chain.py`
+- `src/pipeline/os01_d4_same_capture.py`
+- `tests/test_os01_d1_open3d_compare.py`
+- `tests/test_os01_d2_plane_background.py`
+- `tests/test_os01_d3_coordinate_chain.py`
+- `tests/test_os01_d4_same_capture.py`
+- `experiments/OS01_D_open3d_coordinate_chain.md`
+
+**最终安全出口：** `position_m=None`、`publishable=False`，不把合成 `world_demo` 坐标冒充已认证机器人 `base_link` 坐标。
+
+---
+
+## 10. How to Reproduce
 
 在仓库根目录启动已配置的 Python 环境（本轮用户环境：Python 3.11，conda `ai_3d`）：
 
@@ -295,39 +361,53 @@ python -m pytest tests/test_os01_c2_batch_evaluate.py -v
 python -m src.evaluation.os01_c2_batch_evaluate
 Get-Content .\outputs\os01_c\evaluation_summary.json -Encoding UTF8
 
+# OS-01-D: compare, segment, transform and bind the same capture
+python -m src.pipeline.os01_d_open3d_compare
+python -m src.pipeline.os01_d2_plane_background
+python -m src.pipeline.os01_d3_coordinate_chain
+python -m src.pipeline.os01_d4_same_capture
+
+python -m pytest tests/test_os01_d1_open3d_compare.py -v
+python -m pytest tests/test_os01_d2_plane_background.py -v
+python -m pytest tests/test_os01_d3_coordinate_chain.py -v
+python -m pytest tests/test_os01_d4_same_capture.py -v
+
 # Full project regression
 python -m pytest -q
 ```
 
-**最近一次完整回归记录（2026-10-27）：**
+**最近一次完整回归记录（2026-10-29，OS-01-D4 之后）：**
 
 ```text
-717 passed, 106 subtests passed in 3.05s
+732 passed, 106 subtests passed in 6.41s
 ```
 
 以上为一次实测快照，不代表未来修改后仍自动通过。
 
 ---
 
-## 10. Known Limitations and Next Steps
+## 11. Known Limitations and Next Steps
 
 - **Synthetic only:** 尚未完成真实 RGB-D 采集、相机内外参可信标定、工作空间覆盖、时间同步与独立物理真值测量。
 - **No robot output:** `position_m=None`、`publishable=False`；算法评估成功不构成机器人执行许可。
 - **Single-target metric:** C1 要求唯一通过门禁簇；多目标场景需建立显式身份匹配，不能挑最近簇掩盖匹配错误。
 - **Small sample and biased distribution:** 6 个可评估样本的 P95 仅为描述性统计；故障注入场景不能代表真实故障率。
 - **Computation:** 当前 NumPy DBSCAN 采用两两距离矩阵，存储量 O(N²)，大规模点云需要优化邻域搜索或限制规模。
-- **Broader Level 2:** 继续核对 Open3D 实际调用、坐标方向错误注入、变换链及真实物理精度验收，并根据主路线安排 FoundationPose / 6D Pose 进阶。
-- **Git closure:** OS-01-C 本轮尚需审查拟提交的代码、Manifest、结果报告和笔记，完成 Git commit、GitHub push，并确认 `HEAD == origin/master` 后更新状态为 `COMPLETE`。
+- **Broader Level 2:** 已完成 Open3D 与合成 SE(3) 单元集成；下一阶段重点是实际数据、可信内外参、真实物理参考值、空间覆盖和时间同步的差距盘点。FoundationPose / 6D Pose 依主路线进阶。
+- **D4 trust boundary:** 防御性快照与 SHA-256 不能单独防止整个验证票据及数据被联合伪造，且票据内部的数组/字典不具备严格不可变保证。
+- **Git closure:** OS-01-C 已于 `41a69c5` 完成 GitHub 闭环；OS-01-D 当前仅完成功能、Boss 与回归，待文档入库、逐文件暂存、Commit/Push、`HEAD == origin/master` 验证。
 
 ---
 
-## 11. Documentation and Git History
+## 12. Documentation and Git History
 
 - **AI Lab learning protocol:** `AI_Lab_SOP.md`（AI Lab Project 核心规范文件，可能位于仓库外）。
 - **OS-01-B learning note:** `experiments/OS01_B_rgbd_pipeline.md`。
 - **OS-01-C learning note:** `experiments/OS01_C_multisample_evaluation.md`。
+- **OS-01-D learning note:** `experiments/OS01_D_open3d_coordinate_chain.md`。
 - **OS-01-A reference commit:** `e35ff69`。
 - **OS-01-B completed commit:** `bc7e3ff`。
-- **OS-01-C commit:** pending；不得在成功 Push 前填写或宣称 COMPLETE。
+- **OS-01-C completed commit:** `41a69c5`。
+- **OS-01-D commit:** pending；完成 Push 并核对远端 SHA 后再标记 COMPLETE。
 
 **Level 2: CONTINUE**。代码测试通过并非整个 Level 或 Learning Unit 的最终通关证据；还需要 SOP 要求的理解、预测、主动实验、笔记、Boss 和 Git/GitHub 记录。
