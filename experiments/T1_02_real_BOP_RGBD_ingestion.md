@@ -1,7 +1,7 @@
 # T1-02｜真实 BOP LM RGB-D 数据读取与 50 帧可追溯审计
 
-> 项目：`Project_002_RGBD_Object_Localizer`；阶段：T1 职业级强化；Learning Unit：T1-02。  
-> 本文件记录**已经提供的本机运行证据**，不把数据读取成功宣称为 6D Pose 估计完成。Git 版本以正式提交后的 `git log` 为准。
+> 项目：`Project_002_RGBD_Object_Localizer`；阶段：T1 职业级强化；Learning Unit：T1-02。
+> **状态：T1-02 COMPLETE（核心实验、理解验收、GitHub 主提交均已完成）**。本文件记录本机实测证据，不将数据接入成功误写为 6D Pose 估计或物理精度认证。
 
 ## 1. 目标、上下游与验收
 
@@ -101,9 +101,17 @@ python -m src.evaluation.t1_02_bop_rgbd `
 3. 使用上面两条命令生成 Smoke 与 50 帧 Manifest。
 4. 使用 `verify_manifest(m, Path('data/raw/bop/lm/test/000001'))` 独立复核保存后的 Manifest；故障注入只修改**内存副本**。
 5. 运行 `python -m pytest tests/test_t1_02_bop_rgbd.py -v` 及 `python -m pytest -q`。
-6. 仅提交脚本、测试、学习笔记、50 帧 Manifest；真实 PNG 与压缩包不提交。Git 提交 SHA 与远端同步结果以提交后的命令输出为准。
+6. 主提交已包含解析脚本、测试、学习笔记、50 帧 Manifest 和单帧 Smoke Manifest 共 5 个文件；不提交原始 PNG 与 ZIP。主提交：`122405a5629dfc782d87da199a20be320b3affd3`，推送成功，用户本机 `HEAD == origin/master` 且已独立核对远端。
 
-## 7. 通关能力检查与后续限制
+## 7. 最终 Boss：数据覆盖与缺失文件策略
+
+**Boss A（PASS）｜50 帧与泛化边界：** `lm/test/000001` 的 50 份 `(scene_id, im_id)` 与 RGB/Depth 内容组合互不相同，满足本关的**帧级可追溯性**验收；但这些样本来自同一场景、同一目标 `obj_id=1`，不具备跨物体、跨场景及系统性光照/遮挡条件的验证证据。不能凭“50 帧”宣称跨条件泛化或任何 6D Pose 准确率。单一场景不意味着每帧条件完全相同，仅意味着本关未做这些条件的分组泛化评估。
+
+**Boss B（PASS）｜Depth 缺失必须 Fail-closed：** 若某一 RGB 帧对应的 Depth PNG 被删除，`_frame_ids()` 发现 RGB 与 Depth 图像 ID 集合不一致，抛出 `ValueError("RGB_DEPTH_IMAGE_IDS_MISMATCH")`。不能静默跳过或自动选择其他帧补足 50 个；否则样本身份与覆盖、Manifest 哈希及下游统计分母都可能发生未声明变化。修复数据后应重新生成并验证清单。
+
+**主提交与追溯证据：** Git commit `122405a5629dfc782d87da199a20be320b3affd3`，远端 `master` 已对齐；主提交前存在本笔记第 3 行尾随空格的 `git diff --cached --check` 报告。本次文档收尾删除该空格，不改动真实数据和历史 Manifest 内容。
+
+## 8. 通关能力检查与后续限制
 
 - [x] 可解释 BOP RGB/Depth/Mask 解码及位深、单位、Shape 契约。
 - [x] 能区分 `gt_index`、`obj_id` 和深度像素/模型原点。
@@ -111,7 +119,8 @@ python -m src.evaluation.t1_02_bop_rgbd `
 - [x] 能先预测再验证哈希不一致故障，明确 Fail-closed。
 - [x] 自动化专项测试与全仓回归通过。
 - [x] 数据来源、压缩包/Manifest SHA-256 和精度声明边界已记录。
-- Git/GitHub 完成证据：以实际 Commit、Push 输出以及 `HEAD == origin/master` 为准；本笔记不预填完成状态。
+- [x] Boss A/B：能够解释帧数量与泛化的区别，以及 RGB/Depth 配对缺失时的明确拒绝。
+- [x] Git/GitHub 主提交 `122405a`、Push、`HEAD == origin/master` 已验证；此文档作为最终状态与空白修正单独提交。
 
 **仍未完成：**数据发布者真实性认证、跨场景/跨物体覆盖、完全冻结的跨平台环境文件、独立物理 GT、任何 6D Pose 模型推理及准确性指标。
 
