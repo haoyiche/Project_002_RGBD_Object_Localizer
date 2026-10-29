@@ -1,0 +1,2172 @@
+{
+  "schema": "t1-03-a-visible-cloud-geometry-v1",
+  "dataset_id": "lm",
+  "split": "test",
+  "scene_id": 1,
+  "reference_kind": "BOP_VISIBLE_CLOUD_GEOMETRY_DIAGNOSTIC",
+  "gt_translation_semantics": "MODEL_ORIGIN_NOT_VISIBLE_CLOUD_CENTROID",
+  "units": "m",
+  "coordinate_frame": "camera_optical_frame",
+  "frame_count": 50,
+  "valid_visible_depth_ratio_mean": 0.9947785434300768,
+  "valid_visible_depth_ratio_min": 0.9511400651465798,
+  "bbox_extent_z_m_median": 0.11400000000000005,
+  "bbox_extent_z_m_max": 0.21299999999999997,
+  "physical_accuracy_claimed": false,
+  "pose_accuracy_claimed": false,
+  "publishable": false,
+  "position_m": null,
+  "samples": [
+    {
+      "sample_id": "lm/test/000001/000015/000000",
+      "scene_id": 1,
+      "im_id": 15,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1258,
+      "valid_visible_depth_pixels": 1252,
+      "invalid_visible_depth_pixels": 6,
+      "valid_visible_depth_ratio": 0.9952305246422893,
+      "centroid_camera_m": [
+        -0.14640505867185347,
+        0.12977941077501276,
+        0.9911421725239609
+      ],
+      "bbox_center_camera_m": [
+        -0.1485546346561232,
+        0.1351323183100635,
+        1.008
+      ],
+      "bbox_min_camera_m": [
+        -0.1872517245463665,
+        0.0952211197324102,
+        0.9590000000000001
+      ],
+      "bbox_max_camera_m": [
+        -0.10985754476587993,
+        0.17504351688771683,
+        1.057
+      ],
+      "bbox_extent_camera_m": [
+        0.07739417978048656,
+        0.07982239715530663,
+        0.09799999999999986
+      ],
+      "depth_min_m": 0.9590000000000001,
+      "depth_max_m": 1.057,
+      "gt_model_origin_camera_m": [
+        -0.14492688862,
+        0.12418127629999999,
+        0.98935606466
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000019/000000",
+      "scene_id": 1,
+      "im_id": 19,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1302,
+      "valid_visible_depth_pixels": 1302,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.18332764401518195,
+        -0.11222373160977281,
+        1.0067357910906334
+      ],
+      "bbox_center_camera_m": [
+        -0.18829175458420294,
+        -0.11941825946292246,
+        1.0185
+      ],
+      "bbox_min_camera_m": [
+        -0.23010856527315846,
+        -0.15865953776592007,
+        0.967
+      ],
+      "bbox_max_camera_m": [
+        -0.1464749438952474,
+        -0.08017698115992486,
+        1.07
+      ],
+      "bbox_extent_camera_m": [
+        0.08363362137791105,
+        0.07848255660599521,
+        0.10300000000000009
+      ],
+      "depth_min_m": 0.967,
+      "depth_max_m": 1.07,
+      "gt_model_origin_camera_m": [
+        -0.18132966408999998,
+        -0.11897611578999999,
+        1.00637468578
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000040/000000",
+      "scene_id": 1,
+      "im_id": 40,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1604,
+      "valid_visible_depth_pixels": 1604,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.24819841813912236,
+        -0.08048987063855312,
+        0.9977350374064834
+      ],
+      "bbox_center_camera_m": [
+        -0.2551151190385097,
+        -0.08169872720774675,
+        1.0310000000000001
+      ],
+      "bbox_min_camera_m": [
+        -0.29130093740271423,
+        -0.13189820332962424,
+        0.978
+      ],
+      "bbox_max_camera_m": [
+        -0.21892930067430522,
+        -0.03149925108586927,
+        1.084
+      ],
+      "bbox_extent_camera_m": [
+        0.07237163672840902,
+        0.10039895224375497,
+        0.1060000000000001
+      ],
+      "depth_min_m": 0.978,
+      "depth_max_m": 1.084,
+      "gt_model_origin_camera_m": [
+        -0.24890067113999997,
+        -0.08873141811,
+        1.00324629652
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000041/000000",
+      "scene_id": 1,
+      "im_id": 41,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1546,
+      "valid_visible_depth_pixels": 1546,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.19880662834609253,
+        -0.13642995857039245,
+        1.0240459249676586
+      ],
+      "bbox_center_camera_m": [
+        -0.20545277898029285,
+        -0.14183789351727913,
+        1.0805
+      ],
+      "bbox_min_camera_m": [
+        -0.24541440631685535,
+        -0.1957661614982488,
+        1.004
+      ],
+      "bbox_max_camera_m": [
+        -0.16549115164373038,
+        -0.08790962553630947,
+        1.157
+      ],
+      "bbox_extent_camera_m": [
+        0.07992325467312497,
+        0.10785653596193932,
+        0.15300000000000002
+      ],
+      "depth_min_m": 1.004,
+      "depth_max_m": 1.157,
+      "gt_model_origin_camera_m": [
+        -0.19896737476,
+        -0.14492760494999998,
+        1.0278623096
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000047/000000",
+      "scene_id": 1,
+      "im_id": 47,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1596,
+      "valid_visible_depth_pixels": 1596,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.27570077672494864,
+        0.0954374230579301,
+        1.0400476190476224
+      ],
+      "bbox_center_camera_m": [
+        -0.288449330586358,
+        0.0910466013389149,
+        1.0725
+      ],
+      "bbox_min_camera_m": [
+        -0.33795486131128766,
+        0.04498025524084287,
+        1.022
+      ],
+      "bbox_max_camera_m": [
+        -0.23894379986142836,
+        0.13711294743698693,
+        1.123
+      ],
+      "bbox_extent_camera_m": [
+        0.0990110614498593,
+        0.09213269219614406,
+        0.10099999999999998
+      ],
+      "depth_min_m": 1.022,
+      "depth_max_m": 1.123,
+      "gt_model_origin_camera_m": [
+        -0.27316451248,
+        0.087179142,
+        1.04442567299
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000055/000000",
+      "scene_id": 1,
+      "im_id": 55,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1436,
+      "valid_visible_depth_pixels": 1436,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.12066883698442066,
+        0.022329114537336166,
+        1.062474930362118
+      ],
+      "bbox_center_camera_m": [
+        -0.1289573257974946,
+        0.017220611381587432,
+        1.103
+      ],
+      "bbox_min_camera_m": [
+        -0.17089122858140143,
+        -0.02794756624744411,
+        1.041
+      ],
+      "bbox_max_camera_m": [
+        -0.08702342301358779,
+        0.06238878901061897,
+        1.165
+      ],
+      "bbox_extent_camera_m": [
+        0.08386780556781365,
+        0.09033635525806308,
+        0.12400000000000011
+      ],
+      "depth_min_m": 1.041,
+      "depth_max_m": 1.165,
+      "gt_model_origin_camera_m": [
+        -0.11653667102,
+        0.01593571994,
+        1.06558977664
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000059/000000",
+      "scene_id": 1,
+      "im_id": 59,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1405,
+      "valid_visible_depth_pixels": 1405,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        0.07186695418540484,
+        -0.04528686354463521,
+        1.0629686832740233
+      ],
+      "bbox_center_camera_m": [
+        0.07085785214969514,
+        -0.05342689120148682,
+        1.0939999999999999
+      ],
+      "bbox_min_camera_m": [
+        0.032942129908663596,
+        -0.0993003607595322,
+        1.031
+      ],
+      "bbox_max_camera_m": [
+        0.10877357439072668,
+        -0.007553421643441424,
+        1.157
+      ],
+      "bbox_extent_camera_m": [
+        0.07583144448206308,
+        0.09174693911609078,
+        0.1260000000000001
+      ],
+      "depth_min_m": 1.031,
+      "depth_max_m": 1.157,
+      "gt_model_origin_camera_m": [
+        0.07678452503,
+        -0.05377915773,
+        1.06636449232
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000066/000000",
+      "scene_id": 1,
+      "im_id": 66,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1749,
+      "valid_visible_depth_pixels": 1749,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.2857160490792419,
+        -0.06676261109040463,
+        0.9504413950828998
+      ],
+      "bbox_center_camera_m": [
+        -0.2919838342667529,
+        -0.07528673514427862,
+        0.9755
+      ],
+      "bbox_min_camera_m": [
+        -0.33635273354094625,
+        -0.11872388311580148,
+        0.92
+      ],
+      "bbox_max_camera_m": [
+        -0.24761493499255957,
+        -0.03184958717275576,
+        1.031
+      ],
+      "bbox_extent_camera_m": [
+        0.08873779854838668,
+        0.08687429594304572,
+        0.11099999999999988
+      ],
+      "depth_min_m": 0.92,
+      "depth_max_m": 1.031,
+      "gt_model_origin_camera_m": [
+        -0.27853572882,
+        -0.07424647023999999,
+        0.9485364889500001
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000074/000000",
+      "scene_id": 1,
+      "im_id": 74,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1609,
+      "valid_visible_depth_pixels": 1609,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.1575424944275737,
+        -0.11579404237108254,
+        1.0040509633312604
+      ],
+      "bbox_center_camera_m": [
+        -0.1608536363880943,
+        -0.12359291872839402,
+        1.035
+      ],
+      "bbox_min_camera_m": [
+        -0.20302740196998176,
+        -0.17781175760751824,
+        0.973
+      ],
+      "bbox_max_camera_m": [
+        -0.11867987080620687,
+        -0.0693740798492698,
+        1.097
+      ],
+      "bbox_extent_camera_m": [
+        0.08434753116377489,
+        0.10843767775824845,
+        0.124
+      ],
+      "depth_min_m": 0.973,
+      "depth_max_m": 1.097,
+      "gt_model_origin_camera_m": [
+        -0.15762976069,
+        -0.12481819466,
+        1.0048719583199999
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000084/000000",
+      "scene_id": 1,
+      "im_id": 84,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1923,
+      "valid_visible_depth_pixels": 1920,
+      "invalid_visible_depth_pixels": 3,
+      "valid_visible_depth_ratio": 0.9984399375975039,
+      "centroid_camera_m": [
+        -0.18584876814978843,
+        -0.11120616240201336,
+        0.9296802083333334
+      ],
+      "bbox_center_camera_m": [
+        -0.19526858505962671,
+        -0.11996819983380246,
+        0.958
+      ],
+      "bbox_min_camera_m": [
+        -0.23971382767708682,
+        -0.1742374534719302,
+        0.906
+      ],
+      "bbox_max_camera_m": [
+        -0.1508233424421666,
+        -0.0656989461956747,
+        1.01
+      ],
+      "bbox_extent_camera_m": [
+        0.08889048523492021,
+        0.1085385072762555,
+        0.10399999999999998
+      ],
+      "depth_min_m": 0.906,
+      "depth_max_m": 1.01,
+      "gt_model_origin_camera_m": [
+        -0.18454156144,
+        -0.1192285549,
+        0.93408341165
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000087/000000",
+      "scene_id": 1,
+      "im_id": 87,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2235,
+      "valid_visible_depth_pixels": 2235,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.2382222883428264,
+        -0.10046020129271076,
+        0.8664774049216973
+      ],
+      "bbox_center_camera_m": [
+        -0.23898512459744864,
+        -0.10158009008588538,
+        0.8975
+      ],
+      "bbox_min_camera_m": [
+        -0.2725583410812573,
+        -0.1504862140818522,
+        0.847
+      ],
+      "bbox_max_camera_m": [
+        -0.20541190811363996,
+        -0.052673966089918554,
+        0.9480000000000001
+      ],
+      "bbox_extent_camera_m": [
+        0.06714643296761735,
+        0.09781224799193364,
+        0.10100000000000009
+      ],
+      "depth_min_m": 0.847,
+      "depth_max_m": 0.9480000000000001,
+      "gt_model_origin_camera_m": [
+        -0.23685958751000002,
+        -0.10873713322,
+        0.8687962573900001
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000098/000000",
+      "scene_id": 1,
+      "im_id": 98,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1423,
+      "valid_visible_depth_pixels": 1423,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.06908359519533845,
+        0.011215240442593127,
+        0.9867891777933958
+      ],
+      "bbox_center_camera_m": [
+        -0.07226531765440032,
+        0.00869979005019488,
+        1.0055
+      ],
+      "bbox_min_camera_m": [
+        -0.1100194908766667,
+        -0.027890343597385247,
+        0.9480000000000001
+      ],
+      "bbox_max_camera_m": [
+        -0.034511144432133954,
+        0.04528992369777501,
+        1.063
+      ],
+      "bbox_extent_camera_m": [
+        0.07550834644453275,
+        0.07318026729516025,
+        0.11499999999999988
+      ],
+      "depth_min_m": 0.9480000000000001,
+      "depth_max_m": 1.063,
+      "gt_model_origin_camera_m": [
+        -0.06291330188,
+        0.00451652615,
+        0.9852742592
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000103/000000",
+      "scene_id": 1,
+      "im_id": 103,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1963,
+      "valid_visible_depth_pixels": 1960,
+      "invalid_visible_depth_pixels": 3,
+      "valid_visible_depth_ratio": 0.9984717269485481,
+      "centroid_camera_m": [
+        -0.038254392477390625,
+        0.0017539332628608536,
+        0.9112403061224353
+      ],
+      "bbox_center_camera_m": [
+        -0.04089670383923172,
+        -0.004541668954238111,
+        0.9485
+      ],
+      "bbox_min_camera_m": [
+        -0.0829629221220961,
+        -0.05342910221156276,
+        0.887
+      ],
+      "bbox_max_camera_m": [
+        0.0011695144436326757,
+        0.04434576430308654,
+        1.01
+      ],
+      "bbox_extent_camera_m": [
+        0.08413243656572877,
+        0.0977748665146493,
+        0.123
+      ],
+      "depth_min_m": 0.887,
+      "depth_max_m": 1.01,
+      "gt_model_origin_camera_m": [
+        -0.03502615694,
+        -0.007056240940000001,
+        0.915311195
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000104/000000",
+      "scene_id": 1,
+      "im_id": 104,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2023,
+      "valid_visible_depth_pixels": 2023,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.06884741871772992,
+        0.03111221390545354,
+        0.8913934750370657
+      ],
+      "bbox_center_camera_m": [
+        -0.0712214509529335,
+        0.027233305672679117,
+        0.9255
+      ],
+      "bbox_min_camera_m": [
+        -0.11252889617502378,
+        -0.020439804175400055,
+        0.864
+      ],
+      "bbox_max_camera_m": [
+        -0.02991400573084324,
+        0.07490641552075829,
+        0.987
+      ],
+      "bbox_extent_camera_m": [
+        0.08261489044418054,
+        0.09534621969615834,
+        0.123
+      ],
+      "depth_min_m": 0.864,
+      "depth_max_m": 0.987,
+      "gt_model_origin_camera_m": [
+        -0.06538309366999999,
+        0.022217105360000003,
+        0.8929877513400001
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000106/000000",
+      "scene_id": 1,
+      "im_id": 106,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2221,
+      "valid_visible_depth_pixels": 2221,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.18858604887412508,
+        0.07035650522670345,
+        0.8292062134173809
+      ],
+      "bbox_center_camera_m": [
+        -0.19428520850563075,
+        0.07131936914878961,
+        0.8605
+      ],
+      "bbox_min_camera_m": [
+        -0.23904065450129053,
+        0.025131457753148116,
+        0.798
+      ],
+      "bbox_max_camera_m": [
+        -0.149529762509971,
+        0.11750728054443112,
+        0.923
+      ],
+      "bbox_extent_camera_m": [
+        0.08951089199131954,
+        0.09237582279128301,
+        0.125
+      ],
+      "depth_min_m": 0.798,
+      "depth_max_m": 0.923,
+      "gt_model_origin_camera_m": [
+        -0.18664208698999998,
+        0.06113289155,
+        0.8276772912599999
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000112/000000",
+      "scene_id": 1,
+      "im_id": 112,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1894,
+      "valid_visible_depth_pixels": 1893,
+      "invalid_visible_depth_pixels": 1,
+      "valid_visible_depth_ratio": 0.9994720168954594,
+      "centroid_camera_m": [
+        -0.1331083619655473,
+        0.005602013345721226,
+        0.8244247226624425
+      ],
+      "bbox_center_camera_m": [
+        -0.13591395297158654,
+        0.007585306019001009,
+        0.8380000000000001
+      ],
+      "bbox_min_camera_m": [
+        -0.17731292615765515,
+        -0.032624680651685625,
+        0.785
+      ],
+      "bbox_max_camera_m": [
+        -0.09451497978551791,
+        0.04779529268968764,
+        0.891
+      ],
+      "bbox_extent_camera_m": [
+        0.08279794637213723,
+        0.08041997334137327,
+        0.10599999999999998
+      ],
+      "depth_min_m": 0.785,
+      "depth_max_m": 0.891,
+      "gt_model_origin_camera_m": [
+        -0.13257507468,
+        -0.00073790375,
+        0.8247011039100001
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000128/000000",
+      "scene_id": 1,
+      "im_id": 128,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1983,
+      "valid_visible_depth_pixels": 1983,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.1744884978526597,
+        -0.03496913795505599,
+        0.7980418557740772
+      ],
+      "bbox_center_camera_m": [
+        -0.18014672323087907,
+        -0.03635548496633622,
+        0.8049999999999999
+      ],
+      "bbox_min_camera_m": [
+        -0.21841751212502059,
+        -0.0825393516189459,
+        0.75
+      ],
+      "bbox_max_camera_m": [
+        -0.14187593433673756,
+        0.009828381686273467,
+        0.86
+      ],
+      "bbox_extent_camera_m": [
+        0.07654157778828302,
+        0.09236773330521937,
+        0.10999999999999999
+      ],
+      "depth_min_m": 0.75,
+      "depth_max_m": 0.86,
+      "gt_model_origin_camera_m": [
+        -0.17363628811999998,
+        -0.04300295459,
+        0.79161295313
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000129/000000",
+      "scene_id": 1,
+      "im_id": 129,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2202,
+      "valid_visible_depth_pixels": 2202,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.16486500093599785,
+        -0.039340991600370655,
+        0.790217529518626
+      ],
+      "bbox_center_camera_m": [
+        -0.16781236886616863,
+        -0.04145450475018387,
+        0.8089999999999999
+      ],
+      "bbox_min_camera_m": [
+        -0.2045856384062232,
+        -0.08853687140043116,
+        0.754
+      ],
+      "bbox_max_camera_m": [
+        -0.13103909932611407,
+        0.005627861900063428,
+        0.864
+      ],
+      "bbox_extent_camera_m": [
+        0.07354653908010914,
+        0.09416473330049459,
+        0.10999999999999999
+      ],
+      "depth_min_m": 0.754,
+      "depth_max_m": 0.864,
+      "gt_model_origin_camera_m": [
+        -0.16526555823,
+        -0.047989650249999995,
+        0.79447754198
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000135/000000",
+      "scene_id": 1,
+      "im_id": 135,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1907,
+      "valid_visible_depth_pixels": 1905,
+      "invalid_visible_depth_pixels": 2,
+      "valid_visible_depth_ratio": 0.9989512323020451,
+      "centroid_camera_m": [
+        -0.12348565417897674,
+        0.03763341160023895,
+        0.7910661417322806
+      ],
+      "bbox_center_camera_m": [
+        -0.13010905705232287,
+        0.040400016289193985,
+        0.8069999999999999
+      ],
+      "bbox_min_camera_m": [
+        -0.16680154745345743,
+        0.004347510470510129,
+        0.754
+      ],
+      "bbox_max_camera_m": [
+        -0.09341656665118829,
+        0.07645252210787784,
+        0.86
+      ],
+      "bbox_extent_camera_m": [
+        0.07338498080226914,
+        0.07210501163736771,
+        0.10599999999999998
+      ],
+      "depth_min_m": 0.754,
+      "depth_max_m": 0.86,
+      "gt_model_origin_camera_m": [
+        -0.12183453126,
+        0.03525139496,
+        0.7957155039299999
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000141/000000",
+      "scene_id": 1,
+      "im_id": 141,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2486,
+      "valid_visible_depth_pixels": 2406,
+      "invalid_visible_depth_pixels": 80,
+      "valid_visible_depth_ratio": 0.9678197908286403,
+      "centroid_camera_m": [
+        -0.10018598642318746,
+        -0.04091809674790131,
+        0.6969401496259415
+      ],
+      "bbox_center_camera_m": [
+        -0.10337129178419578,
+        -0.04585731445395468,
+        0.71
+      ],
+      "bbox_min_camera_m": [
+        -0.14650134798153916,
+        -0.08397371614851205,
+        0.658
+      ],
+      "bbox_max_camera_m": [
+        -0.060241235586852404,
+        -0.007740912759397311,
+        0.762
+      ],
+      "bbox_extent_camera_m": [
+        0.08626011239468676,
+        0.07623280338911474,
+        0.10399999999999998
+      ],
+      "depth_min_m": 0.658,
+      "depth_max_m": 0.762,
+      "gt_model_origin_camera_m": [
+        -0.09750900365,
+        -0.04499724107,
+        0.6985589414700001
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000144/000000",
+      "scene_id": 1,
+      "im_id": 144,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1771,
+      "valid_visible_depth_pixels": 1716,
+      "invalid_visible_depth_pixels": 55,
+      "valid_visible_depth_ratio": 0.968944099378882,
+      "centroid_camera_m": [
+        -0.08698312037750296,
+        -0.09472422952458807,
+        0.8154615384615358
+      ],
+      "bbox_center_camera_m": [
+        -0.08828562132060963,
+        -0.10066771280381381,
+        0.829
+      ],
+      "bbox_min_camera_m": [
+        -0.12973609208342113,
+        -0.1376282147773901,
+        0.783
+      ],
+      "bbox_max_camera_m": [
+        -0.04683515055779812,
+        -0.06370721083023755,
+        0.875
+      ],
+      "bbox_extent_camera_m": [
+        0.08290094152562301,
+        0.07392100394715255,
+        0.09199999999999997
+      ],
+      "depth_min_m": 0.783,
+      "depth_max_m": 0.875,
+      "gt_model_origin_camera_m": [
+        -0.08271489167,
+        -0.09375594332000001,
+        0.8212369444700001
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000145/000000",
+      "scene_id": 1,
+      "im_id": 145,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1799,
+      "valid_visible_depth_pixels": 1762,
+      "invalid_visible_depth_pixels": 37,
+      "valid_visible_depth_ratio": 0.9794330183435241,
+      "centroid_camera_m": [
+        -0.0859330626677694,
+        -0.016226425990482473,
+        0.8158989784335984
+      ],
+      "bbox_center_camera_m": [
+        -0.08527129272757322,
+        -0.015503590108367344,
+        0.8275
+      ],
+      "bbox_min_camera_m": [
+        -0.12237189580780537,
+        -0.05486818466216957,
+        0.78
+      ],
+      "bbox_max_camera_m": [
+        -0.048170689647341065,
+        0.02386100444543488,
+        0.875
+      ],
+      "bbox_extent_camera_m": [
+        0.0742012061604643,
+        0.07872918910760446,
+        0.09499999999999997
+      ],
+      "depth_min_m": 0.78,
+      "depth_max_m": 0.875,
+      "gt_model_origin_camera_m": [
+        -0.08151569990999999,
+        -0.01984267681,
+        0.81871598149
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000157/000000",
+      "scene_id": 1,
+      "im_id": 157,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 3337,
+      "valid_visible_depth_pixels": 3219,
+      "invalid_visible_depth_pixels": 118,
+      "valid_visible_depth_ratio": 0.9646388972130656,
+      "centroid_camera_m": [
+        -0.09609707338635361,
+        -0.09594194804206176,
+        0.6878611369990755
+      ],
+      "bbox_center_camera_m": [
+        -0.09467334219758726,
+        -0.11080719085361498,
+        0.7350000000000001
+      ],
+      "bbox_min_camera_m": [
+        -0.1279006240965851,
+        -0.17302006311587578,
+        0.67
+      ],
+      "bbox_max_camera_m": [
+        -0.061446060298589435,
+        -0.04859431859135417,
+        0.8
+      ],
+      "bbox_extent_camera_m": [
+        0.06645456379799566,
+        0.12442574452452161,
+        0.13
+      ],
+      "depth_min_m": 0.67,
+      "depth_max_m": 0.8,
+      "gt_model_origin_camera_m": [
+        -0.09866109676000001,
+        -0.10409499655,
+        0.69990819379
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000176/000000",
+      "scene_id": 1,
+      "im_id": 176,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 3328,
+      "valid_visible_depth_pixels": 3317,
+      "invalid_visible_depth_pixels": 11,
+      "valid_visible_depth_ratio": 0.9966947115384616,
+      "centroid_camera_m": [
+        -0.08090206977829391,
+        -0.09454702048166642,
+        0.6577084715104005
+      ],
+      "bbox_center_camera_m": [
+        -0.08804781927823241,
+        -0.10599196402959615,
+        0.688
+      ],
+      "bbox_min_camera_m": [
+        -0.1253744689571172,
+        -0.1622057966970159,
+        0.629
+      ],
+      "bbox_max_camera_m": [
+        -0.05072116959934761,
+        -0.0497781313621764,
+        0.747
+      ],
+      "bbox_extent_camera_m": [
+        0.0746532993577696,
+        0.1124276653348395,
+        0.118
+      ],
+      "depth_min_m": 0.629,
+      "depth_max_m": 0.747,
+      "gt_model_origin_camera_m": [
+        -0.08323427511,
+        -0.1038622333,
+        0.66566526379
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000197/000000",
+      "scene_id": 1,
+      "im_id": 197,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2578,
+      "valid_visible_depth_pixels": 2550,
+      "invalid_visible_depth_pixels": 28,
+      "valid_visible_depth_ratio": 0.9891388673390225,
+      "centroid_camera_m": [
+        -0.11859721201432373,
+        -0.020018618040196834,
+        0.7766992156862751
+      ],
+      "bbox_center_camera_m": [
+        -0.12804243923164355,
+        -0.02556115525341849,
+        0.8125
+      ],
+      "bbox_min_camera_m": [
+        -0.1668977873256892,
+        -0.07954059172820328,
+        0.754
+      ],
+      "bbox_max_camera_m": [
+        -0.0891870911375979,
+        0.028418281221366307,
+        0.871
+      ],
+      "bbox_extent_camera_m": [
+        0.07771069618809129,
+        0.10795887294956959,
+        0.11699999999999999
+      ],
+      "depth_min_m": 0.754,
+      "depth_max_m": 0.871,
+      "gt_model_origin_camera_m": [
+        -0.11918185929000001,
+        -0.02779685855,
+        0.7837579997499999
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000202/000000",
+      "scene_id": 1,
+      "im_id": 202,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2630,
+      "valid_visible_depth_pixels": 2618,
+      "invalid_visible_depth_pixels": 12,
+      "valid_visible_depth_ratio": 0.9954372623574145,
+      "centroid_camera_m": [
+        0.022030344985615246,
+        -0.11083896397943549,
+        0.788377005347592
+      ],
+      "bbox_center_camera_m": [
+        0.020601749021770012,
+        -0.12496415703473418,
+        0.8300000000000001
+      ],
+      "bbox_min_camera_m": [
+        -0.019085294422857408,
+        -0.18041765050544883,
+        0.769
+      ],
+      "bbox_max_camera_m": [
+        0.060288792466397435,
+        -0.06951066356401951,
+        0.891
+      ],
+      "bbox_extent_camera_m": [
+        0.07937408688925485,
+        0.11090698694142932,
+        0.122
+      ],
+      "depth_min_m": 0.769,
+      "depth_max_m": 0.891,
+      "gt_model_origin_camera_m": [
+        0.02479262098,
+        -0.11992312793000001,
+        0.7972417156599999
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000205/000000",
+      "scene_id": 1,
+      "im_id": 205,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2702,
+      "valid_visible_depth_pixels": 2702,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.10036129982608177,
+        -0.1074354990742529,
+        0.7824844559585367
+      ],
+      "bbox_center_camera_m": [
+        -0.1071105782484416,
+        -0.12006070428003063,
+        0.8185
+      ],
+      "bbox_min_camera_m": [
+        -0.1484578645708314,
+        -0.1698097258256497,
+        0.759
+      ],
+      "bbox_max_camera_m": [
+        -0.06576329192605179,
+        -0.07031168273441153,
+        0.878
+      ],
+      "bbox_extent_camera_m": [
+        0.08269457264477961,
+        0.09949804309123818,
+        0.119
+      ],
+      "depth_min_m": 0.759,
+      "depth_max_m": 0.878,
+      "gt_model_origin_camera_m": [
+        -0.09531584834000001,
+        -0.11574775614,
+        0.7906149637800001
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000209/000000",
+      "scene_id": 1,
+      "im_id": 209,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2466,
+      "valid_visible_depth_pixels": 2466,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.11630180265708884,
+        -0.05767550782155048,
+        0.8174675587996876
+      ],
+      "bbox_center_camera_m": [
+        -0.1218038896499965,
+        -0.06884349409365473,
+        0.855
+      ],
+      "bbox_min_camera_m": [
+        -0.16396155370071247,
+        -0.11787140440625575,
+        0.8
+      ],
+      "bbox_max_camera_m": [
+        -0.07964622559928053,
+        -0.019815583781053712,
+        0.91
+      ],
+      "bbox_extent_camera_m": [
+        0.08431532810143194,
+        0.09805582062520204,
+        0.10999999999999999
+      ],
+      "depth_min_m": 0.8,
+      "depth_max_m": 0.91,
+      "gt_model_origin_camera_m": [
+        -0.11265946301,
+        -0.06637566298,
+        0.82592727909
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000214/000000",
+      "scene_id": 1,
+      "im_id": 214,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1996,
+      "valid_visible_depth_pixels": 1996,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.12226932545713418,
+        -0.05954100116997407,
+        0.9055205410821655
+      ],
+      "bbox_center_camera_m": [
+        -0.1257271784768787,
+        -0.06727241328497358,
+        0.9455
+      ],
+      "bbox_min_camera_m": [
+        -0.1696496521557747,
+        -0.11388741067073489,
+        0.887
+      ],
+      "bbox_max_camera_m": [
+        -0.08180470479798271,
+        -0.020657415899212245,
+        1.004
+      ],
+      "bbox_extent_camera_m": [
+        0.087844947357792,
+        0.09322999477152265,
+        0.11699999999999999
+      ],
+      "depth_min_m": 0.887,
+      "depth_max_m": 1.004,
+      "gt_model_origin_camera_m": [
+        -0.11576456328000001,
+        -0.06594472372,
+        0.9131023414899999
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000228/000000",
+      "scene_id": 1,
+      "im_id": 228,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1456,
+      "valid_visible_depth_pixels": 1456,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        0.10694789100071456,
+        0.09890156720126006,
+        0.9368921703296694
+      ],
+      "bbox_center_camera_m": [
+        0.10915704736139079,
+        0.10093636151187223,
+        0.954
+      ],
+      "bbox_min_camera_m": [
+        0.07634521517216465,
+        0.06311808485315396,
+        0.898
+      ],
+      "bbox_max_camera_m": [
+        0.14196887955061693,
+        0.1387546381705905,
+        1.01
+      ],
+      "bbox_extent_camera_m": [
+        0.06562366437845228,
+        0.07563655331743654,
+        0.11199999999999999
+      ],
+      "depth_min_m": 0.898,
+      "depth_max_m": 1.01,
+      "gt_model_origin_camera_m": [
+        0.106112392,
+        0.09149011240999999,
+        0.93731509802
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000236/000000",
+      "scene_id": 1,
+      "im_id": 236,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1989,
+      "valid_visible_depth_pixels": 1989,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.20004953188622732,
+        -0.16189643775404233,
+        0.8983655103066746
+      ],
+      "bbox_center_camera_m": [
+        -0.20285721292413117,
+        -0.1706178945365088,
+        0.9239999999999999
+      ],
+      "bbox_min_camera_m": [
+        -0.24032799434113297,
+        -0.21993379313504707,
+        0.878
+      ],
+      "bbox_max_camera_m": [
+        -0.16538643150712934,
+        -0.12130199593797052,
+        0.97
+      ],
+      "bbox_extent_camera_m": [
+        0.07494156283400363,
+        0.09863179719707656,
+        0.09199999999999997
+      ],
+      "depth_min_m": 0.878,
+      "depth_max_m": 0.97,
+      "gt_model_origin_camera_m": [
+        -0.20410735213,
+        -0.16939012046,
+        0.90499948802
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000239/000000",
+      "scene_id": 1,
+      "im_id": 239,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1724,
+      "valid_visible_depth_pixels": 1724,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.036503697876713474,
+        -0.06339333441891755,
+        0.9397906032482629
+      ],
+      "bbox_center_camera_m": [
+        -0.03379314327073151,
+        -0.07170295731598297,
+        0.99
+      ],
+      "bbox_min_camera_m": [
+        -0.06714884783915905,
+        -0.12391142514093692,
+        0.92
+      ],
+      "bbox_max_camera_m": [
+        -0.00043743870230397074,
+        -0.019494489491029034,
+        1.06
+      ],
+      "bbox_extent_camera_m": [
+        0.06671140913685507,
+        0.1044169356499079,
+        0.14
+      ],
+      "depth_min_m": 0.92,
+      "depth_max_m": 1.06,
+      "gt_model_origin_camera_m": [
+        -0.03927098356,
+        -0.07029292134000001,
+        0.95242331005
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000240/000000",
+      "scene_id": 1,
+      "im_id": 240,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1842,
+      "valid_visible_depth_pixels": 1752,
+      "invalid_visible_depth_pixels": 90,
+      "valid_visible_depth_ratio": 0.9511400651465798,
+      "centroid_camera_m": [
+        -0.06541682068394206,
+        0.028172374483766638,
+        0.8969035388127825
+      ],
+      "bbox_center_camera_m": [
+        -0.07120989519076665,
+        0.024523782667805933,
+        0.9585
+      ],
+      "bbox_min_camera_m": [
+        -0.11322941000126832,
+        -0.019918487882996348,
+        0.873
+      ],
+      "bbox_max_camera_m": [
+        -0.029190380380264967,
+        0.06896605321860821,
+        1.044
+      ],
+      "bbox_extent_camera_m": [
+        0.08403902962100335,
+        0.08888454110160457,
+        0.17100000000000004
+      ],
+      "depth_min_m": 0.873,
+      "depth_max_m": 1.044,
+      "gt_model_origin_camera_m": [
+        -0.06917650903,
+        0.02581002126,
+        0.90411849531
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000245/000000",
+      "scene_id": 1,
+      "im_id": 245,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1489,
+      "valid_visible_depth_pixels": 1489,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.08165881923672154,
+        -0.04704990405497157,
+        1.0537474815312302
+      ],
+      "bbox_center_camera_m": [
+        -0.08568960602461798,
+        -0.05700128601469223,
+        1.088
+      ],
+      "bbox_min_camera_m": [
+        -0.12883224023840198,
+        -0.10845286898768476,
+        1.031
+      ],
+      "bbox_max_camera_m": [
+        -0.04254697181083396,
+        -0.005549703041699698,
+        1.145
+      ],
+      "bbox_extent_camera_m": [
+        0.08628526842756802,
+        0.10290316594598506,
+        0.1140000000000001
+      ],
+      "depth_min_m": 1.031,
+      "depth_max_m": 1.145,
+      "gt_model_origin_camera_m": [
+        -0.07925332186,
+        -0.055442042989999996,
+        1.05929666763
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000251/000000",
+      "scene_id": 1,
+      "im_id": 251,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1846,
+      "valid_visible_depth_pixels": 1846,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.19884277344714807,
+        -0.013929574851659523,
+        0.8992843986998783
+      ],
+      "bbox_center_camera_m": [
+        -0.2111844597259943,
+        -0.01395642557793644,
+        0.9299999999999999
+      ],
+      "bbox_min_camera_m": [
+        -0.24916900362222,
+        -0.05824396006607245,
+        0.873
+      ],
+      "bbox_max_camera_m": [
+        -0.17319991582976862,
+        0.03033110891019957,
+        0.987
+      ],
+      "bbox_extent_camera_m": [
+        0.07596908779245137,
+        0.08857506897627201,
+        0.11399999999999999
+      ],
+      "depth_min_m": 0.873,
+      "depth_max_m": 0.987,
+      "gt_model_origin_camera_m": [
+        -0.20227557798,
+        -0.02184443157,
+        0.9031394348899999
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000268/000000",
+      "scene_id": 1,
+      "im_id": 268,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 2918,
+      "valid_visible_depth_pixels": 2916,
+      "invalid_visible_depth_pixels": 2,
+      "valid_visible_depth_ratio": 0.9993145990404386,
+      "centroid_camera_m": [
+        -0.024493062593412204,
+        -0.0335887019012121,
+        0.7143456790123528
+      ],
+      "bbox_center_camera_m": [
+        -0.02689923837994841,
+        -0.04110178987086208,
+        0.7455
+      ],
+      "bbox_min_camera_m": [
+        -0.06734377966616319,
+        -0.08469689225436536,
+        0.682
+      ],
+      "bbox_max_camera_m": [
+        0.01354530290626637,
+        0.002493312512641207,
+        0.809
+      ],
+      "bbox_extent_camera_m": [
+        0.08088908257242955,
+        0.08719020476700656,
+        0.127
+      ],
+      "depth_min_m": 0.682,
+      "depth_max_m": 0.809,
+      "gt_model_origin_camera_m": [
+        -0.01803767164,
+        -0.041073275369999995,
+        0.71531160183
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000272/000000",
+      "scene_id": 1,
+      "im_id": 272,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 3485,
+      "valid_visible_depth_pixels": 3483,
+      "invalid_visible_depth_pixels": 2,
+      "valid_visible_depth_ratio": 0.9994261119081779,
+      "centroid_camera_m": [
+        -0.11936341603844336,
+        0.01776530326036228,
+        0.6887088716623487
+      ],
+      "bbox_center_camera_m": [
+        -0.12148632784043087,
+        0.010106853573326642,
+        0.7245
+      ],
+      "bbox_min_camera_m": [
+        -0.15949638319572254,
+        -0.036595359771249024,
+        0.671
+      ],
+      "bbox_max_camera_m": [
+        -0.0834762724851392,
+        0.05680906691790231,
+        0.778
+      ],
+      "bbox_extent_camera_m": [
+        0.07602011071058334,
+        0.09340442668915133,
+        0.10699999999999998
+      ],
+      "depth_min_m": 0.671,
+      "depth_max_m": 0.778,
+      "gt_model_origin_camera_m": [
+        -0.11605467324999999,
+        0.01030278068,
+        0.69813832477
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000274/000000",
+      "scene_id": 1,
+      "im_id": 274,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 3626,
+      "valid_visible_depth_pixels": 3625,
+      "invalid_visible_depth_pixels": 1,
+      "valid_visible_depth_ratio": 0.9997242140099283,
+      "centroid_camera_m": [
+        -0.09569066016283279,
+        -0.008968508984248889,
+        0.6687100689655279
+      ],
+      "bbox_center_camera_m": [
+        -0.09245581883938721,
+        -0.010189604570444821,
+        0.7135
+      ],
+      "bbox_min_camera_m": [
+        -0.12766384893801908,
+        -0.059801347168472414,
+        0.649
+      ],
+      "bbox_max_camera_m": [
+        -0.05724778874075535,
+        0.03942213802758277,
+        0.778
+      ],
+      "bbox_extent_camera_m": [
+        0.07041606019726374,
+        0.09922348519605519,
+        0.129
+      ],
+      "depth_min_m": 0.649,
+      "depth_max_m": 0.778,
+      "gt_model_origin_camera_m": [
+        -0.09948918722000001,
+        -0.017608005250000003,
+        0.68133193176
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000278/000000",
+      "scene_id": 1,
+      "im_id": 278,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 3107,
+      "valid_visible_depth_pixels": 3099,
+      "invalid_visible_depth_pixels": 8,
+      "valid_visible_depth_ratio": 0.9974251689732861,
+      "centroid_camera_m": [
+        -0.05715708662678637,
+        -0.07015108696661443,
+        0.6858099386899031
+      ],
+      "bbox_center_camera_m": [
+        -0.05825555666780921,
+        -0.07290661956719073,
+        0.706
+      ],
+      "bbox_min_camera_m": [
+        -0.09782170376061694,
+        -0.1209604379012356,
+        0.65
+      ],
+      "bbox_max_camera_m": [
+        -0.018689409575001478,
+        -0.02485280123314586,
+        0.762
+      ],
+      "bbox_extent_camera_m": [
+        0.07913229418561546,
+        0.09610763666808975,
+        0.11199999999999999
+      ],
+      "depth_min_m": 0.65,
+      "depth_max_m": 0.762,
+      "gt_model_origin_camera_m": [
+        -0.05917337036,
+        -0.07902431828999999,
+        0.68816166565
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000283/000000",
+      "scene_id": 1,
+      "im_id": 283,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 3075,
+      "valid_visible_depth_pixels": 3019,
+      "invalid_visible_depth_pixels": 56,
+      "valid_visible_depth_ratio": 0.9817886178861789,
+      "centroid_camera_m": [
+        -0.023232981929062695,
+        -0.09061902487671825,
+        0.6534153693275958
+      ],
+      "bbox_center_camera_m": [
+        -0.02595417299515698,
+        -0.0973141832817288,
+        0.6725
+      ],
+      "bbox_min_camera_m": [
+        -0.06110182466666457,
+        -0.14455699142300624,
+        0.618
+      ],
+      "bbox_max_camera_m": [
+        0.009193478676350614,
+        -0.050071375140451374,
+        0.727
+      ],
+      "bbox_extent_camera_m": [
+        0.07029530334301519,
+        0.09448561628255486,
+        0.10899999999999999
+      ],
+      "depth_min_m": 0.618,
+      "depth_max_m": 0.727,
+      "gt_model_origin_camera_m": [
+        -0.022558606659999998,
+        -0.09936718227,
+        0.65653343048
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000285/000000",
+      "scene_id": 1,
+      "im_id": 285,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 3072,
+      "valid_visible_depth_pixels": 3037,
+      "invalid_visible_depth_pixels": 35,
+      "valid_visible_depth_ratio": 0.9886067708333334,
+      "centroid_camera_m": [
+        0.008377884733436881,
+        -0.08576585798548456,
+        0.6676065195917067
+      ],
+      "bbox_center_camera_m": [
+        0.00953872905046965,
+        -0.08373893390912779,
+        0.6865
+      ],
+      "bbox_min_camera_m": [
+        -0.025272776537993476,
+        -0.12633915348460348,
+        0.634
+      ],
+      "bbox_max_camera_m": [
+        0.04435023463893278,
+        -0.04113871433365211,
+        0.739
+      ],
+      "bbox_extent_camera_m": [
+        0.06962301117692625,
+        0.08520043915095137,
+        0.10499999999999998
+      ],
+      "depth_min_m": 0.634,
+      "depth_max_m": 0.739,
+      "gt_model_origin_camera_m": [
+        0.00951689607,
+        -0.09493317805,
+        0.67303397676
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000308/000000",
+      "scene_id": 1,
+      "im_id": 308,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1198,
+      "valid_visible_depth_pixels": 1198,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        0.0288723331492561,
+        -0.059505221272600876,
+        1.0004691151919862
+      ],
+      "bbox_center_camera_m": [
+        0.030483884143467452,
+        -0.06199708736728288,
+        1.02
+      ],
+      "bbox_min_camera_m": [
+        -0.006038953801409265,
+        -0.097573124873261,
+        0.97
+      ],
+      "bbox_max_camera_m": [
+        0.06700672208834417,
+        -0.026421049861304752,
+        1.07
+      ],
+      "bbox_extent_camera_m": [
+        0.07304567588975344,
+        0.07115207501195625,
+        0.10000000000000009
+      ],
+      "depth_min_m": 0.97,
+      "depth_max_m": 1.07,
+      "gt_model_origin_camera_m": [
+        0.03223149388,
+        -0.06963799127999999,
+        1.0156824133
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000310/000000",
+      "scene_id": 1,
+      "im_id": 310,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1249,
+      "valid_visible_depth_pixels": 1249,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        0.08636463085278433,
+        0.14053240745215015,
+        1.0456132906325137
+      ],
+      "bbox_center_camera_m": [
+        0.093766269242716,
+        0.13759362382924795,
+        1.0925
+      ],
+      "bbox_min_camera_m": [
+        0.056317829449238785,
+        0.09365431258372228,
+        1.028
+      ],
+      "bbox_max_camera_m": [
+        0.1312147090361932,
+        0.18153293507477364,
+        1.157
+      ],
+      "bbox_extent_camera_m": [
+        0.07489687958695442,
+        0.08787862249105136,
+        0.129
+      ],
+      "depth_min_m": 1.028,
+      "depth_max_m": 1.157,
+      "gt_model_origin_camera_m": [
+        0.09079514093,
+        0.13251459706,
+        1.05353062869
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000316/000000",
+      "scene_id": 1,
+      "im_id": 316,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1137,
+      "valid_visible_depth_pixels": 1137,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.008012495690249546,
+        0.1626338223654465,
+        1.0384476693051896
+      ],
+      "bbox_center_camera_m": [
+        -0.007181041817126633,
+        0.1607010398705526,
+        1.0510000000000002
+      ],
+      "bbox_min_camera_m": [
+        -0.04594428482731127,
+        0.124867602641231,
+        1.0010000000000001
+      ],
+      "bbox_max_camera_m": [
+        0.031582201193058004,
+        0.1965344770998742,
+        1.101
+      ],
+      "bbox_extent_camera_m": [
+        0.07752648602036927,
+        0.07166687445864321,
+        0.09999999999999987
+      ],
+      "depth_min_m": 1.0010000000000001,
+      "depth_max_m": 1.101,
+      "gt_model_origin_camera_m": [
+        -0.007482714620000001,
+        0.15849876886,
+        1.04089525923
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000323/000000",
+      "scene_id": 1,
+      "im_id": 323,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1238,
+      "valid_visible_depth_pixels": 1238,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        0.10428265178061463,
+        0.035004750355377263,
+        1.0298190630048565
+      ],
+      "bbox_center_camera_m": [
+        0.11087517552934831,
+        0.03082772301389386,
+        1.065
+      ],
+      "bbox_min_camera_m": [
+        0.07408866228031098,
+        -0.011759015976468667,
+        1.004
+      ],
+      "bbox_max_camera_m": [
+        0.14766168877838562,
+        0.07341446200425639,
+        1.1260000000000001
+      ],
+      "bbox_extent_camera_m": [
+        0.07357302649807464,
+        0.08517347798072505,
+        0.12200000000000011
+      ],
+      "depth_min_m": 1.004,
+      "depth_max_m": 1.1260000000000001,
+      "gt_model_origin_camera_m": [
+        0.10938321313,
+        0.02645829292,
+        1.04282190571
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000326/000000",
+      "scene_id": 1,
+      "im_id": 326,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1349,
+      "valid_visible_depth_pixels": 1349,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        0.17788105582647462,
+        0.046295651366362,
+        1.0498250555967443
+      ],
+      "bbox_center_camera_m": [
+        0.18926216380386557,
+        0.04165257348604947,
+        1.0915
+      ],
+      "bbox_min_camera_m": [
+        0.14909035232352116,
+        -0.004036746978047672,
+        1.034
+      ],
+      "bbox_max_camera_m": [
+        0.22943397528420995,
+        0.08734189395014662,
+        1.149
+      ],
+      "bbox_extent_camera_m": [
+        0.08034362296068878,
+        0.0913786409281943,
+        0.11499999999999999
+      ],
+      "depth_min_m": 1.034,
+      "depth_max_m": 1.149,
+      "gt_model_origin_camera_m": [
+        0.18024311868999998,
+        0.03759861181,
+        1.06129143725
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000343/000000",
+      "scene_id": 1,
+      "im_id": 343,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1337,
+      "valid_visible_depth_pixels": 1337,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.13957799414311015,
+        0.07105504964405265,
+        1.027703814510096
+      ],
+      "bbox_center_camera_m": [
+        -0.1431581321580947,
+        0.07401677635299295,
+        1.069
+      ],
+      "bbox_min_camera_m": [
+        -0.1806193051011912,
+        0.02617082969217921,
+        1.004
+      ],
+      "bbox_max_camera_m": [
+        -0.10569695921499817,
+        0.1218627230138067,
+        1.1340000000000001
+      ],
+      "bbox_extent_camera_m": [
+        0.07492234588619304,
+        0.09569189332162749,
+        0.13000000000000012
+      ],
+      "depth_min_m": 1.004,
+      "depth_max_m": 1.1340000000000001,
+      "gt_model_origin_camera_m": [
+        -0.13319912863,
+        0.06376735145,
+        1.0296083734700001
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000345/000000",
+      "scene_id": 1,
+      "im_id": 345,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1298,
+      "valid_visible_depth_pixels": 1296,
+      "invalid_visible_depth_pixels": 2,
+      "valid_visible_depth_ratio": 0.9984591679506933,
+      "centroid_camera_m": [
+        -0.15185365008933568,
+        0.12094085598394799,
+        0.9991959876543232
+      ],
+      "bbox_center_camera_m": [
+        -0.15664709062398127,
+        0.12484827616549202,
+        1.02
+      ],
+      "bbox_min_camera_m": [
+        -0.1932487806846614,
+        0.0827840439752098,
+        0.967
+      ],
+      "bbox_max_camera_m": [
+        -0.12004540056330115,
+        0.16691250835577423,
+        1.073
+      ],
+      "bbox_extent_camera_m": [
+        0.07320338012136024,
+        0.08412846438056443,
+        0.10599999999999998
+      ],
+      "depth_min_m": 0.967,
+      "depth_max_m": 1.073,
+      "gt_model_origin_camera_m": [
+        -0.14638529851999998,
+        0.11354134846,
+        1.00009976887
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000350/000000",
+      "scene_id": 1,
+      "im_id": 350,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1774,
+      "valid_visible_depth_pixels": 1774,
+      "invalid_visible_depth_pixels": 0,
+      "valid_visible_depth_ratio": 1.0,
+      "centroid_camera_m": [
+        -0.3295160454784243,
+        -0.030507728405655368,
+        0.9490124013528773
+      ],
+      "bbox_center_camera_m": [
+        -0.34491726143120144,
+        -0.034928134370525346,
+        1.0345
+      ],
+      "bbox_min_camera_m": [
+        -0.392171978056342,
+        -0.0881661711361236,
+        0.928
+      ],
+      "bbox_max_camera_m": [
+        -0.29766254480606086,
+        0.018309902395072908,
+        1.141
+      ],
+      "bbox_extent_camera_m": [
+        0.09450943325028116,
+        0.10647607353119651,
+        0.21299999999999997
+      ],
+      "depth_min_m": 0.928,
+      "depth_max_m": 1.141,
+      "gt_model_origin_camera_m": [
+        -0.32586587419,
+        -0.03764312304,
+        0.9557418216900001
+      ]
+    },
+    {
+      "sample_id": "lm/test/000001/000358/000000",
+      "scene_id": 1,
+      "im_id": 358,
+      "gt_index": 0,
+      "obj_id": 1,
+      "visible_mask_pixels": 1485,
+      "valid_visible_depth_pixels": 1441,
+      "invalid_visible_depth_pixels": 44,
+      "valid_visible_depth_ratio": 0.9703703703703703,
+      "centroid_camera_m": [
+        -0.20573279645991752,
+        0.14848744831244975,
+        0.9602463566967385
+      ],
+      "bbox_center_camera_m": [
+        -0.21990305661277887,
+        0.14664166461649705,
+        1.0025
+      ],
+      "bbox_min_camera_m": [
+        -0.2597376048066129,
+        0.10275917932170944,
+        0.935
+      ],
+      "bbox_max_camera_m": [
+        -0.18006850841894484,
+        0.19052414991128466,
+        1.07
+      ],
+      "bbox_extent_camera_m": [
+        0.07966909638766806,
+        0.08776497058957522,
+        0.135
+      ],
+      "depth_min_m": 0.935,
+      "depth_max_m": 1.07,
+      "gt_model_origin_camera_m": [
+        -0.20195500960999999,
+        0.14860365542,
+        0.9690294726800001
+      ]
+    }
+  ],
+  "source_manifest_sha256": "b5ba15667c803b2f235d0de3f40a7edfe8b584d5ffaef8037cd45392c85b1877"
+}

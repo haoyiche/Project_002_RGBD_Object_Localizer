@@ -1,0 +1,85 @@
+{
+  "schema": "t1-03-c-geometry-perturbations-v1",
+  "sample_id": "lm/test/000001/000015/000000",
+  "reference_kind": "VISIBLE_CLOUD_PERTURBATION_SENSITIVITY_NOT_POSE_ERROR",
+  "unit": "m",
+  "depth_bias_m": 0.01,
+  "fx_multiplier": 1.1,
+  "dropout_stride": 10,
+  "dropout_removed_count": 125,
+  "baseline": {
+    "point_count": 1252,
+    "centroid_camera_m": [
+      -0.14640505867185347,
+      0.12977941077501276,
+      0.9911421725239609
+    ],
+    "aabb_extent_camera_m": [
+      0.07739417978048656,
+      0.07982239715530663,
+      0.09799999999999986
+    ],
+    "depth_min_m": 0.9590000000000001,
+    "depth_max_m": 1.057,
+    "selected_pixels": 1252
+  },
+  "A_depth_bias": {
+    "point_count": 1252,
+    "centroid_camera_m": [
+      -0.1478825380092225,
+      0.13108739480518636,
+      1.00114217252396
+    ],
+    "aabb_extent_camera_m": [
+      0.07811044783524579,
+      0.08053721782693712,
+      0.09799999999999986
+    ],
+    "depth_min_m": 0.9690000000000001,
+    "depth_max_m": 1.067,
+    "selected_pixels": 1252
+  },
+  "B_fx_change": {
+    "point_count": 1252,
+    "centroid_camera_m": [
+      -0.1330955078835028,
+      0.12977941077501276,
+      0.9911421725239609
+    ],
+    "aabb_extent_camera_m": [
+      0.07035834525498777,
+      0.07982239715530663,
+      0.09799999999999986
+    ],
+    "depth_min_m": 0.9590000000000001,
+    "depth_max_m": 1.057,
+    "selected_pixels": 1252
+  },
+  "C_depth_dropout": {
+    "point_count": 1127,
+    "centroid_camera_m": [
+      -0.1462824156283396,
+      0.12975533287579058,
+      0.9911756876663708
+    ],
+    "aabb_extent_camera_m": [
+      0.07739417978048656,
+      0.07982239715530663,
+      0.09799999999999986
+    ],
+    "depth_min_m": 0.9590000000000001,
+    "depth_max_m": 1.057,
+    "selected_pixels": 1127
+  },
+  "visible_mask_pixels": 1258,
+  "gt_model_origin_camera_m": [
+    -0.14492688862,
+    0.12418127629999999,
+    0.98935606466
+  ],
+  "source_input_unchanged": true,
+  "physical_accuracy_claimed": false,
+  "pose_accuracy_claimed": false,
+  "publishable": false,
+  "position_m": null
+}
