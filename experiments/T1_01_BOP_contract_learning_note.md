@@ -77,9 +77,9 @@ P_c=Z_mK^{-1}[u,v,1]^T,
 - [x] 最小格式夹具运行
 - [x] 三组主动修改均先预测、后验证
 - [x] 本机 9 项专项与 751 项全仓测试通过
-- [ ] 核查新增测试的数值断言确实存在
-- [ ] 复核学习笔记并入库
-- [ ] Git commit + GitHub push，确认 `HEAD == origin/master`
+- [x] 核查新增测试的数值断言确实存在
+- [x] 复核学习笔记并入库
+- [x] Git commit + GitHub push，确认 `HEAD == origin/master`
 
 代码：`src/evaluation/t1_01_bop_contract.py`；测试：`tests/test_t1_01_bop_contract.py`。
 
