@@ -1,0 +1,2970 @@
+{
+  "schema": "t1-02-bop-rgbd-manifest-v1",
+  "dataset_id": "lm",
+  "split": "test",
+  "scene_id": 1,
+  "source_url": "https://bop.felk.cvut.cz/datasets/",
+  "claimed_dataset_repository": "bop-benchmark/lm",
+  "data_origin_authenticated": false,
+  "dataset_license": "CC BY 4.0",
+  "reference_kind": "BOP_FORMAT_POSE_ANNOTATION_NOT_INDEPENDENT_PHYSICAL_GT",
+  "physical_accuracy_claimed": false,
+  "pose_accuracy_claimed": false,
+  "distinct_rgbd_frame_count": 50,
+  "annotation_sha256": {
+    "scene_camera.json": "fdf508c0d8140c965b7ecce5491b55a554eda8c075ce49799a320a401c3b8fc0",
+    "scene_gt.json": "8a6faa001c9bd51ccfd7dc545249713274c4032d1e5dd9150d7dff74326dddc1"
+  },
+  "samples": [
+    {
+      "sample_id": "lm/test/000001/000015/000000",
+      "scene_id": 1,
+      "im_id": 15,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1258,
+      "valid_visible_depth_pixels": 1252,
+      "visible_depth_min_m": 0.9590000000000001,
+      "visible_depth_max_m": 1.057,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.28073499,
+        0.95872998,
+        0.0449957,
+        0.91456503,
+        -0.25299299,
+        -0.31553999,
+        -0.291134,
+        0.12973499,
+        -0.94784498
+      ],
+      "t_cam_from_model_m": [
+        -0.14492688862,
+        0.12418127629999999,
+        0.98935606466
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000015.png",
+          "sha256": "2390d9c3921a24914bb2100c9f5a89e2ed154ba054e9a5d7553278c852ca6868"
+        },
+        "depth": {
+          "relative": "depth/000015.png",
+          "sha256": "36f82342b2162e5a86a0067c1f4cc7972f4109f4866ddbfc7c704d23101c3649"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000015_000000.png",
+          "sha256": "0b73d5991dda7796fa661591bfcefa8ba7de6acfcedecd9c3107c98820a15b13"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000019/000000",
+      "scene_id": 1,
+      "im_id": 19,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1302,
+      "valid_visible_depth_pixels": 1302,
+      "visible_depth_min_m": 0.967,
+      "visible_depth_max_m": 1.07,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.45818201,
+        0.88884002,
+        0.00577884,
+        0.84785402,
+        0.438988,
+        -0.29737699,
+        -0.26685801,
+        -0.13135301,
+        -0.95474303
+      ],
+      "t_cam_from_model_m": [
+        -0.18132966408999998,
+        -0.11897611578999999,
+        1.00637468578
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000019.png",
+          "sha256": "342270c7885465e0889b3d505198e83d9955658885985f6f5b922fa9d21344a6"
+        },
+        "depth": {
+          "relative": "depth/000019.png",
+          "sha256": "3689d3fba5c9f6165efed7ed776dbd3e472c50c14cdbf2f009bb311be7d97316"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000019_000000.png",
+          "sha256": "af8d077cf62c1cdb4f75565430aa90ded83c4bed4cbd3fbc76126af5028ac103"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000040/000000",
+      "scene_id": 1,
+      "im_id": 40,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1604,
+      "valid_visible_depth_pixels": 1604,
+      "visible_depth_min_m": 0.978,
+      "visible_depth_max_m": 1.084,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.60143602,
+        0.78841603,
+        0.12912799,
+        0.50392401,
+        -0.248952,
+        -0.82709301,
+        -0.61994702,
+        0.56251401,
+        -0.54703099
+      ],
+      "t_cam_from_model_m": [
+        -0.24890067113999997,
+        -0.08873141811,
+        1.00324629652
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000040.png",
+          "sha256": "bcec450c3546f4a75640db530ad38964452eba85fb8f027769bc602938747206"
+        },
+        "depth": {
+          "relative": "depth/000040.png",
+          "sha256": "4785eb810d664f1980ad2ab1781cdd689560fa4da1b5272d05dd247b18f2f2dd"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000040_000000.png",
+          "sha256": "be96bf135d59f68175d521ae9716539c3aaa1dfe0cf92c69ebd83ded9de9cd6f"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000041/000000",
+      "scene_id": 1,
+      "im_id": 41,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1546,
+      "valid_visible_depth_pixels": 1546,
+      "visible_depth_min_m": 1.004,
+      "visible_depth_max_m": 1.157,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.44870701,
+        0.88847202,
+        0.0963285,
+        0.58876097,
+        -0.212798,
+        -0.77979398,
+        -0.67232603,
+        0.40661299,
+        -0.618581
+      ],
+      "t_cam_from_model_m": [
+        -0.19896737476,
+        -0.14492760494999998,
+        1.0278623096
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000041.png",
+          "sha256": "ca6ad69f4bf9af6cff7566a7ed99ae6a33c7b9976addc1b31af8af7e2bcb1c79"
+        },
+        "depth": {
+          "relative": "depth/000041.png",
+          "sha256": "27872970f86d4e3a4f0b4d9184e330decf9a771390ac4c9ac41e510398f96cb3"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000041_000000.png",
+          "sha256": "1071b3e4e158389f1ba8408b2a079b36f3aa6d0cd02b40674fdfdfbbff06c9ba"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000047/000000",
+      "scene_id": 1,
+      "im_id": 47,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1596,
+      "valid_visible_depth_pixels": 1596,
+      "visible_depth_min_m": 1.022,
+      "visible_depth_max_m": 1.123,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.00211873,
+        0.979518,
+        0.201345,
+        0.30280399,
+        0.19252101,
+        -0.93340498,
+        -0.95305097,
+        0.0589902,
+        -0.29701
+      ],
+      "t_cam_from_model_m": [
+        -0.27316451248,
+        0.087179142,
+        1.04442567299
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000047.png",
+          "sha256": "7ae6f328e8cb5d2d37ed357640bc95cc29f0421fb1ba18aae0b88b826c03720c"
+        },
+        "depth": {
+          "relative": "depth/000047.png",
+          "sha256": "55b87afd0b1dc6bc425f3f28c835e5f1d2500682a51493f0dd940808258b4e7e"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000047_000000.png",
+          "sha256": "cc11bb8fd49f9bb0cb3fa73d23d275cb66dbbc56516c0a2b9b94f417c88b9011"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000055/000000",
+      "scene_id": 1,
+      "im_id": 55,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1436,
+      "valid_visible_depth_pixels": 1436,
+      "visible_depth_min_m": 1.041,
+      "visible_depth_max_m": 1.165,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.21502601,
+        0.86663097,
+        0.45023799,
+        0.33849999,
+        0.36630601,
+        -0.86673999,
+        -0.91606897,
+        0.33877701,
+        -0.214589
+      ],
+      "t_cam_from_model_m": [
+        -0.11653667102,
+        0.01593571994,
+        1.06558977664
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000055.png",
+          "sha256": "de05a63011ec6f11128b741303f90398ace281fdac0fac1947410ea795df8079"
+        },
+        "depth": {
+          "relative": "depth/000055.png",
+          "sha256": "6be4228a40c6a0b9fcbc555ca38283c3309a3c1d90e7cfe5e6b1ad24fd6535dd"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000055_000000.png",
+          "sha256": "620eeae7ccb05b930d91d5ebcb9d6298694e0bd58c9a81f3f33b5dda6932664c"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000059/000000",
+      "scene_id": 1,
+      "im_id": 59,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1405,
+      "valid_visible_depth_pixels": 1405,
+      "visible_depth_min_m": 1.031,
+      "visible_depth_max_m": 1.157,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.50319302,
+        0.85854101,
+        0.0985072,
+        0.55571502,
+        0.40876901,
+        -0.723939,
+        -0.661798,
+        -0.30953899,
+        -0.68279499
+      ],
+      "t_cam_from_model_m": [
+        0.07678452503,
+        -0.05377915773,
+        1.06636449232
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000059.png",
+          "sha256": "6a432536a6c431ece4055975105142e40ee2afdc0053f31fb1f361e9cf57e945"
+        },
+        "depth": {
+          "relative": "depth/000059.png",
+          "sha256": "3087f55027e1e5d8bdca06ef10a8923e9365db5ac5a2c4ad493b98d2e856112a"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000059_000000.png",
+          "sha256": "cc3ec0bf36fbac30bae57ce96e7ab497a963597d06004ed9989608ae373cbe90"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000066/000000",
+      "scene_id": 1,
+      "im_id": 66,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1749,
+      "valid_visible_depth_pixels": 1749,
+      "visible_depth_min_m": 0.92,
+      "visible_depth_max_m": 1.031,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.28493699,
+        0.85724902,
+        0.42887601,
+        0.68343198,
+        0.49541,
+        -0.53618097,
+        -0.67211002,
+        0.14033,
+        -0.72703201
+      ],
+      "t_cam_from_model_m": [
+        -0.27853572882,
+        -0.07424647023999999,
+        0.9485364889500001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000066.png",
+          "sha256": "83b0902b81b44b1243dd8bd6aaa55ed938fd3a1d132d88ecd45e667d8a98b6ae"
+        },
+        "depth": {
+          "relative": "depth/000066.png",
+          "sha256": "87838bf8c5bdeae74d257436db76128378c2b1117b4307f5b0fbea351b3d0329"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000066_000000.png",
+          "sha256": "13a167db7eab397a2e991cdd99c819605b53d62d57cce5d005dfd9c3fc724a2d"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000074/000000",
+      "scene_id": 1,
+      "im_id": 74,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1609,
+      "valid_visible_depth_pixels": 1609,
+      "visible_depth_min_m": 0.973,
+      "visible_depth_max_m": 1.097,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.0313044,
+        0.99271703,
+        -0.11633,
+        0.76376599,
+        -0.0513173,
+        -0.64345002,
+        -0.64473403,
+        -0.108992,
+        -0.75659698
+      ],
+      "t_cam_from_model_m": [
+        -0.15762976069,
+        -0.12481819466,
+        1.0048719583199999
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000074.png",
+          "sha256": "b66d9f1d600d53d6b0e55cfeddb717ab4d9a3cfebb5dc2617b6db7abd612b5d5"
+        },
+        "depth": {
+          "relative": "depth/000074.png",
+          "sha256": "e0fa97fca3927183c163cd9e8ee2e240e140a74aa39b94effc85d4fc737a653e"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000074_000000.png",
+          "sha256": "901d5bf2513469a8f97f08c3867e515a8de4de6b93f85b717d6c22dc6ef84cf2"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000084/000000",
+      "scene_id": 1,
+      "im_id": 84,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1923,
+      "valid_visible_depth_pixels": 1920,
+      "visible_depth_min_m": 0.906,
+      "visible_depth_max_m": 1.01,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.295782,
+        0.93105698,
+        0.213649,
+        0.43768999,
+        0.0667059,
+        -0.89664799,
+        -0.84908199,
+        0.358724,
+        -0.387784
+      ],
+      "t_cam_from_model_m": [
+        -0.18454156144,
+        -0.1192285549,
+        0.93408341165
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000084.png",
+          "sha256": "65d81d8ac47a5eb2b690fa0c3eb8fd498693dcabcc948ec9937c85d4ad6eb8b3"
+        },
+        "depth": {
+          "relative": "depth/000084.png",
+          "sha256": "b621a613c13c98757ac103433f48ad81fee42dbed174c2451d045e6f65249b4a"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000084_000000.png",
+          "sha256": "ebffd8b2295bd3c434115085146f151658f78c5dc89fcf03a8bd3c16d294a780"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000087/000000",
+      "scene_id": 1,
+      "im_id": 87,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2235,
+      "valid_visible_depth_pixels": 2235,
+      "visible_depth_min_m": 0.847,
+      "visible_depth_max_m": 0.9480000000000001,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.38803801,
+        0.887734,
+        0.24769799,
+        0.56631202,
+        -0.0176252,
+        -0.82400298,
+        -0.72713,
+        0.46001801,
+        -0.509574
+      ],
+      "t_cam_from_model_m": [
+        -0.23685958751000002,
+        -0.10873713322,
+        0.8687962573900001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000087.png",
+          "sha256": "c8f2fd154538a1ad2fc5d2a5ba9a793f2a1f135f0130df11153e1168a50258a8"
+        },
+        "depth": {
+          "relative": "depth/000087.png",
+          "sha256": "39747ddceea29dbe0114a032f057be7108f9aa9b5f65ae1b5e0e726edd32f958"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000087_000000.png",
+          "sha256": "07cefe674da27794a244cb5df0a28c1d5b12545f0535622aecbe1c2ddeb9aea2"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000098/000000",
+      "scene_id": 1,
+      "im_id": 98,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1423,
+      "valid_visible_depth_pixels": 1423,
+      "visible_depth_min_m": 0.9480000000000001,
+      "visible_depth_max_m": 1.063,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.72109902,
+        0.67202699,
+        0.16850901,
+        0.51511002,
+        0.68268102,
+        -0.51827401,
+        -0.463332,
+        -0.286926,
+        -0.838449
+      ],
+      "t_cam_from_model_m": [
+        -0.06291330188,
+        0.00451652615,
+        0.9852742592
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000098.png",
+          "sha256": "1e184cf081372ee353569285fb01f0a12fd024e21b86b0f6ed2ad70d6b3bcaf2"
+        },
+        "depth": {
+          "relative": "depth/000098.png",
+          "sha256": "3374696a63600b1b186c7a32944e161a474997ab40f32396ffe0b0e90dddbb91"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000098_000000.png",
+          "sha256": "ced490abcee8e1f74f9dfcd5fb59387ed647cb86e0a35d15dbb2335ac5329613"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000103/000000",
+      "scene_id": 1,
+      "im_id": 103,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1963,
+      "valid_visible_depth_pixels": 1960,
+      "visible_depth_min_m": 0.887,
+      "visible_depth_max_m": 1.01,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.29119399,
+        0.95249897,
+        0.0891767,
+        0.4648,
+        0.22233699,
+        -0.85704601,
+        -0.83616197,
+        -0.20811699,
+        -0.50746399
+      ],
+      "t_cam_from_model_m": [
+        -0.03502615694,
+        -0.007056240940000001,
+        0.915311195
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000103.png",
+          "sha256": "1f1870dabfd865353fddac81aa4d7a09a5c6cac274ad77ac3a65084f20277512"
+        },
+        "depth": {
+          "relative": "depth/000103.png",
+          "sha256": "18cd434b72f3eb8a6a108e0bb44c2ad6369050faeef2866cebdb9c119829ae70"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000103_000000.png",
+          "sha256": "14f2cad53a0221fac84a2afe08a8bdf36459d0359198936b901d515c570e4271"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000104/000000",
+      "scene_id": 1,
+      "im_id": 104,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2023,
+      "valid_visible_depth_pixels": 2023,
+      "visible_depth_min_m": 0.864,
+      "visible_depth_max_m": 0.987,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.26116899,
+        0.95803899,
+        0.118116,
+        0.56845599,
+        0.25154001,
+        -0.78331703,
+        -0.780159,
+        -0.137435,
+        -0.61029798
+      ],
+      "t_cam_from_model_m": [
+        -0.06538309366999999,
+        0.022217105360000003,
+        0.8929877513400001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000104.png",
+          "sha256": "e51f6df8dd4712b70d878eda80ed6b70db649e75fdc1b6f37d876da97f11bab9"
+        },
+        "depth": {
+          "relative": "depth/000104.png",
+          "sha256": "066460d6e97dda782b846a7ba89d259152b325f2d294f400ffafa10760240eef"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000104_000000.png",
+          "sha256": "4a869cb24dcd6d68311857f1ac1ceb1fa09822ee2522e7d630b5c8502cc8d49f"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000106/000000",
+      "scene_id": 1,
+      "im_id": 106,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2221,
+      "valid_visible_depth_pixels": 2221,
+      "visible_depth_min_m": 0.798,
+      "visible_depth_max_m": 0.923,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.026083,
+        0.99622601,
+        0.0827835,
+        0.76410198,
+        0.0335275,
+        -0.64422399,
+        -0.64456803,
+        0.0800583,
+        -0.76034403
+      ],
+      "t_cam_from_model_m": [
+        -0.18664208698999998,
+        0.06113289155,
+        0.8276772912599999
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000106.png",
+          "sha256": "300b976fb3052eaacb80ecf07f30c46849ecc897381de249be472c6291f022d8"
+        },
+        "depth": {
+          "relative": "depth/000106.png",
+          "sha256": "10fe8a4f18ca49c8984f928c8fba1908e1778d936cb1df35e1ae8f3962e59063"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000106_000000.png",
+          "sha256": "f19314793dd0590aba91c4e256b5f5cd0882abc1802dcea8285f966571c577c2"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000112/000000",
+      "scene_id": 1,
+      "im_id": 112,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1894,
+      "valid_visible_depth_pixels": 1893,
+      "visible_depth_min_m": 0.785,
+      "visible_depth_max_m": 0.891,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.0550692,
+        0.99847502,
+        0.00376538,
+        0.95347899,
+        -0.0514673,
+        -0.29703301,
+        -0.296386,
+        0.0199476,
+        -0.95485997
+      ],
+      "t_cam_from_model_m": [
+        -0.13257507468,
+        -0.00073790375,
+        0.8247011039100001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000112.png",
+          "sha256": "884eda31a5e1ea7454725ededf7a32036d1914963585fa42b0c2aa70d1b09f30"
+        },
+        "depth": {
+          "relative": "depth/000112.png",
+          "sha256": "2a7b59dcfc36d6c07b6d84ec4fbff291aeeb207fd4b886898a70aaa9b3347252"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000112_000000.png",
+          "sha256": "3e3566ddd430cabad02b1054068eea418cb3464da13179aa3d35bdf42cbc52b4"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000128/000000",
+      "scene_id": 1,
+      "im_id": 128,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1983,
+      "valid_visible_depth_pixels": 1983,
+      "visible_depth_min_m": 0.75,
+      "visible_depth_max_m": 0.86,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.39265099,
+        0.91206503,
+        0.118164,
+        0.85349703,
+        -0.31351101,
+        -0.416237,
+        -0.34259,
+        0.26428801,
+        -0.90154499
+      ],
+      "t_cam_from_model_m": [
+        -0.17363628811999998,
+        -0.04300295459,
+        0.79161295313
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000128.png",
+          "sha256": "2f0eb0ea9edb124e6c4da18b59341a833e4075e25fc44184f9ee4ba9e6d152ce"
+        },
+        "depth": {
+          "relative": "depth/000128.png",
+          "sha256": "5bd6663293f099a89dbc204f7bb7cef04726c72b4f07c32115b0eccfa9a4ad79"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000128_000000.png",
+          "sha256": "e50934d261d5148f3517bf88b5737a0134b0549c87d6cc61912327c58435ea14"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000129/000000",
+      "scene_id": 1,
+      "im_id": 129,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2202,
+      "valid_visible_depth_pixels": 2202,
+      "visible_depth_min_m": 0.754,
+      "visible_depth_max_m": 0.864,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.37400699,
+        0.919689,
+        0.119546,
+        0.85947299,
+        -0.29528001,
+        -0.417272,
+        -0.348461,
+        0.258809,
+        -0.90088499
+      ],
+      "t_cam_from_model_m": [
+        -0.16526555823,
+        -0.047989650249999995,
+        0.79447754198
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000129.png",
+          "sha256": "0150844f8770c88a69d1a54d39ac911c0630c3a5938da88ac7b8304f4c3cc1aa"
+        },
+        "depth": {
+          "relative": "depth/000129.png",
+          "sha256": "4d8f16cd13dbf48f3d65d8a166efa5a8cdb180089c4c3ce42a0238d2be334f7a"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000129_000000.png",
+          "sha256": "c5264bd1a021ff13dadde0d25ae54a0ebd10347979128a459456c553cbef9fe3"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000135/000000",
+      "scene_id": 1,
+      "im_id": 135,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1907,
+      "valid_visible_depth_pixels": 1905,
+      "visible_depth_min_m": 0.754,
+      "visible_depth_max_m": 0.86,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.715487,
+        0.69025302,
+        0.107842,
+        0.69862598,
+        -0.70709902,
+        -0.10924,
+        0.00085172,
+        0.153501,
+        -0.98814797
+      ],
+      "t_cam_from_model_m": [
+        -0.12183453126,
+        0.03525139496,
+        0.7957155039299999
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000135.png",
+          "sha256": "208e5af16b644146d1f481b9e4227678f1c48dabb2c74f4189aed68e368727aa"
+        },
+        "depth": {
+          "relative": "depth/000135.png",
+          "sha256": "55ab0f92226eab55eb84e59625a11eaf725db0713222edd24cee074010ae05ba"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000135_000000.png",
+          "sha256": "613486645473db4d6fe04ad6c0376335831d568c2352e911c22ed59f2c49dcb2"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000141/000000",
+      "scene_id": 1,
+      "im_id": 141,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2486,
+      "valid_visible_depth_pixels": 2406,
+      "visible_depth_min_m": 0.658,
+      "visible_depth_max_m": 0.762,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.29829299,
+        0.95234299,
+        0.0637457,
+        0.94379199,
+        0.30425999,
+        -0.129161,
+        -0.14240099,
+        0.021635,
+        -0.989573
+      ],
+      "t_cam_from_model_m": [
+        -0.09750900365,
+        -0.04499724107,
+        0.6985589414700001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000141.png",
+          "sha256": "cda6e7136aa6e5e9e2fde1bc7fb0c1e6d15b450d57e3f1c4698945773b280950"
+        },
+        "depth": {
+          "relative": "depth/000141.png",
+          "sha256": "1747b70764dd73ffea0ec6c511686aaac0841ec3cd0271b044446e938b9294b5"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000141_000000.png",
+          "sha256": "1cf87e47184f8ffffda18bb2c89e9775c37ede9522d5f667467d03a5baad5563"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000144/000000",
+      "scene_id": 1,
+      "im_id": 144,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1771,
+      "valid_visible_depth_pixels": 1716,
+      "visible_depth_min_m": 0.783,
+      "visible_depth_max_m": 0.875,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.0854885,
+        0.99094898,
+        0.103498,
+        0.99240899,
+        0.0754728,
+        0.0971022,
+        0.0884121,
+        0.111013,
+        -0.989878
+      ],
+      "t_cam_from_model_m": [
+        -0.08271489167,
+        -0.09375594332000001,
+        0.8212369444700001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000144.png",
+          "sha256": "b9aacb2538523b78929746cb9d16ce039fb1fcb50c9d90f5fe6cc8fa16ade92b"
+        },
+        "depth": {
+          "relative": "depth/000144.png",
+          "sha256": "0a6fdcf6d0b8e12d172d5210bd0b795d36356a028b10c46bed7df1e5cdfa02ed"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000144_000000.png",
+          "sha256": "47c8e2b955ca66224ae372973f92c10ce6618d408bd598d125638de93cda5e77"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000145/000000",
+      "scene_id": 1,
+      "im_id": 145,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1799,
+      "valid_visible_depth_pixels": 1762,
+      "visible_depth_min_m": 0.78,
+      "visible_depth_max_m": 0.875,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.310774,
+        0.940256,
+        0.13905901,
+        0.94603997,
+        -0.29186299,
+        -0.140799,
+        -0.0918014,
+        0.175312,
+        -0.980223
+      ],
+      "t_cam_from_model_m": [
+        -0.08151569990999999,
+        -0.01984267681,
+        0.81871598149
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000145.png",
+          "sha256": "be902009fc2a82d320891b113f8a2584eb7492dc0e466b09174eaa766a6a7c19"
+        },
+        "depth": {
+          "relative": "depth/000145.png",
+          "sha256": "667d10aa93c0173951b628091a9c922e64db5a27f1904041936c35a99632ddbf"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000145_000000.png",
+          "sha256": "143537b56fe978bc4a79db12c0f5bccaf4f14b8fbca97e2f68d1ee4c9dda0c97"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000157/000000",
+      "scene_id": 1,
+      "im_id": 157,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 3337,
+      "valid_visible_depth_pixels": 3219,
+      "visible_depth_min_m": 0.67,
+      "visible_depth_max_m": 0.8,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.47194299,
+        0.87160999,
+        -0.132535,
+        0.32977501,
+        -0.31394199,
+        -0.89033097,
+        -0.81762999,
+        0.376479,
+        -0.43559799
+      ],
+      "t_cam_from_model_m": [
+        -0.09866109676000001,
+        -0.10409499655,
+        0.69990819379
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000157.png",
+          "sha256": "f906059479800b1f73779c4f47f66e24b9495615b0adfc0553580a2448cd734c"
+        },
+        "depth": {
+          "relative": "depth/000157.png",
+          "sha256": "4529f5cacd9e757f46b6a98bf24e1c41f437e705b196071e91037c0ab855d8c3"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000157_000000.png",
+          "sha256": "f619deebd1eb0d0aa4c881311afc5155a5bcad5b2c5a63a2cb08fb83b68b4f37"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000176/000000",
+      "scene_id": 1,
+      "im_id": 176,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 3328,
+      "valid_visible_depth_pixels": 3317,
+      "visible_depth_min_m": 0.629,
+      "visible_depth_max_m": 0.747,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.70063502,
+        0.71111202,
+        -0.0585675,
+        0.56167299,
+        -0.60029,
+        -0.56936401,
+        -0.44003901,
+        0.36602101,
+        -0.81999701
+      ],
+      "t_cam_from_model_m": [
+        -0.08323427511,
+        -0.1038622333,
+        0.66566526379
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000176.png",
+          "sha256": "b3e3a45b69100d91f4699e1eff8ed9e60832ea7502fe2650e6b6dee7bf45a58f"
+        },
+        "depth": {
+          "relative": "depth/000176.png",
+          "sha256": "63f9f0285d8b4072658f565012d71a8f239237c9a96d4ed6be9db161497660d2"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000176_000000.png",
+          "sha256": "e993e41a26b392684fbf0abeb3a1cc3a32ff5fb9436c7ddf4c8ddeb0d8222b30"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000197/000000",
+      "scene_id": 1,
+      "im_id": 197,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2578,
+      "valid_visible_depth_pixels": 2550,
+      "visible_depth_min_m": 0.754,
+      "visible_depth_max_m": 0.871,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.704404,
+        0.70933199,
+        0.0257553,
+        0.362553,
+        -0.328365,
+        -0.872199,
+        -0.61022198,
+        0.62371802,
+        -0.488473
+      ],
+      "t_cam_from_model_m": [
+        -0.11918185929000001,
+        -0.02779685855,
+        0.7837579997499999
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000197.png",
+          "sha256": "5dc8509d0895bbef0e153699e8611299954927d543f6e7de9a016c8bcf1cb81e"
+        },
+        "depth": {
+          "relative": "depth/000197.png",
+          "sha256": "f47112af24b721c8030629e798fe8673364a7703cf4759e4f93142ba2a7878d4"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000197_000000.png",
+          "sha256": "4cd5b3812a1377203012b9648249efba614a03a788df1abab3ddef81af56b62a"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000202/000000",
+      "scene_id": 1,
+      "im_id": 202,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2630,
+      "valid_visible_depth_pixels": 2618,
+      "visible_depth_min_m": 0.769,
+      "visible_depth_max_m": 0.891,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.28806701,
+        0.95329398,
+        0.0908221,
+        0.347305,
+        0.19238999,
+        -0.91780502,
+        -0.89240998,
+        -0.23284701,
+        -0.38650501
+      ],
+      "t_cam_from_model_m": [
+        0.02479262098,
+        -0.11992312793000001,
+        0.7972417156599999
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000202.png",
+          "sha256": "9e29802cac92bee93c18125c7bc73be04cdaa9c3365bfeecf0293441822cec3d"
+        },
+        "depth": {
+          "relative": "depth/000202.png",
+          "sha256": "ddfe60a7f6db19cff0183aa7843e3c3f3b61c747cc3b1c6192b0c434e303dadf"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000202_000000.png",
+          "sha256": "9d15d86eba571240f3afd4bd5d25609e1284b27c1dd12e23269bd8416a27caf2"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000205/000000",
+      "scene_id": 1,
+      "im_id": 205,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2702,
+      "valid_visible_depth_pixels": 2702,
+      "visible_depth_min_m": 0.759,
+      "visible_depth_max_m": 0.878,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.43965799,
+        0.80826902,
+        0.39166501,
+        0.28691101,
+        0.53961301,
+        -0.79151702,
+        -0.851107,
+        -0.235624,
+        -0.469147
+      ],
+      "t_cam_from_model_m": [
+        -0.09531584834000001,
+        -0.11574775614,
+        0.7906149637800001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000205.png",
+          "sha256": "8d38eb4944b4166cbe544ab0b59a9fc94cfe7d41ed775142c677fc74419789e7"
+        },
+        "depth": {
+          "relative": "depth/000205.png",
+          "sha256": "e134ce44b9e4cf446e36bbb14a7ca933d055e39311b0481b1611c8e23318d3a6"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000205_000000.png",
+          "sha256": "9cc475110ffce2033da14bfd382e7725509501f5ef0edf98c4c974415cddfa92"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000209/000000",
+      "scene_id": 1,
+      "im_id": 209,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2466,
+      "valid_visible_depth_pixels": 2466,
+      "visible_depth_min_m": 0.8,
+      "visible_depth_max_m": 0.91,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.25830099,
+        0.91962099,
+        0.29593399,
+        0.34440199,
+        0.37386,
+        -0.86117202,
+        -0.90258998,
+        -0.120522,
+        -0.41328701
+      ],
+      "t_cam_from_model_m": [
+        -0.11265946301,
+        -0.06637566298,
+        0.82592727909
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000209.png",
+          "sha256": "7b016eb58348e9e82e63db5a3b4650ac27a41c87bfc06df6a4fbd9f9b1ecc67a"
+        },
+        "depth": {
+          "relative": "depth/000209.png",
+          "sha256": "af0f0ef48e556dd3a63903759e40eaa57b3a502997b18659932d83db49d1934b"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000209_000000.png",
+          "sha256": "2e1559dacc135402c0a619404146600b9961002d5e816216d54973403f538fb8"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000214/000000",
+      "scene_id": 1,
+      "im_id": 214,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1996,
+      "valid_visible_depth_pixels": 1996,
+      "visible_depth_min_m": 0.887,
+      "visible_depth_max_m": 1.004,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.46712801,
+        0.70711601,
+        0.530828,
+        0.0748898,
+        0.62984002,
+        -0.77310598,
+        -0.88101298,
+        -0.32138601,
+        -0.34717101
+      ],
+      "t_cam_from_model_m": [
+        -0.11576456328000001,
+        -0.06594472372,
+        0.9131023414899999
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000214.png",
+          "sha256": "e99776d6fef9c04c44c9262f3d725b9b6b68e416fbad3351dbea02c01522756e"
+        },
+        "depth": {
+          "relative": "depth/000214.png",
+          "sha256": "74c6c363a0b1ad037c7c583a62750e08000383f8b2e96168869c553010d490e8"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000214_000000.png",
+          "sha256": "9af86ae6a3c02116f4c6f813e03506dceb311c158aea9abf71d203079f9b3734"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000228/000000",
+      "scene_id": 1,
+      "im_id": 228,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1456,
+      "valid_visible_depth_pixels": 1456,
+      "visible_depth_min_m": 0.898,
+      "visible_depth_max_m": 1.01,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.786502,
+        0.54895401,
+        -0.28295499,
+        0.349244,
+        -0.77320701,
+        -0.52932101,
+        -0.50935501,
+        0.31749201,
+        -0.79984802
+      ],
+      "t_cam_from_model_m": [
+        0.106112392,
+        0.09149011240999999,
+        0.93731509802
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000228.png",
+          "sha256": "38b70c8ef431bd30d55000a0cf8a2b08b8dc46619b9f3cf2c55988350ef3ba29"
+        },
+        "depth": {
+          "relative": "depth/000228.png",
+          "sha256": "3a0ca4763bcc712cba77725f204bcadfe5bfff798ab53d1522a5347d94ad236a"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000228_000000.png",
+          "sha256": "f1295e1b5ed559313a15c4400205c9ad71b7270f9b94a9a32452176f3b9d5e2b"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000236/000000",
+      "scene_id": 1,
+      "im_id": 236,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1989,
+      "valid_visible_depth_pixels": 1989,
+      "visible_depth_min_m": 0.878,
+      "visible_depth_max_m": 0.97,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.81227899,
+        0.48637,
+        -0.321942,
+        0.12700599,
+        -0.68620598,
+        -0.71623403,
+        -0.56927299,
+        0.54089397,
+        -0.61916298
+      ],
+      "t_cam_from_model_m": [
+        -0.20410735213,
+        -0.16939012046,
+        0.90499948802
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000236.png",
+          "sha256": "cee539720df77a9fcf7b448b4c71c75aa7b936cdb77a3d64b5552edda1299c4d"
+        },
+        "depth": {
+          "relative": "depth/000236.png",
+          "sha256": "5cb088940904a4b740e6c4464defaf686a20153bbcb6ef0f21369cb816c4a877"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000236_000000.png",
+          "sha256": "16b9a99ef5263ae39098b77dc866cb6b14fafa143787a5ac0c060f2899d0d174"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000239/000000",
+      "scene_id": 1,
+      "im_id": 239,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1724,
+      "valid_visible_depth_pixels": 1724,
+      "visible_depth_min_m": 0.92,
+      "visible_depth_max_m": 1.06,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.55213797,
+        0.76501501,
+        -0.33150399,
+        0.112333,
+        -0.462237,
+        -0.87961298,
+        -0.82615101,
+        0.44842899,
+        -0.34115499
+      ],
+      "t_cam_from_model_m": [
+        -0.03927098356,
+        -0.07029292134000001,
+        0.95242331005
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000239.png",
+          "sha256": "a025db3f842a804568422e35294dea54d481f622404aed66dbcfeda1da29eee8"
+        },
+        "depth": {
+          "relative": "depth/000239.png",
+          "sha256": "6bcbf30f99cb9794d16a11b0b561d10027444218ed8a7b5ef5de12a58673123d"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000239_000000.png",
+          "sha256": "300ec7ee5202aa8817a567509fd5819707c82b4013f6d598a4bb10d4847af92d"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000240/000000",
+      "scene_id": 1,
+      "im_id": 240,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1842,
+      "valid_visible_depth_pixels": 1752,
+      "visible_depth_min_m": 0.873,
+      "visible_depth_max_m": 1.044,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.58466399,
+        0.65647399,
+        -0.47666499,
+        -0.15503199,
+        -0.486314,
+        -0.85992098,
+        -0.79632503,
+        0.57666302,
+        -0.182556
+      ],
+      "t_cam_from_model_m": [
+        -0.06917650903,
+        0.02581002126,
+        0.90411849531
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000240.png",
+          "sha256": "c165040978f20bce8b0d4861cb3e5af6e786d805067bfc50292175e9aa2559ee"
+        },
+        "depth": {
+          "relative": "depth/000240.png",
+          "sha256": "753d67711569ca50d738c18786c308dfb6dc6e45f83f0aec27efadd744b5fe4f"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000240_000000.png",
+          "sha256": "098fefaee948ab76c5dc05d2cf4729a5ec5858f285f0f5e00576741689245d4c"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000245/000000",
+      "scene_id": 1,
+      "im_id": 245,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1489,
+      "valid_visible_depth_pixels": 1489,
+      "visible_depth_min_m": 1.031,
+      "visible_depth_max_m": 1.145,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.28470099,
+        0.95670998,
+        0.0604286,
+        0.30761001,
+        0.15087999,
+        -0.93947399,
+        -0.90792102,
+        -0.248881,
+        -0.33724901
+      ],
+      "t_cam_from_model_m": [
+        -0.07925332186,
+        -0.055442042989999996,
+        1.05929666763
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000245.png",
+          "sha256": "316bd04a9d40c254a2028c60147fdb9e70aa2c1f85be2b6abf28760b91d5eca8"
+        },
+        "depth": {
+          "relative": "depth/000245.png",
+          "sha256": "4b756e8872e1f347473b9750c5bccee6a90c9ed55bab6748bd5359249ce0455b"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000245_000000.png",
+          "sha256": "b0e5f249f4b61820d9070e9c03f677f2609a1126d2b6bbe46e6bd5072b04e621"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000251/000000",
+      "scene_id": 1,
+      "im_id": 251,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1846,
+      "valid_visible_depth_pixels": 1846,
+      "visible_depth_min_m": 0.873,
+      "visible_depth_max_m": 0.987,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.82872897,
+        0.54854202,
+        -0.110946,
+        0.36644301,
+        -0.681696,
+        -0.63325298,
+        -0.422997,
+        0.48414001,
+        -0.76595098
+      ],
+      "t_cam_from_model_m": [
+        -0.20227557798,
+        -0.02184443157,
+        0.9031394348899999
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000251.png",
+          "sha256": "994007d4c1e3789707395428d27b9c6f67740b69429170722e890125a5061678"
+        },
+        "depth": {
+          "relative": "depth/000251.png",
+          "sha256": "ed4fe130d95dbe66c66168db87884430cd7bee6a16156ed381bcb1ec882cfc45"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000251_000000.png",
+          "sha256": "d78a0342527f4c75e2bb8e8c9d2833ab6907a10637b495873713218a6f7c8012"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000268/000000",
+      "scene_id": 1,
+      "im_id": 268,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 2918,
+      "valid_visible_depth_pixels": 2916,
+      "visible_depth_min_m": 0.682,
+      "visible_depth_max_m": 0.809,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.370399,
+        0.87799901,
+        0.30318499,
+        0.70650399,
+        0.478203,
+        -0.52170402,
+        -0.60303998,
+        0.0209627,
+        -0.797436
+      ],
+      "t_cam_from_model_m": [
+        -0.01803767164,
+        -0.041073275369999995,
+        0.71531160183
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000268.png",
+          "sha256": "d2e2d945071a43872337948bb45019815b4d9a84b775b34a2a5b596137483987"
+        },
+        "depth": {
+          "relative": "depth/000268.png",
+          "sha256": "8e8987b59c366da25ebafe8e80e2a0317fdf67e656373244364f4d015862caae"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000268_000000.png",
+          "sha256": "4454fd9ec81666e46e03aca7d913acf37e59e29f4ee101f660e43b51915af55c"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000272/000000",
+      "scene_id": 1,
+      "im_id": 272,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 3485,
+      "valid_visible_depth_pixels": 3483,
+      "visible_depth_min_m": 0.671,
+      "visible_depth_max_m": 0.778,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        -0.0590532,
+        0.92347997,
+        0.37907401,
+        0.19402,
+        0.383113,
+        -0.90309501,
+        -0.97921801,
+        0.0202174,
+        -0.20179801
+      ],
+      "t_cam_from_model_m": [
+        -0.11605467324999999,
+        0.01030278068,
+        0.69813832477
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000272.png",
+          "sha256": "8a9432629a1be355892a973f1c4a3260aa528c081718b7755f944043d1290c1f"
+        },
+        "depth": {
+          "relative": "depth/000272.png",
+          "sha256": "d9bf5c7ce3443f3141eed0a40785779dbdb49173778722a5210087b4efaffb55"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000272_000000.png",
+          "sha256": "fdf8bf6dc84779cc1ea178dda8ec9dd71b5d66002cd8551aa6c926d941705eb9"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000274/000000",
+      "scene_id": 1,
+      "im_id": 274,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 3626,
+      "valid_visible_depth_pixels": 3625,
+      "visible_depth_min_m": 0.649,
+      "visible_depth_max_m": 0.778,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.237831,
+        0.93406999,
+        -0.26636499,
+        0.42494199,
+        -0.34665799,
+        -0.83621299,
+        -0.87341899,
+        0.0856879,
+        -0.47937101
+      ],
+      "t_cam_from_model_m": [
+        -0.09948918722000001,
+        -0.017608005250000003,
+        0.68133193176
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000274.png",
+          "sha256": "b9bc89d3dc9aa5809ac5f7258e0caf71711ccd26f471505edb9a0bd5ad538d76"
+        },
+        "depth": {
+          "relative": "depth/000274.png",
+          "sha256": "2bc3b19b2f9deaef1e2ba5f384a2dd33ee2912a65b0a7fcfb88fef771d35495b"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000274_000000.png",
+          "sha256": "6e4d1deecfc31cf3eb57c18f322f9215912f9388c6b0a56956eb83f3138f41ba"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000278/000000",
+      "scene_id": 1,
+      "im_id": 278,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 3107,
+      "valid_visible_depth_pixels": 3099,
+      "visible_depth_min_m": 0.65,
+      "visible_depth_max_m": 0.762,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.250653,
+        0.95099801,
+        -0.181044,
+        0.84906602,
+        -0.305796,
+        -0.43078399,
+        -0.465038,
+        -0.0457411,
+        -0.88410801
+      ],
+      "t_cam_from_model_m": [
+        -0.05917337036,
+        -0.07902431828999999,
+        0.68816166565
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000278.png",
+          "sha256": "2acce6d6c30ff53a8fbf25481c0c1d74d0894d34c2d46b35351fc1df1f82db90"
+        },
+        "depth": {
+          "relative": "depth/000278.png",
+          "sha256": "737de71587836c65a11304ded5511cccea126298875bef05776bda3874d4000a"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000278_000000.png",
+          "sha256": "7bed6e4bc1c90bf1d2c55709a52c645488ff0453a47638c2807e549b101bb1a2"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000283/000000",
+      "scene_id": 1,
+      "im_id": 283,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 3075,
+      "valid_visible_depth_pixels": 3019,
+      "visible_depth_min_m": 0.618,
+      "visible_depth_max_m": 0.727,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.67863703,
+        0.73416603,
+        -0.0212396,
+        0.68593597,
+        -0.64386302,
+        -0.33901599,
+        -0.26256901,
+        0.2155,
+        -0.94054103
+      ],
+      "t_cam_from_model_m": [
+        -0.022558606659999998,
+        -0.09936718227,
+        0.65653343048
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000283.png",
+          "sha256": "b77d15eac477824d979ace677f17bec4c2c5a810ca247547eceb21f1c3790c59"
+        },
+        "depth": {
+          "relative": "depth/000283.png",
+          "sha256": "ae15b37b9d9649e50941fb990abcd0f58ad03e245648b3d1a6756c6a87f91022"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000283_000000.png",
+          "sha256": "d36304dd4d8826862f1afe9cf4d401af1b3461db7f6407218d143abfcdf39578"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000285/000000",
+      "scene_id": 1,
+      "im_id": 285,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 3072,
+      "valid_visible_depth_pixels": 3037,
+      "visible_depth_min_m": 0.634,
+      "visible_depth_max_m": 0.739,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.37264401,
+        0.92792201,
+        -0.00990796,
+        0.82605702,
+        -0.33656299,
+        -0.452057,
+        -0.42280799,
+        0.160271,
+        -0.89193398
+      ],
+      "t_cam_from_model_m": [
+        0.00951689607,
+        -0.09493317805,
+        0.67303397676
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000285.png",
+          "sha256": "cd085dff384b41545b658353797a793550f495e2d4e1395cbc965287d3e42854"
+        },
+        "depth": {
+          "relative": "depth/000285.png",
+          "sha256": "eef8ba017acccd5950c3fd73a6ddff37b5c3031c83583c80234e95fc4430d437"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000285_000000.png",
+          "sha256": "5e9d08f7542025231ad9905a4b13c0c36c1746a6a090ed67474fbe9598ed4786"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000308/000000",
+      "scene_id": 1,
+      "im_id": 308,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1198,
+      "valid_visible_depth_pixels": 1198,
+      "visible_depth_min_m": 0.97,
+      "visible_depth_max_m": 1.07,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.988922,
+        0.144742,
+        -0.0329216,
+        0.123359,
+        -0.92473102,
+        -0.36007699,
+        -0.0825617,
+        0.352027,
+        -0.93234098
+      ],
+      "t_cam_from_model_m": [
+        0.03223149388,
+        -0.06963799127999999,
+        1.0156824133
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000308.png",
+          "sha256": "f300d0f33216a16627b6738be0a3c1b5df077a09bc228277b56885649765bb4b"
+        },
+        "depth": {
+          "relative": "depth/000308.png",
+          "sha256": "fae5a4649d0be4be91695b0f1d28c70119429033861a39785154a23a66ea2385"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000308_000000.png",
+          "sha256": "1344494bb0f3933e0d15597bce22b588cd26010616a80ad692d54ec379964e14"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000310/000000",
+      "scene_id": 1,
+      "im_id": 310,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1249,
+      "valid_visible_depth_pixels": 1249,
+      "visible_depth_min_m": 1.028,
+      "visible_depth_max_m": 1.157,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.99487299,
+        0.0468661,
+        -0.0896222,
+        -0.0381962,
+        -0.64640999,
+        -0.762034,
+        -0.0936463,
+        0.76155001,
+        -0.64130503
+      ],
+      "t_cam_from_model_m": [
+        0.09079514093,
+        0.13251459706,
+        1.05353062869
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000310.png",
+          "sha256": "2ee82f920fc06b470477319c84a67665829749eb101477596dcf3018f64bf731"
+        },
+        "depth": {
+          "relative": "depth/000310.png",
+          "sha256": "08782535d2eb64469a95e1fac682eb4f854bd7e32317a89871bba18d775adaf6"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000310_000000.png",
+          "sha256": "122b84d76d62bcdbe8a37043bb17b4e72e7d275241f94b874186a636877c084c"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000316/000000",
+      "scene_id": 1,
+      "im_id": 316,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1137,
+      "valid_visible_depth_pixels": 1137,
+      "visible_depth_min_m": 1.0010000000000001,
+      "visible_depth_max_m": 1.101,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.98572999,
+        -0.166581,
+        -0.0242117,
+        -0.167318,
+        -0.95384502,
+        -0.249368,
+        0.0184459,
+        0.249861,
+        -0.96810597
+      ],
+      "t_cam_from_model_m": [
+        -0.007482714620000001,
+        0.15849876886,
+        1.04089525923
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000316.png",
+          "sha256": "12cc3c830ed4b6b798f83d9a0aba0c960ae8729e7943b1b880517a70c566612d"
+        },
+        "depth": {
+          "relative": "depth/000316.png",
+          "sha256": "50de29944d0bd0e6d80f308544bfe16286c3f53f42528cabb3a258516dcb5e08"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000316_000000.png",
+          "sha256": "0123faf06c4374c5987ac0f096ac8206b82bb040a25df7dc13cb127c5b6258fd"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000323/000000",
+      "scene_id": 1,
+      "im_id": 323,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1238,
+      "valid_visible_depth_pixels": 1238,
+      "visible_depth_min_m": 1.004,
+      "visible_depth_max_m": 1.1260000000000001,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.99558598,
+        -0.044929,
+        -0.0824019,
+        -0.0864586,
+        -0.78065401,
+        -0.618954,
+        -0.0365183,
+        0.62334698,
+        -0.78109199
+      ],
+      "t_cam_from_model_m": [
+        0.10938321313,
+        0.02645829292,
+        1.04282190571
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000323.png",
+          "sha256": "4cad1d9a56d70651757a48bcbc3e0d80f30fa5586ee35f9e8dbf8fd1e11f0037"
+        },
+        "depth": {
+          "relative": "depth/000323.png",
+          "sha256": "69a111b33dddc2e805ac4cb0bab26559be9c94088789a06b901a7a16c857f3bf"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000323_000000.png",
+          "sha256": "4ee678c0a9f77e58d96bbbeb6d7afb4a2c743db16bf893358f2dcb1357b0f860"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000326/000000",
+      "scene_id": 1,
+      "im_id": 326,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1349,
+      "valid_visible_depth_pixels": 1349,
+      "visible_depth_min_m": 1.034,
+      "visible_depth_max_m": 1.149,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.94118899,
+        -0.0278411,
+        -0.33673301,
+        -0.30667999,
+        -0.48867899,
+        -0.816787,
+        -0.14181399,
+        0.87201899,
+        -0.46847701
+      ],
+      "t_cam_from_model_m": [
+        0.18024311868999998,
+        0.03759861181,
+        1.06129143725
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000326.png",
+          "sha256": "89500d21ea5a9b005a9f5a753a0d043d3b8f4db797423dc8c7983e76249db5ec"
+        },
+        "depth": {
+          "relative": "depth/000326.png",
+          "sha256": "1748edcd042b3f93ce5e1643f6684a403cb433056255ff1221a40f43828bac19"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000326_000000.png",
+          "sha256": "a01f762c56cfa512cb814bb64cafdab368f64bf406f78f1bfc8ef0144643751d"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000343/000000",
+      "scene_id": 1,
+      "im_id": 343,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1337,
+      "valid_visible_depth_pixels": 1337,
+      "visible_depth_min_m": 1.004,
+      "visible_depth_max_m": 1.1340000000000001,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.68330002,
+        0.65985799,
+        0.31255201,
+        0.64826,
+        -0.351316,
+        -0.67552698,
+        -0.33594701,
+        0.66420197,
+        -0.667813
+      ],
+      "t_cam_from_model_m": [
+        -0.13319912863,
+        0.06376735145,
+        1.0296083734700001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000343.png",
+          "sha256": "40b88339d0a29e3b68a1ecb0b17628afd21e82e97fc701361d1b0ee4e519b895"
+        },
+        "depth": {
+          "relative": "depth/000343.png",
+          "sha256": "517ceabf10be36d84a85ad80c8fcef352bd5e393f049f548769a80dfd8eab40e"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000343_000000.png",
+          "sha256": "0d21b0f2e56e0f1c0bdc4c59089060a694a177fd74124b8afb3c8d2b9000da45"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000345/000000",
+      "scene_id": 1,
+      "im_id": 345,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1298,
+      "valid_visible_depth_pixels": 1296,
+      "visible_depth_min_m": 0.967,
+      "visible_depth_max_m": 1.073,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.73129898,
+        0.64747101,
+        0.214435,
+        0.65407002,
+        -0.57659602,
+        -0.48962101,
+        -0.19337299,
+        0.49831501,
+        -0.84515601
+      ],
+      "t_cam_from_model_m": [
+        -0.14638529851999998,
+        0.11354134846,
+        1.00009976887
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000345.png",
+          "sha256": "00411ddb5b46ed4590a4a650a60991ceb4ac9f2c4132cac25717463fdf8a0f57"
+        },
+        "depth": {
+          "relative": "depth/000345.png",
+          "sha256": "e22a389d705e3c5ba3736531c52826f18be2e4644fc12dfff25215a2933b8f05"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000345_000000.png",
+          "sha256": "2b619b9b02ef3ab941f971290c00fbc610f34910986504062a1084fdb4a2e0e0"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000350/000000",
+      "scene_id": 1,
+      "im_id": 350,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1774,
+      "valid_visible_depth_pixels": 1774,
+      "visible_depth_min_m": 0.928,
+      "visible_depth_max_m": 1.141,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.89550799,
+        0.27546799,
+        0.349547,
+        0.425641,
+        -0.300724,
+        -0.85346103,
+        -0.12998401,
+        0.91306198,
+        -0.38655099
+      ],
+      "t_cam_from_model_m": [
+        -0.32586587419,
+        -0.03764312304,
+        0.9557418216900001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000350.png",
+          "sha256": "13d73a0df094cf0342eab3c1e68fabd4af6bba4e8365ddbd5d34055eb945fac7"
+        },
+        "depth": {
+          "relative": "depth/000350.png",
+          "sha256": "b4dbf369532e8a6c7fd6d154b30f6ff420baeb5afffa57cdbb88169f6a92ca84"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000350_000000.png",
+          "sha256": "a667b5ab447b7dca2ea062f20bb51d48f26d536426cd5ba7e37858b5fb68a74a"
+        }
+      }
+    },
+    {
+      "sample_id": "lm/test/000001/000358/000000",
+      "scene_id": 1,
+      "im_id": 358,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1485,
+      "valid_visible_depth_pixels": 1441,
+      "visible_depth_min_m": 0.935,
+      "visible_depth_max_m": 1.07,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.86654902,
+        0.48030701,
+        0.135639,
+        0.163545,
+        -0.0165016,
+        -0.98639798,
+        -0.47153601,
+        0.87694502,
+        -0.0928511
+      ],
+      "t_cam_from_model_m": [
+        -0.20195500960999999,
+        0.14860365542,
+        0.9690294726800001
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000358.png",
+          "sha256": "5bf005011c3435131001930b1c7ca65237b5fa7c6a13b8d611112bb93e46e7e5"
+        },
+        "depth": {
+          "relative": "depth/000358.png",
+          "sha256": "375b634d7fb3f5159c90d751c19092f75cb6fe5ba33ef1d55c2bc2f5fe1631f3"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000358_000000.png",
+          "sha256": "8b0f8843db8a6215a7f5411e55e04c9e2f296eccd7c7d9880255a53ee28e86bb"
+        }
+      }
+    }
+  ]
+}

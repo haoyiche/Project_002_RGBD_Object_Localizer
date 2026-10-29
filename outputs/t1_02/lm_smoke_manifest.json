@@ -1,0 +1,79 @@
+{
+  "schema": "t1-02-bop-rgbd-manifest-v1",
+  "dataset_id": "lm",
+  "split": "test",
+  "scene_id": 1,
+  "source_url": "https://bop.felk.cvut.cz/datasets/",
+  "claimed_dataset_repository": "bop-benchmark/lm",
+  "data_origin_authenticated": false,
+  "dataset_license": "CC BY 4.0",
+  "reference_kind": "BOP_FORMAT_POSE_ANNOTATION_NOT_INDEPENDENT_PHYSICAL_GT",
+  "physical_accuracy_claimed": false,
+  "pose_accuracy_claimed": false,
+  "distinct_rgbd_frame_count": 1,
+  "annotation_sha256": {
+    "scene_camera.json": "fdf508c0d8140c965b7ecce5491b55a554eda8c075ce49799a320a401c3b8fc0",
+    "scene_gt.json": "8a6faa001c9bd51ccfd7dc545249713274c4032d1e5dd9150d7dff74326dddc1"
+  },
+  "samples": [
+    {
+      "sample_id": "lm/test/000001/000015/000000",
+      "scene_id": 1,
+      "im_id": 15,
+      "gt_index": 0,
+      "obj_id": 1,
+      "image_hw": [
+        480,
+        640
+      ],
+      "rgb_dtype": "uint8",
+      "depth_dtype_raw": "uint16",
+      "depth_scale_mm_per_unit": 1.0,
+      "visible_mask_pixels": 1258,
+      "valid_visible_depth_pixels": 1252,
+      "visible_depth_min_m": 0.9590000000000001,
+      "visible_depth_max_m": 1.057,
+      "K_row_major": [
+        572.4114,
+        0.0,
+        325.2611,
+        0.0,
+        573.57043,
+        242.04899,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "R_cam_from_model_row_major": [
+        0.28073499,
+        0.95872998,
+        0.0449957,
+        0.91456503,
+        -0.25299299,
+        -0.31553999,
+        -0.291134,
+        0.12973499,
+        -0.94784498
+      ],
+      "t_cam_from_model_m": [
+        -0.14492688862,
+        0.12418127629999999,
+        0.98935606466
+      ],
+      "files": {
+        "rgb": {
+          "relative": "rgb/000015.png",
+          "sha256": "2390d9c3921a24914bb2100c9f5a89e2ed154ba054e9a5d7553278c852ca6868"
+        },
+        "depth": {
+          "relative": "depth/000015.png",
+          "sha256": "36f82342b2162e5a86a0067c1f4cc7972f4109f4866ddbfc7c704d23101c3649"
+        },
+        "mask_visib": {
+          "relative": "mask_visib/000015_000000.png",
+          "sha256": "0b73d5991dda7796fa661591bfcefa8ba7de6acfcedecd9c3107c98820a15b13"
+        }
+      }
+    }
+  ]
+}
