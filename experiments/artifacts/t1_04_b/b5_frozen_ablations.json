@@ -1,0 +1,114 @@
+{
+  "schema": "t1-04-b5-gt-informed-case-diagnostics-v1",
+  "status": "PREDICTIONS_FROZEN",
+  "case_selection": "Prior B4 GT-informed diagnostic cases; not held out",
+  "cases": [
+    47,
+    55,
+    240
+  ],
+  "obj_id": 1,
+  "gt_index": 0,
+  "variants": {
+    "baseline": {
+      "max_iterations": 18,
+      "trim_fraction": 0.75,
+      "support_threshold_m": 0.008
+    },
+    "trim_060": {
+      "max_iterations": 18,
+      "trim_fraction": 0.6,
+      "support_threshold_m": 0.008
+    },
+    "iter_036": {
+      "max_iterations": 36,
+      "trim_fraction": 0.75,
+      "support_threshold_m": 0.008
+    },
+    "support_004": {
+      "max_iterations": 18,
+      "trim_fraction": 0.75,
+      "support_threshold_m": 0.004
+    }
+  },
+  "prediction_gt_pose_access": false,
+  "oracle_mask_used": true,
+  "source_sha256": "d80f918eb48347e2a018eb6cdd6204ac047af84325791894ae7a390bbb5e7631",
+  "b1_source_sha256": "bcca83f5e1b5ddf44ed32a818d9bfb74a4f25d18ec1ffb569c92ba5a6b70f4d1",
+  "records": [
+    {
+      "im_id": 47,
+      "variant": "baseline",
+      "filename": "candidate_000047_baseline.json",
+      "sha256": "3adf35c9adf0fec333e68cee7b3714ab4afab0ea5898f8cd7101bc8c833a3a30"
+    },
+    {
+      "im_id": 47,
+      "variant": "trim_060",
+      "filename": "candidate_000047_trim_060.json",
+      "sha256": "96858a53d28b6e49a9b73c023938eaafdef4cb3212baea5fefc409adf04979af"
+    },
+    {
+      "im_id": 47,
+      "variant": "iter_036",
+      "filename": "candidate_000047_iter_036.json",
+      "sha256": "1ec478075cb772d73830c8d541be8c3be54a3112d1710af35f16ca5e8a40d02f"
+    },
+    {
+      "im_id": 47,
+      "variant": "support_004",
+      "filename": "candidate_000047_support_004.json",
+      "sha256": "8a1c735c250ac432b8d991368f1d5e8e9330aa57c7c49b989f98a2c9bdd43df8"
+    },
+    {
+      "im_id": 55,
+      "variant": "baseline",
+      "filename": "candidate_000055_baseline.json",
+      "sha256": "b4e7deaa8503ee954ea65a916442b0e6846238afa9dc8a77e8f8640eb95d0a5b"
+    },
+    {
+      "im_id": 55,
+      "variant": "trim_060",
+      "filename": "candidate_000055_trim_060.json",
+      "sha256": "8029f9a0c402c25e4ac9d691d925516f548c91f406c58b2e737ba752350471fb"
+    },
+    {
+      "im_id": 55,
+      "variant": "iter_036",
+      "filename": "candidate_000055_iter_036.json",
+      "sha256": "adfb83d77de481e37f3ce3941fe92a7513949ce087a0ddab2f181cc73e71fa78"
+    },
+    {
+      "im_id": 55,
+      "variant": "support_004",
+      "filename": "candidate_000055_support_004.json",
+      "sha256": "54a1d577693bc9206c369a97254d87d33c28e162976c046beb0e29b90adbb5bf"
+    },
+    {
+      "im_id": 240,
+      "variant": "baseline",
+      "filename": "candidate_000240_baseline.json",
+      "sha256": "d662170ab59e3c59831445cb95c607feb19952e6f5557fb0dba34634138fd968"
+    },
+    {
+      "im_id": 240,
+      "variant": "trim_060",
+      "filename": "candidate_000240_trim_060.json",
+      "sha256": "f45ca101dfaa1bd06906462fce99449dd8069e4e34f55f060976f8ff2176cf17"
+    },
+    {
+      "im_id": 240,
+      "variant": "iter_036",
+      "filename": "candidate_000240_iter_036.json",
+      "sha256": "1f376f5045648d5ff739ba29229764d8b5b8ee13d14d2167478aa1febe8e1ee1"
+    },
+    {
+      "im_id": 240,
+      "variant": "support_004",
+      "filename": "candidate_000240_support_004.json",
+      "sha256": "79cfc018a6f6a04bb71c8225726fe2185bb3d5d97367df0c557804161c502db7"
+    }
+  ],
+  "publishable": false,
+  "position_m": null
+}
