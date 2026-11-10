@@ -1,0 +1,39 @@
+{
+  "schema": "t1-07-a-e1-c-heteroscedastic-v1",
+  "seed": 20261109,
+  "trials": 20000,
+  "model": "sigma_mm=2*(Z_m/1m)^2",
+  "results": {
+    "near_100": {
+      "N": 100,
+      "mean_depth_m": 1.0,
+      "predicted_std_mm": 0.2,
+      "observed_std_mm": 0.19936962988857806,
+      "observed_mean_error_mm": 0.0007036528697823915
+    },
+    "far_100": {
+      "N": 100,
+      "mean_depth_m": 2.0,
+      "predicted_std_mm": 0.8,
+      "observed_std_mm": 0.7967386503321584,
+      "observed_mean_error_mm": -0.00365110656646264
+    },
+    "far_400": {
+      "N": 400,
+      "mean_depth_m": 2.0,
+      "predicted_std_mm": 0.4,
+      "observed_std_mm": 0.3973647911910144,
+      "observed_mean_error_mm": -0.0030350359184851045
+    },
+    "mixed_100": {
+      "N": 100,
+      "mean_depth_m": 1.5,
+      "predicted_std_mm": 0.58309518948453,
+      "observed_std_mm": 0.5842150755892449,
+      "observed_mean_error_mm": -0.006483506514355901
+    }
+  },
+  "naive_mixed_std_mm": 0.45,
+  "physical_sensor_noise_measured": false,
+  "physical_accuracy_claimed": false
+}

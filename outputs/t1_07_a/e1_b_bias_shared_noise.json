@@ -1,0 +1,28 @@
+{
+  "schema": "t1-07-a-e1-b-bias-shared-iid-v1",
+  "seed": 20261109,
+  "trials": 20000,
+  "bias_mm": 10.0,
+  "shared_std_mm": 1.0,
+  "iid_std_mm": 2.0,
+  "results": [
+    {
+      "N": 100,
+      "predicted_mean_mm": 10.0,
+      "observed_mean_mm": 10.005209026963668,
+      "predicted_std_mm": 1.019803902718557,
+      "observed_std_mm": 1.0190787132931851
+    },
+    {
+      "N": 400,
+      "predicted_mean_mm": 10.0,
+      "observed_mean_mm": 10.003902189573974,
+      "predicted_std_mm": 1.004987562112089,
+      "observed_std_mm": 1.0022975313288685
+    }
+  ],
+  "std_ratio": 0.9835329874469777,
+  "reference_kind": "SYNTHETIC_NOISE_SIMULATION",
+  "physical_sensor_noise_measured": false,
+  "physical_accuracy_claimed": false
+}

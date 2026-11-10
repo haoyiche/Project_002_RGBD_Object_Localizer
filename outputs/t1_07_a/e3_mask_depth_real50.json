@@ -1,0 +1,1994 @@
+{
+  "schema": "t1-07-a-e3-mask-depth-real50-v1",
+  "manifest_sha256": "b5ba15667c803b2f235d0de3f40a7edfe8b584d5ffaef8037cd45392c85b1877",
+  "source_sha256": "93ddda4b342d862af9a2dd911a3be4cdeba604d3fd9de28b5b19cecfd0f1b30c",
+  "frame_count": 50,
+  "strip_equivalent_frames": 50,
+  "summary": {
+    "erode": {
+      "mean_centroid_shift_mm": 2.3158362897784377,
+      "median_centroid_shift_mm": 2.0472780252573664,
+      "p95_centroid_shift_mm": 5.281616492602266,
+      "max_centroid_shift_mm": 6.1037546532309594,
+      "total_points": 87446
+    },
+    "dilate": {
+      "mean_centroid_shift_mm": 2.9275918974596182,
+      "median_centroid_shift_mm": 2.8801281267771923,
+      "p95_centroid_shift_mm": 5.16656637432062,
+      "max_centroid_shift_mm": 6.232703620784452,
+      "total_points": 111280
+    },
+    "mask_strip": {
+      "mean_centroid_shift_mm": 1.0909838954524829,
+      "median_centroid_shift_mm": 1.0024661093252316,
+      "p95_centroid_shift_mm": 2.111437795711484,
+      "max_centroid_shift_mm": 2.612460552120464,
+      "total_points": 85954
+    },
+    "depth_strip": {
+      "mean_centroid_shift_mm": 1.0909838954524829,
+      "median_centroid_shift_mm": 1.0024661093252316,
+      "p95_centroid_shift_mm": 2.111437795711484,
+      "max_centroid_shift_mm": 2.612460552120464,
+      "total_points": 85954
+    }
+  },
+  "frames": [
+    {
+      "sample_id": "lm/test/000001/000015/000000",
+      "im_id": 15,
+      "baseline_points": 1252,
+      "baseline_mask_pixels": 1258,
+      "baseline_valid_depth_pixels": 276095,
+      "strip_target_pixels_removed": 172,
+      "strip_left": 238,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1016,
+          "point_count": 1012,
+          "retention_fraction": 0.8083067092651757,
+          "centroid_shift_mm": 5.4775903426533645
+        },
+        "dilate": {
+          "mask_pixels": 1468,
+          "point_count": 1462,
+          "retention_fraction": 1.1677316293929711,
+          "centroid_shift_mm": 3.7690110908661967
+        },
+        "mask_strip": {
+          "mask_pixels": 1084,
+          "point_count": 1080,
+          "retention_fraction": 0.8626198083067093,
+          "centroid_shift_mm": 0.9264131347169322
+        },
+        "depth_strip": {
+          "mask_pixels": 1258,
+          "point_count": 1080,
+          "retention_fraction": 0.8626198083067093,
+          "centroid_shift_mm": 0.9264131347169322
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000019/000000",
+      "im_id": 19,
+      "baseline_points": 1302,
+      "baseline_mask_pixels": 1302,
+      "baseline_valid_depth_pixels": 269396,
+      "strip_target_pixels_removed": 158,
+      "strip_left": 219,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1120,
+          "point_count": 1120,
+          "retention_fraction": 0.8602150537634409,
+          "centroid_shift_mm": 2.8288928012804155
+        },
+        "dilate": {
+          "mask_pixels": 1483,
+          "point_count": 1483,
+          "retention_fraction": 1.1390168970814132,
+          "centroid_shift_mm": 3.7060237654649653
+        },
+        "mask_strip": {
+          "mask_pixels": 1144,
+          "point_count": 1144,
+          "retention_fraction": 0.8786482334869432,
+          "centroid_shift_mm": 1.4654383009114467
+        },
+        "depth_strip": {
+          "mask_pixels": 1302,
+          "point_count": 1144,
+          "retention_fraction": 0.8786482334869432,
+          "centroid_shift_mm": 1.4654383009114467
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000040/000000",
+      "im_id": 40,
+      "baseline_points": 1604,
+      "baseline_mask_pixels": 1604,
+      "baseline_valid_depth_pixels": 279310,
+      "strip_target_pixels_removed": 235,
+      "strip_left": 181,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1407,
+          "point_count": 1407,
+          "retention_fraction": 0.8771820448877805,
+          "centroid_shift_mm": 0.5386406501349731
+        },
+        "dilate": {
+          "mask_pixels": 1809,
+          "point_count": 1808,
+          "retention_fraction": 1.1271820448877805,
+          "centroid_shift_mm": 1.8852672437453994
+        },
+        "mask_strip": {
+          "mask_pixels": 1369,
+          "point_count": 1369,
+          "retention_fraction": 0.8534912718204489,
+          "centroid_shift_mm": 0.5994038273786434
+        },
+        "depth_strip": {
+          "mask_pixels": 1604,
+          "point_count": 1369,
+          "retention_fraction": 0.8534912718204489,
+          "centroid_shift_mm": 0.5994038273786434
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000041/000000",
+      "im_id": 41,
+      "baseline_points": 1546,
+      "baseline_mask_pixels": 1546,
+      "baseline_valid_depth_pixels": 286197,
+      "strip_target_pixels_removed": 231,
+      "strip_left": 212,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1352,
+          "point_count": 1352,
+          "retention_fraction": 0.8745148771021992,
+          "centroid_shift_mm": 0.9900749519822375
+        },
+        "dilate": {
+          "mask_pixels": 1748,
+          "point_count": 1748,
+          "retention_fraction": 1.130659767141009,
+          "centroid_shift_mm": 3.5006938932342506
+        },
+        "mask_strip": {
+          "mask_pixels": 1315,
+          "point_count": 1315,
+          "retention_fraction": 0.8505821474773609,
+          "centroid_shift_mm": 0.6468103922146513
+        },
+        "depth_strip": {
+          "mask_pixels": 1546,
+          "point_count": 1315,
+          "retention_fraction": 0.8505821474773609,
+          "centroid_shift_mm": 0.6468103922146513
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000047/000000",
+      "im_id": 47,
+      "baseline_points": 1596,
+      "baseline_mask_pixels": 1596,
+      "baseline_valid_depth_pixels": 273016,
+      "strip_target_pixels_removed": 197,
+      "strip_left": 172,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1403,
+          "point_count": 1403,
+          "retention_fraction": 0.8790726817042607,
+          "centroid_shift_mm": 1.8370711458113518
+        },
+        "dilate": {
+          "mask_pixels": 1798,
+          "point_count": 1798,
+          "retention_fraction": 1.1265664160401003,
+          "centroid_shift_mm": 3.0138979751975117
+        },
+        "mask_strip": {
+          "mask_pixels": 1399,
+          "point_count": 1399,
+          "retention_fraction": 0.8765664160401002,
+          "centroid_shift_mm": 0.7177941864909757
+        },
+        "depth_strip": {
+          "mask_pixels": 1596,
+          "point_count": 1399,
+          "retention_fraction": 0.8765664160401002,
+          "centroid_shift_mm": 0.7177941864909757
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000055/000000",
+      "im_id": 55,
+      "baseline_points": 1436,
+      "baseline_mask_pixels": 1436,
+      "baseline_valid_depth_pixels": 268840,
+      "strip_target_pixels_removed": 167,
+      "strip_left": 259,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1251,
+          "point_count": 1251,
+          "retention_fraction": 0.8711699164345403,
+          "centroid_shift_mm": 2.443407866710536
+        },
+        "dilate": {
+          "mask_pixels": 1630,
+          "point_count": 1629,
+          "retention_fraction": 1.134401114206128,
+          "centroid_shift_mm": 3.310087955926541
+        },
+        "mask_strip": {
+          "mask_pixels": 1269,
+          "point_count": 1269,
+          "retention_fraction": 0.8837047353760445,
+          "centroid_shift_mm": 0.3674015552614206
+        },
+        "depth_strip": {
+          "mask_pixels": 1436,
+          "point_count": 1269,
+          "retention_fraction": 0.8837047353760445,
+          "centroid_shift_mm": 0.3674015552614206
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000059/000000",
+      "im_id": 59,
+      "baseline_points": 1405,
+      "baseline_mask_pixels": 1405,
+      "baseline_valid_depth_pixels": 288081,
+      "strip_target_pixels_removed": 171,
+      "strip_left": 363,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1229,
+          "point_count": 1229,
+          "retention_fraction": 0.8747330960854093,
+          "centroid_shift_mm": 2.1899890563862585
+        },
+        "dilate": {
+          "mask_pixels": 1589,
+          "point_count": 1589,
+          "retention_fraction": 1.1309608540925267,
+          "centroid_shift_mm": 3.641165760827144
+        },
+        "mask_strip": {
+          "mask_pixels": 1234,
+          "point_count": 1234,
+          "retention_fraction": 0.8782918149466192,
+          "centroid_shift_mm": 0.6081311643576872
+        },
+        "depth_strip": {
+          "mask_pixels": 1405,
+          "point_count": 1234,
+          "retention_fraction": 0.8782918149466192,
+          "centroid_shift_mm": 0.6081311643576872
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000066/000000",
+      "im_id": 66,
+      "baseline_points": 1749,
+      "baseline_mask_pixels": 1749,
+      "baseline_valid_depth_pixels": 290691,
+      "strip_target_pixels_removed": 210,
+      "strip_left": 152,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1550,
+          "point_count": 1550,
+          "retention_fraction": 0.8862206975414523,
+          "centroid_shift_mm": 2.5499661801576807
+        },
+        "dilate": {
+          "mask_pixels": 1956,
+          "point_count": 1956,
+          "retention_fraction": 1.118353344768439,
+          "centroid_shift_mm": 2.970645192296021
+        },
+        "mask_strip": {
+          "mask_pixels": 1539,
+          "point_count": 1539,
+          "retention_fraction": 0.8799313893653516,
+          "centroid_shift_mm": 0.37155484762396107
+        },
+        "depth_strip": {
+          "mask_pixels": 1749,
+          "point_count": 1539,
+          "retention_fraction": 0.8799313893653516,
+          "centroid_shift_mm": 0.37155484762396107
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000074/000000",
+      "im_id": 74,
+      "baseline_points": 1609,
+      "baseline_mask_pixels": 1609,
+      "baseline_valid_depth_pixels": 286377,
+      "strip_target_pixels_removed": 219,
+      "strip_left": 233,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1411,
+          "point_count": 1411,
+          "retention_fraction": 0.8769422001243008,
+          "centroid_shift_mm": 1.4142023278980516
+        },
+        "dilate": {
+          "mask_pixels": 1815,
+          "point_count": 1815,
+          "retention_fraction": 1.1280298321939093,
+          "centroid_shift_mm": 4.278529632905567
+        },
+        "mask_strip": {
+          "mask_pixels": 1390,
+          "point_count": 1390,
+          "retention_fraction": 0.8638906152889994,
+          "centroid_shift_mm": 1.0013242742450714
+        },
+        "depth_strip": {
+          "mask_pixels": 1609,
+          "point_count": 1390,
+          "retention_fraction": 0.8638906152889994,
+          "centroid_shift_mm": 1.0013242742450714
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000084/000000",
+      "im_id": 84,
+      "baseline_points": 1920,
+      "baseline_mask_pixels": 1923,
+      "baseline_valid_depth_pixels": 274189,
+      "strip_target_pixels_removed": 288,
+      "strip_left": 209,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1707,
+          "point_count": 1707,
+          "retention_fraction": 0.8890625,
+          "centroid_shift_mm": 1.839255779427505
+        },
+        "dilate": {
+          "mask_pixels": 2147,
+          "point_count": 2138,
+          "retention_fraction": 1.1135416666666667,
+          "centroid_shift_mm": 3.17738204889527
+        },
+        "mask_strip": {
+          "mask_pixels": 1635,
+          "point_count": 1632,
+          "retention_fraction": 0.85,
+          "centroid_shift_mm": 0.830377740668716
+        },
+        "depth_strip": {
+          "mask_pixels": 1923,
+          "point_count": 1632,
+          "retention_fraction": 0.85,
+          "centroid_shift_mm": 0.830377740668716
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000087/000000",
+      "im_id": 87,
+      "baseline_points": 2235,
+      "baseline_mask_pixels": 2235,
+      "baseline_valid_depth_pixels": 291700,
+      "strip_target_pixels_removed": 316,
+      "strip_left": 166,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2003,
+          "point_count": 2003,
+          "retention_fraction": 0.8961968680089486,
+          "centroid_shift_mm": 0.22790973952890886
+        },
+        "dilate": {
+          "mask_pixels": 2475,
+          "point_count": 2475,
+          "retention_fraction": 1.1073825503355705,
+          "centroid_shift_mm": 1.8195337653674493
+        },
+        "mask_strip": {
+          "mask_pixels": 1919,
+          "point_count": 1919,
+          "retention_fraction": 0.8586129753914988,
+          "centroid_shift_mm": 0.8950968838238484
+        },
+        "depth_strip": {
+          "mask_pixels": 2235,
+          "point_count": 1919,
+          "retention_fraction": 0.8586129753914988,
+          "centroid_shift_mm": 0.8950968838238484
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000098/000000",
+      "im_id": 98,
+      "baseline_points": 1423,
+      "baseline_mask_pixels": 1423,
+      "baseline_valid_depth_pixels": 278299,
+      "strip_target_pixels_removed": 153,
+      "strip_left": 284,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1251,
+          "point_count": 1251,
+          "retention_fraction": 0.8791286015460296,
+          "centroid_shift_mm": 2.9657047391031286
+        },
+        "dilate": {
+          "mask_pixels": 1605,
+          "point_count": 1605,
+          "retention_fraction": 1.1278988053408292,
+          "centroid_shift_mm": 2.952208800622021
+        },
+        "mask_strip": {
+          "mask_pixels": 1270,
+          "point_count": 1270,
+          "retention_fraction": 0.8924806746310612,
+          "centroid_shift_mm": 0.25777419408659413
+        },
+        "depth_strip": {
+          "mask_pixels": 1423,
+          "point_count": 1270,
+          "retention_fraction": 0.8924806746310612,
+          "centroid_shift_mm": 0.25777419408659413
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000103/000000",
+      "im_id": 103,
+      "baseline_points": 1960,
+      "baseline_mask_pixels": 1963,
+      "baseline_valid_depth_pixels": 282845,
+      "strip_target_pixels_removed": 280,
+      "strip_left": 300,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1746,
+          "point_count": 1746,
+          "retention_fraction": 0.8908163265306123,
+          "centroid_shift_mm": 2.6167770989141745
+        },
+        "dilate": {
+          "mask_pixels": 2189,
+          "point_count": 2171,
+          "retention_fraction": 1.1076530612244897,
+          "centroid_shift_mm": 2.997045435998852
+        },
+        "mask_strip": {
+          "mask_pixels": 1683,
+          "point_count": 1680,
+          "retention_fraction": 0.8571428571428571,
+          "centroid_shift_mm": 1.155282692204568
+        },
+        "depth_strip": {
+          "mask_pixels": 1963,
+          "point_count": 1680,
+          "retention_fraction": 0.8571428571428571,
+          "centroid_shift_mm": 1.155282692204568
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000104/000000",
+      "im_id": 104,
+      "baseline_points": 2023,
+      "baseline_mask_pixels": 2023,
+      "baseline_valid_depth_pixels": 287752,
+      "strip_target_pixels_removed": 273,
+      "strip_left": 279,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1804,
+          "point_count": 1804,
+          "retention_fraction": 0.8917449332674247,
+          "centroid_shift_mm": 2.426145945722287
+        },
+        "dilate": {
+          "mask_pixels": 2251,
+          "point_count": 2251,
+          "retention_fraction": 1.1127039050914485,
+          "centroid_shift_mm": 2.8280328003362585
+        },
+        "mask_strip": {
+          "mask_pixels": 1750,
+          "point_count": 1750,
+          "retention_fraction": 0.8650519031141869,
+          "centroid_shift_mm": 0.7452680792693204
+        },
+        "depth_strip": {
+          "mask_pixels": 2023,
+          "point_count": 1750,
+          "retention_fraction": 0.8650519031141869,
+          "centroid_shift_mm": 0.7452680792693204
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000106/000000",
+      "im_id": 106,
+      "baseline_points": 2221,
+      "baseline_mask_pixels": 2221,
+      "baseline_valid_depth_pixels": 292357,
+      "strip_target_pixels_removed": 354,
+      "strip_left": 192,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1982,
+          "point_count": 1982,
+          "retention_fraction": 0.8923908149482215,
+          "centroid_shift_mm": 1.4377350492123413
+        },
+        "dilate": {
+          "mask_pixels": 2468,
+          "point_count": 2468,
+          "retention_fraction": 1.1112111661413777,
+          "centroid_shift_mm": 2.5597758313845365
+        },
+        "mask_strip": {
+          "mask_pixels": 1867,
+          "point_count": 1867,
+          "retention_fraction": 0.8406123367852318,
+          "centroid_shift_mm": 1.0462407627307964
+        },
+        "depth_strip": {
+          "mask_pixels": 2221,
+          "point_count": 1867,
+          "retention_fraction": 0.8406123367852318,
+          "centroid_shift_mm": 1.0462407627307964
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000112/000000",
+      "im_id": 112,
+      "baseline_points": 1893,
+      "baseline_mask_pixels": 1894,
+      "baseline_valid_depth_pixels": 290216,
+      "strip_target_pixels_removed": 258,
+      "strip_left": 230,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1609,
+          "point_count": 1608,
+          "retention_fraction": 0.849445324881141,
+          "centroid_shift_mm": 3.63369097167625
+        },
+        "dilate": {
+          "mask_pixels": 2138,
+          "point_count": 2137,
+          "retention_fraction": 1.1288959323824617,
+          "centroid_shift_mm": 3.950941818623497
+        },
+        "mask_strip": {
+          "mask_pixels": 1636,
+          "point_count": 1635,
+          "retention_fraction": 0.8637083993660856,
+          "centroid_shift_mm": 1.4999445691385667
+        },
+        "depth_strip": {
+          "mask_pixels": 1894,
+          "point_count": 1635,
+          "retention_fraction": 0.8637083993660856,
+          "centroid_shift_mm": 1.4999445691385667
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000128/000000",
+      "im_id": 128,
+      "baseline_points": 1983,
+      "baseline_mask_pixels": 1983,
+      "baseline_valid_depth_pixels": 297299,
+      "strip_target_pixels_removed": 289,
+      "strip_left": 198,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1627,
+          "point_count": 1627,
+          "retention_fraction": 0.8204740292486132,
+          "centroid_shift_mm": 1.799303725053946
+        },
+        "dilate": {
+          "mask_pixels": 2351,
+          "point_count": 2351,
+          "retention_fraction": 1.1855774079677257,
+          "centroid_shift_mm": 0.7806550255402457
+        },
+        "mask_strip": {
+          "mask_pixels": 1694,
+          "point_count": 1694,
+          "retention_fraction": 0.854261220373172,
+          "centroid_shift_mm": 0.9315815302479775
+        },
+        "depth_strip": {
+          "mask_pixels": 1983,
+          "point_count": 1694,
+          "retention_fraction": 0.854261220373172,
+          "centroid_shift_mm": 0.9315815302479775
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000129/000000",
+      "im_id": 129,
+      "baseline_points": 2202,
+      "baseline_mask_pixels": 2202,
+      "baseline_valid_depth_pixels": 295846,
+      "strip_target_pixels_removed": 315,
+      "strip_left": 203,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1942,
+          "point_count": 1942,
+          "retention_fraction": 0.8819255222524978,
+          "centroid_shift_mm": 1.7699241575683866
+        },
+        "dilate": {
+          "mask_pixels": 2446,
+          "point_count": 2446,
+          "retention_fraction": 1.1108083560399638,
+          "centroid_shift_mm": 2.7262086773509426
+        },
+        "mask_strip": {
+          "mask_pixels": 1887,
+          "point_count": 1887,
+          "retention_fraction": 0.8569482288828338,
+          "centroid_shift_mm": 0.9029533107854305
+        },
+        "depth_strip": {
+          "mask_pixels": 2202,
+          "point_count": 1887,
+          "retention_fraction": 0.8569482288828338,
+          "centroid_shift_mm": 0.9029533107854305
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000135/000000",
+      "im_id": 135,
+      "baseline_points": 1905,
+      "baseline_mask_pixels": 1907,
+      "baseline_valid_depth_pixels": 291357,
+      "strip_target_pixels_removed": 259,
+      "strip_left": 234,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1675,
+          "point_count": 1675,
+          "retention_fraction": 0.8792650918635171,
+          "centroid_shift_mm": 3.1508227503799
+        },
+        "dilate": {
+          "mask_pixels": 2133,
+          "point_count": 2131,
+          "retention_fraction": 1.1186351706036746,
+          "centroid_shift_mm": 3.6116485569498638
+        },
+        "mask_strip": {
+          "mask_pixels": 1648,
+          "point_count": 1646,
+          "retention_fraction": 0.8640419947506561,
+          "centroid_shift_mm": 2.104102348769114
+        },
+        "depth_strip": {
+          "mask_pixels": 1907,
+          "point_count": 1646,
+          "retention_fraction": 0.8640419947506561,
+          "centroid_shift_mm": 2.104102348769114
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000141/000000",
+      "im_id": 141,
+      "baseline_points": 2406,
+      "baseline_mask_pixels": 2486,
+      "baseline_valid_depth_pixels": 290578,
+      "strip_target_pixels_removed": 295,
+      "strip_left": 239,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2104,
+          "point_count": 2049,
+          "retention_fraction": 0.8516209476309227,
+          "centroid_shift_mm": 2.38604482862049
+        },
+        "dilate": {
+          "mask_pixels": 2804,
+          "point_count": 2723,
+          "retention_fraction": 1.131753948462178,
+          "centroid_shift_mm": 2.3781641116652836
+        },
+        "mask_strip": {
+          "mask_pixels": 2162,
+          "point_count": 2111,
+          "retention_fraction": 0.8773898586866168,
+          "centroid_shift_mm": 1.4457470345686017
+        },
+        "depth_strip": {
+          "mask_pixels": 2486,
+          "point_count": 2111,
+          "retention_fraction": 0.8773898586866168,
+          "centroid_shift_mm": 1.4457470345686017
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000144/000000",
+      "im_id": 144,
+      "baseline_points": 1716,
+      "baseline_mask_pixels": 1771,
+      "baseline_valid_depth_pixels": 286379,
+      "strip_target_pixels_removed": 239,
+      "strip_left": 262,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1543,
+          "point_count": 1519,
+          "retention_fraction": 0.8851981351981352,
+          "centroid_shift_mm": 2.9133645531422956
+        },
+        "dilate": {
+          "mask_pixels": 1990,
+          "point_count": 1894,
+          "retention_fraction": 1.1037296037296038,
+          "centroid_shift_mm": 3.979456219611952
+        },
+        "mask_strip": {
+          "mask_pixels": 1532,
+          "point_count": 1477,
+          "retention_fraction": 0.8607226107226107,
+          "centroid_shift_mm": 1.3952094721813495
+        },
+        "depth_strip": {
+          "mask_pixels": 1771,
+          "point_count": 1477,
+          "retention_fraction": 0.8607226107226107,
+          "centroid_shift_mm": 1.3952094721813495
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000145/000000",
+      "im_id": 145,
+      "baseline_points": 1762,
+      "baseline_mask_pixels": 1799,
+      "baseline_valid_depth_pixels": 292801,
+      "strip_target_pixels_removed": 255,
+      "strip_left": 262,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1536,
+          "point_count": 1500,
+          "retention_fraction": 0.8513053348467651,
+          "centroid_shift_mm": 3.286060962072093
+        },
+        "dilate": {
+          "mask_pixels": 2050,
+          "point_count": 2013,
+          "retention_fraction": 1.1424517593643586,
+          "centroid_shift_mm": 4.001870035585409
+        },
+        "mask_strip": {
+          "mask_pixels": 1544,
+          "point_count": 1507,
+          "retention_fraction": 0.85527809307605,
+          "centroid_shift_mm": 0.6966290467771559
+        },
+        "depth_strip": {
+          "mask_pixels": 1799,
+          "point_count": 1507,
+          "retention_fraction": 0.85527809307605,
+          "centroid_shift_mm": 0.6966290467771559
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000157/000000",
+      "im_id": 157,
+      "baseline_points": 3219,
+      "baseline_mask_pixels": 3337,
+      "baseline_valid_depth_pixels": 251343,
+      "strip_target_pixels_removed": 483,
+      "strip_left": 242,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 3014,
+          "point_count": 2912,
+          "retention_fraction": 0.9046287666977322,
+          "centroid_shift_mm": 0.4633247387802071
+        },
+        "dilate": {
+          "mask_pixels": 3640,
+          "point_count": 3500,
+          "retention_fraction": 1.0872941907424667,
+          "centroid_shift_mm": 1.194289026132503
+        },
+        "mask_strip": {
+          "mask_pixels": 2852,
+          "point_count": 2736,
+          "retention_fraction": 0.8499534016775396,
+          "centroid_shift_mm": 0.737142482623627
+        },
+        "depth_strip": {
+          "mask_pixels": 3337,
+          "point_count": 2736,
+          "retention_fraction": 0.8499534016775396,
+          "centroid_shift_mm": 0.737142482623627
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000176/000000",
+      "im_id": 176,
+      "baseline_points": 3317,
+      "baseline_mask_pixels": 3328,
+      "baseline_valid_depth_pixels": 287246,
+      "strip_target_pixels_removed": 463,
+      "strip_left": 251,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 3002,
+          "point_count": 2998,
+          "retention_fraction": 0.9038287609285499,
+          "centroid_shift_mm": 0.8651304650506687
+        },
+        "dilate": {
+          "mask_pixels": 3675,
+          "point_count": 3657,
+          "retention_fraction": 1.1025022610792885,
+          "centroid_shift_mm": 1.9462044475749682
+        },
+        "mask_strip": {
+          "mask_pixels": 2863,
+          "point_count": 2854,
+          "retention_fraction": 0.8604160385890866,
+          "centroid_shift_mm": 1.4925471800951808
+        },
+        "depth_strip": {
+          "mask_pixels": 3328,
+          "point_count": 2854,
+          "retention_fraction": 0.8604160385890866,
+          "centroid_shift_mm": 1.4925471800951808
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000197/000000",
+      "im_id": 197,
+      "baseline_points": 2550,
+      "baseline_mask_pixels": 2578,
+      "baseline_valid_depth_pixels": 275254,
+      "strip_target_pixels_removed": 363,
+      "strip_left": 236,
+      "strip_width": 5,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2300,
+          "point_count": 2284,
+          "retention_fraction": 0.8956862745098039,
+          "centroid_shift_mm": 1.381804456234209
+        },
+        "dilate": {
+          "mask_pixels": 2842,
+          "point_count": 2804,
+          "retention_fraction": 1.099607843137255,
+          "centroid_shift_mm": 2.5008797644967498
+        },
+        "mask_strip": {
+          "mask_pixels": 2215,
+          "point_count": 2187,
+          "retention_fraction": 0.8576470588235294,
+          "centroid_shift_mm": 1.3614199765625845
+        },
+        "depth_strip": {
+          "mask_pixels": 2578,
+          "point_count": 2187,
+          "retention_fraction": 0.8576470588235294,
+          "centroid_shift_mm": 1.3614199765625845
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000202/000000",
+      "im_id": 202,
+      "baseline_points": 2618,
+      "baseline_mask_pixels": 2630,
+      "baseline_valid_depth_pixels": 262022,
+      "strip_target_pixels_removed": 400,
+      "strip_left": 339,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2374,
+          "point_count": 2370,
+          "retention_fraction": 0.9052711993888465,
+          "centroid_shift_mm": 2.140337861771366
+        },
+        "dilate": {
+          "mask_pixels": 2894,
+          "point_count": 2870,
+          "retention_fraction": 1.0962566844919786,
+          "centroid_shift_mm": 2.4160917312372385
+        },
+        "mask_strip": {
+          "mask_pixels": 2230,
+          "point_count": 2218,
+          "retention_fraction": 0.8472116119174943,
+          "centroid_shift_mm": 1.0986212668150261
+        },
+        "depth_strip": {
+          "mask_pixels": 2630,
+          "point_count": 2218,
+          "retention_fraction": 0.8472116119174943,
+          "centroid_shift_mm": 1.0986212668150261
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000205/000000",
+      "im_id": 205,
+      "baseline_points": 2702,
+      "baseline_mask_pixels": 2702,
+      "baseline_valid_depth_pixels": 271572,
+      "strip_target_pixels_removed": 340,
+      "strip_left": 251,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2453,
+          "point_count": 2453,
+          "retention_fraction": 0.9078460399703923,
+          "centroid_shift_mm": 1.384316574702465
+        },
+        "dilate": {
+          "mask_pixels": 2957,
+          "point_count": 2955,
+          "retention_fraction": 1.0936343449296817,
+          "centroid_shift_mm": 2.0723781380824593
+        },
+        "mask_strip": {
+          "mask_pixels": 2362,
+          "point_count": 2362,
+          "retention_fraction": 0.8741672834937083,
+          "centroid_shift_mm": 0.6169714938803317
+        },
+        "depth_strip": {
+          "mask_pixels": 2702,
+          "point_count": 2362,
+          "retention_fraction": 0.8741672834937083,
+          "centroid_shift_mm": 0.6169714938803317
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000209/000000",
+      "im_id": 209,
+      "baseline_points": 2466,
+      "baseline_mask_pixels": 2466,
+      "baseline_valid_depth_pixels": 282050,
+      "strip_target_pixels_removed": 348,
+      "strip_left": 242,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2214,
+          "point_count": 2214,
+          "retention_fraction": 0.8978102189781022,
+          "centroid_shift_mm": 1.222973924443722
+        },
+        "dilate": {
+          "mask_pixels": 2725,
+          "point_count": 2725,
+          "retention_fraction": 1.1050283860502839,
+          "centroid_shift_mm": 2.0420185641717543
+        },
+        "mask_strip": {
+          "mask_pixels": 2118,
+          "point_count": 2118,
+          "retention_fraction": 0.8588807785888077,
+          "centroid_shift_mm": 0.7473551031474843
+        },
+        "depth_strip": {
+          "mask_pixels": 2466,
+          "point_count": 2118,
+          "retention_fraction": 0.8588807785888077,
+          "centroid_shift_mm": 0.7473551031474843
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000214/000000",
+      "im_id": 214,
+      "baseline_points": 1996,
+      "baseline_mask_pixels": 1996,
+      "baseline_valid_depth_pixels": 262351,
+      "strip_target_pixels_removed": 266,
+      "strip_left": 246,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1780,
+          "point_count": 1780,
+          "retention_fraction": 0.8917835671342685,
+          "centroid_shift_mm": 1.271699966719853
+        },
+        "dilate": {
+          "mask_pixels": 2220,
+          "point_count": 2220,
+          "retention_fraction": 1.1122244488977955,
+          "centroid_shift_mm": 1.7055508876549674
+        },
+        "mask_strip": {
+          "mask_pixels": 1730,
+          "point_count": 1730,
+          "retention_fraction": 0.8667334669338678,
+          "centroid_shift_mm": 1.0036079444053916
+        },
+        "depth_strip": {
+          "mask_pixels": 1996,
+          "point_count": 1730,
+          "retention_fraction": 0.8667334669338678,
+          "centroid_shift_mm": 1.0036079444053916
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000228/000000",
+      "im_id": 228,
+      "baseline_points": 1456,
+      "baseline_mask_pixels": 1456,
+      "baseline_valid_depth_pixels": 288816,
+      "strip_target_pixels_removed": 180,
+      "strip_left": 388,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1166,
+          "point_count": 1166,
+          "retention_fraction": 0.8008241758241759,
+          "centroid_shift_mm": 4.719746811687841
+        },
+        "dilate": {
+          "mask_pixels": 1725,
+          "point_count": 1725,
+          "retention_fraction": 1.1847527472527473,
+          "centroid_shift_mm": 2.9098985094968617
+        },
+        "mask_strip": {
+          "mask_pixels": 1276,
+          "point_count": 1276,
+          "retention_fraction": 0.8763736263736264,
+          "centroid_shift_mm": 2.1174395250279683
+        },
+        "depth_strip": {
+          "mask_pixels": 1456,
+          "point_count": 1276,
+          "retention_fraction": 0.8763736263736264,
+          "centroid_shift_mm": 2.1174395250279683
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000236/000000",
+      "im_id": 236,
+      "baseline_points": 1989,
+      "baseline_mask_pixels": 1989,
+      "baseline_valid_depth_pixels": 279869,
+      "strip_target_pixels_removed": 218,
+      "strip_left": 195,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1759,
+          "point_count": 1759,
+          "retention_fraction": 0.8843640020110608,
+          "centroid_shift_mm": 1.0568408609958349
+        },
+        "dilate": {
+          "mask_pixels": 2217,
+          "point_count": 2215,
+          "retention_fraction": 1.113624937154349,
+          "centroid_shift_mm": 2.0405923925968295
+        },
+        "mask_strip": {
+          "mask_pixels": 1771,
+          "point_count": 1771,
+          "retention_fraction": 0.8903971845148315,
+          "centroid_shift_mm": 0.9711869975020807
+        },
+        "depth_strip": {
+          "mask_pixels": 1989,
+          "point_count": 1771,
+          "retention_fraction": 0.8903971845148315,
+          "centroid_shift_mm": 0.9711869975020807
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000239/000000",
+      "im_id": 239,
+      "baseline_points": 1724,
+      "baseline_mask_pixels": 1724,
+      "baseline_valid_depth_pixels": 262539,
+      "strip_target_pixels_removed": 216,
+      "strip_left": 300,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1519,
+          "point_count": 1519,
+          "retention_fraction": 0.8810904872389791,
+          "centroid_shift_mm": 0.6035146373292856
+        },
+        "dilate": {
+          "mask_pixels": 1930,
+          "point_count": 1930,
+          "retention_fraction": 1.1194895591647331,
+          "centroid_shift_mm": 1.5571645503125497
+        },
+        "mask_strip": {
+          "mask_pixels": 1508,
+          "point_count": 1508,
+          "retention_fraction": 0.8747099767981439,
+          "centroid_shift_mm": 1.11537401975814
+        },
+        "depth_strip": {
+          "mask_pixels": 1724,
+          "point_count": 1508,
+          "retention_fraction": 0.8747099767981439,
+          "centroid_shift_mm": 1.11537401975814
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000240/000000",
+      "im_id": 240,
+      "baseline_points": 1752,
+      "baseline_mask_pixels": 1842,
+      "baseline_valid_depth_pixels": 249237,
+      "strip_target_pixels_removed": 185,
+      "strip_left": 281,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1633,
+          "point_count": 1578,
+          "retention_fraction": 0.9006849315068494,
+          "centroid_shift_mm": 1.9259114771469412
+        },
+        "dilate": {
+          "mask_pixels": 2060,
+          "point_count": 1943,
+          "retention_fraction": 1.1090182648401827,
+          "centroid_shift_mm": 0.39354603175093866
+        },
+        "mask_strip": {
+          "mask_pixels": 1633,
+          "point_count": 1567,
+          "retention_fraction": 0.894406392694064,
+          "centroid_shift_mm": 1.0438834029043962
+        },
+        "depth_strip": {
+          "mask_pixels": 1842,
+          "point_count": 1567,
+          "retention_fraction": 0.894406392694064,
+          "centroid_shift_mm": 1.0438834029043962
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000245/000000",
+      "im_id": 245,
+      "baseline_points": 1489,
+      "baseline_mask_pixels": 1489,
+      "baseline_valid_depth_pixels": 278605,
+      "strip_target_pixels_removed": 200,
+      "strip_left": 279,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1300,
+          "point_count": 1300,
+          "retention_fraction": 0.8730691739422431,
+          "centroid_shift_mm": 2.00767559741119
+        },
+        "dilate": {
+          "mask_pixels": 1687,
+          "point_count": 1687,
+          "retention_fraction": 1.1329751511081263,
+          "centroid_shift_mm": 3.5604836811726472
+        },
+        "mask_strip": {
+          "mask_pixels": 1289,
+          "point_count": 1289,
+          "retention_fraction": 0.8656816655473473,
+          "centroid_shift_mm": 1.0823845725707852
+        },
+        "depth_strip": {
+          "mask_pixels": 1489,
+          "point_count": 1289,
+          "retention_fraction": 0.8656816655473473,
+          "centroid_shift_mm": 1.0823845725707852
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000251/000000",
+      "im_id": 251,
+      "baseline_points": 1846,
+      "baseline_mask_pixels": 1846,
+      "baseline_valid_depth_pixels": 287235,
+      "strip_target_pixels_removed": 213,
+      "strip_left": 196,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1615,
+          "point_count": 1615,
+          "retention_fraction": 0.8748645720476707,
+          "centroid_shift_mm": 1.163032936595028
+        },
+        "dilate": {
+          "mask_pixels": 2074,
+          "point_count": 2074,
+          "retention_fraction": 1.123510292524377,
+          "centroid_shift_mm": 1.8309658031513754
+        },
+        "mask_strip": {
+          "mask_pixels": 1633,
+          "point_count": 1633,
+          "retention_fraction": 0.8846153846153846,
+          "centroid_shift_mm": 1.279132227277997
+        },
+        "depth_strip": {
+          "mask_pixels": 1846,
+          "point_count": 1633,
+          "retention_fraction": 0.8846153846153846,
+          "centroid_shift_mm": 1.279132227277997
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000268/000000",
+      "im_id": 268,
+      "baseline_points": 2916,
+      "baseline_mask_pixels": 2918,
+      "baseline_valid_depth_pixels": 290499,
+      "strip_target_pixels_removed": 321,
+      "strip_left": 303,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2630,
+          "point_count": 2630,
+          "retention_fraction": 0.901920438957476,
+          "centroid_shift_mm": 1.5474338579038842
+        },
+        "dilate": {
+          "mask_pixels": 3206,
+          "point_count": 3204,
+          "retention_fraction": 1.0987654320987654,
+          "centroid_shift_mm": 2.6214472162050004
+        },
+        "mask_strip": {
+          "mask_pixels": 2597,
+          "point_count": 2595,
+          "retention_fraction": 0.8899176954732511,
+          "centroid_shift_mm": 0.6478786881946316
+        },
+        "depth_strip": {
+          "mask_pixels": 2918,
+          "point_count": 2595,
+          "retention_fraction": 0.8899176954732511,
+          "centroid_shift_mm": 0.6478786881946316
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000272/000000",
+      "im_id": 272,
+      "baseline_points": 3483,
+      "baseline_mask_pixels": 3485,
+      "baseline_valid_depth_pixels": 270046,
+      "strip_target_pixels_removed": 459,
+      "strip_left": 224,
+      "strip_width": 7,
+      "variants": {
+        "erode": {
+          "mask_pixels": 3190,
+          "point_count": 3190,
+          "retention_fraction": 0.915877117427505,
+          "centroid_shift_mm": 0.5811842215610172
+        },
+        "dilate": {
+          "mask_pixels": 3786,
+          "point_count": 3782,
+          "retention_fraction": 1.0858455354579386,
+          "centroid_shift_mm": 1.582079639775232
+        },
+        "mask_strip": {
+          "mask_pixels": 3026,
+          "point_count": 3024,
+          "retention_fraction": 0.8682170542635659,
+          "centroid_shift_mm": 0.2033383136743335
+        },
+        "depth_strip": {
+          "mask_pixels": 3485,
+          "point_count": 3024,
+          "retention_fraction": 0.8682170542635659,
+          "centroid_shift_mm": 0.2033383136743335
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000274/000000",
+      "im_id": 274,
+      "baseline_points": 3625,
+      "baseline_mask_pixels": 3626,
+      "baseline_valid_depth_pixels": 274540,
+      "strip_target_pixels_removed": 500,
+      "strip_left": 239,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 3326,
+          "point_count": 3326,
+          "retention_fraction": 0.9175172413793103,
+          "centroid_shift_mm": 0.3351430559267271
+        },
+        "dilate": {
+          "mask_pixels": 3933,
+          "point_count": 3927,
+          "retention_fraction": 1.0833103448275863,
+          "centroid_shift_mm": 0.9820570335497673
+        },
+        "mask_strip": {
+          "mask_pixels": 3126,
+          "point_count": 3125,
+          "retention_fraction": 0.8620689655172413,
+          "centroid_shift_mm": 0.5908252977620703
+        },
+        "depth_strip": {
+          "mask_pixels": 3626,
+          "point_count": 3125,
+          "retention_fraction": 0.8620689655172413,
+          "centroid_shift_mm": 0.5908252977620703
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000278/000000",
+      "im_id": 278,
+      "baseline_points": 3099,
+      "baseline_mask_pixels": 3107,
+      "baseline_valid_depth_pixels": 287356,
+      "strip_target_pixels_removed": 439,
+      "strip_left": 274,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2779,
+          "point_count": 2772,
+          "retention_fraction": 0.8944820909970959,
+          "centroid_shift_mm": 1.0703153894356014
+        },
+        "dilate": {
+          "mask_pixels": 3405,
+          "point_count": 3396,
+          "retention_fraction": 1.095837366892546,
+          "centroid_shift_mm": 2.168721793417969
+        },
+        "mask_strip": {
+          "mask_pixels": 2668,
+          "point_count": 2660,
+          "retention_fraction": 0.8583414004517587,
+          "centroid_shift_mm": 0.8173706184862578
+        },
+        "depth_strip": {
+          "mask_pixels": 3107,
+          "point_count": 2660,
+          "retention_fraction": 0.8583414004517587,
+          "centroid_shift_mm": 0.8173706184862578
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000283/000000",
+      "im_id": 283,
+      "baseline_points": 3019,
+      "baseline_mask_pixels": 3075,
+      "baseline_valid_depth_pixels": 279295,
+      "strip_target_pixels_removed": 428,
+      "strip_left": 302,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2673,
+          "point_count": 2619,
+          "retention_fraction": 0.8675057966213978,
+          "centroid_shift_mm": 2.6936200144806874
+        },
+        "dilate": {
+          "mask_pixels": 3407,
+          "point_count": 3351,
+          "retention_fraction": 1.10997018880424,
+          "centroid_shift_mm": 2.8503577440575234
+        },
+        "mask_strip": {
+          "mask_pixels": 2647,
+          "point_count": 2591,
+          "retention_fraction": 0.8582312023848957,
+          "centroid_shift_mm": 2.194860454381603
+        },
+        "depth_strip": {
+          "mask_pixels": 3075,
+          "point_count": 2591,
+          "retention_fraction": 0.8582312023848957,
+          "centroid_shift_mm": 2.194860454381603
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000285/000000",
+      "im_id": 285,
+      "baseline_points": 3037,
+      "baseline_mask_pixels": 3072,
+      "baseline_valid_depth_pixels": 286655,
+      "strip_target_pixels_removed": 476,
+      "strip_left": 330,
+      "strip_width": 6,
+      "variants": {
+        "erode": {
+          "mask_pixels": 2679,
+          "point_count": 2661,
+          "retention_fraction": 0.8761936121172209,
+          "centroid_shift_mm": 1.7486133299311992
+        },
+        "dilate": {
+          "mask_pixels": 3415,
+          "point_count": 3371,
+          "retention_fraction": 1.109976950938426,
+          "centroid_shift_mm": 1.9981578894641048
+        },
+        "mask_strip": {
+          "mask_pixels": 2596,
+          "point_count": 2561,
+          "retention_fraction": 0.8432663812973329,
+          "centroid_shift_mm": 0.820520081619466
+        },
+        "depth_strip": {
+          "mask_pixels": 3072,
+          "point_count": 2561,
+          "retention_fraction": 0.8432663812973329,
+          "centroid_shift_mm": 0.820520081619466
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000308/000000",
+      "im_id": 308,
+      "baseline_points": 1198,
+      "baseline_mask_pixels": 1198,
+      "baseline_valid_depth_pixels": 292673,
+      "strip_target_pixels_removed": 172,
+      "strip_left": 340,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1002,
+          "point_count": 1002,
+          "retention_fraction": 0.8363939899833055,
+          "centroid_shift_mm": 2.1740895088762358
+        },
+        "dilate": {
+          "mask_pixels": 1391,
+          "point_count": 1391,
+          "retention_fraction": 1.16110183639399,
+          "centroid_shift_mm": 3.389820359740043
+        },
+        "mask_strip": {
+          "mask_pixels": 1026,
+          "point_count": 1026,
+          "retention_fraction": 0.8564273789649416,
+          "centroid_shift_mm": 1.764853409366115
+        },
+        "depth_strip": {
+          "mask_pixels": 1198,
+          "point_count": 1026,
+          "retention_fraction": 0.8564273789649416,
+          "centroid_shift_mm": 1.764853409366115
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000310/000000",
+      "im_id": 310,
+      "baseline_points": 1249,
+      "baseline_mask_pixels": 1249,
+      "baseline_valid_depth_pixels": 274158,
+      "strip_target_pixels_removed": 192,
+      "strip_left": 370,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1034,
+          "point_count": 1034,
+          "retention_fraction": 0.8278622898318655,
+          "centroid_shift_mm": 5.0773089886661324
+        },
+        "dilate": {
+          "mask_pixels": 1471,
+          "point_count": 1471,
+          "retention_fraction": 1.177742193755004,
+          "centroid_shift_mm": 5.4990637843955446
+        },
+        "mask_strip": {
+          "mask_pixels": 1057,
+          "point_count": 1057,
+          "retention_fraction": 0.8462770216172938,
+          "centroid_shift_mm": 1.3847339521164708
+        },
+        "depth_strip": {
+          "mask_pixels": 1249,
+          "point_count": 1057,
+          "retention_fraction": 0.8462770216172938,
+          "centroid_shift_mm": 1.3847339521164708
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000316/000000",
+      "im_id": 316,
+      "baseline_points": 1137,
+      "baseline_mask_pixels": 1137,
+      "baseline_valid_depth_pixels": 278968,
+      "strip_target_pixels_removed": 158,
+      "strip_left": 318,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 955,
+          "point_count": 955,
+          "retention_fraction": 0.8399296394019349,
+          "centroid_shift_mm": 5.2670011157175125
+        },
+        "dilate": {
+          "mask_pixels": 1315,
+          "point_count": 1315,
+          "retention_fraction": 1.156552330694811,
+          "centroid_shift_mm": 5.757004360519662
+        },
+        "mask_strip": {
+          "mask_pixels": 979,
+          "point_count": 979,
+          "retention_fraction": 0.86103781882146,
+          "centroid_shift_mm": 2.612460552120464
+        },
+        "depth_strip": {
+          "mask_pixels": 1137,
+          "point_count": 979,
+          "retention_fraction": 0.86103781882146,
+          "centroid_shift_mm": 2.612460552120464
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000323/000000",
+      "im_id": 323,
+      "baseline_points": 1238,
+      "baseline_mask_pixels": 1238,
+      "baseline_valid_depth_pixels": 282808,
+      "strip_target_pixels_removed": 186,
+      "strip_left": 381,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1035,
+          "point_count": 1035,
+          "retention_fraction": 0.8360258481421647,
+          "centroid_shift_mm": 4.880566626242809
+        },
+        "dilate": {
+          "mask_pixels": 1443,
+          "point_count": 1443,
+          "retention_fraction": 1.1655896607431342,
+          "centroid_shift_mm": 6.232703620784452
+        },
+        "mask_strip": {
+          "mask_pixels": 1052,
+          "point_count": 1052,
+          "retention_fraction": 0.8497576736672051,
+          "centroid_shift_mm": 1.1872881500338226
+        },
+        "depth_strip": {
+          "mask_pixels": 1238,
+          "point_count": 1052,
+          "retention_fraction": 0.8497576736672051,
+          "centroid_shift_mm": 1.1872881500338226
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000326/000000",
+      "im_id": 326,
+      "baseline_points": 1349,
+      "baseline_mask_pixels": 1349,
+      "baseline_valid_depth_pixels": 278445,
+      "strip_target_pixels_removed": 197,
+      "strip_left": 419,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1151,
+          "point_count": 1151,
+          "retention_fraction": 0.8532246108228317,
+          "centroid_shift_mm": 3.146998687267187
+        },
+        "dilate": {
+          "mask_pixels": 1554,
+          "point_count": 1554,
+          "retention_fraction": 1.1519644180874722,
+          "centroid_shift_mm": 4.760180650895718
+        },
+        "mask_strip": {
+          "mask_pixels": 1152,
+          "point_count": 1152,
+          "retention_fraction": 0.8539659006671608,
+          "centroid_shift_mm": 0.9546653439084885
+        },
+        "depth_strip": {
+          "mask_pixels": 1349,
+          "point_count": 1152,
+          "retention_fraction": 0.8539659006671608,
+          "centroid_shift_mm": 0.9546653439084885
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000343/000000",
+      "im_id": 343,
+      "baseline_points": 1337,
+      "baseline_mask_pixels": 1337,
+      "baseline_valid_depth_pixels": 284349,
+      "strip_target_pixels_removed": 194,
+      "strip_left": 246,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1095,
+          "point_count": 1095,
+          "retention_fraction": 0.818997756170531,
+          "centroid_shift_mm": 5.293574528235246
+        },
+        "dilate": {
+          "mask_pixels": 1558,
+          "point_count": 1558,
+          "retention_fraction": 1.1652954375467464,
+          "centroid_shift_mm": 4.709967313753794
+        },
+        "mask_strip": {
+          "mask_pixels": 1143,
+          "point_count": 1143,
+          "retention_fraction": 0.8548990276738968,
+          "centroid_shift_mm": 1.193311744666492
+        },
+        "depth_strip": {
+          "mask_pixels": 1337,
+          "point_count": 1143,
+          "retention_fraction": 0.8548990276738968,
+          "centroid_shift_mm": 1.193311744666492
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000345/000000",
+      "im_id": 345,
+      "baseline_points": 1296,
+      "baseline_mask_pixels": 1298,
+      "baseline_valid_depth_pixels": 275510,
+      "strip_target_pixels_removed": 176,
+      "strip_left": 237,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1076,
+          "point_count": 1076,
+          "retention_fraction": 0.8302469135802469,
+          "centroid_shift_mm": 6.1037546532309594
+        },
+        "dilate": {
+          "mask_pixels": 1501,
+          "point_count": 1499,
+          "retention_fraction": 1.1566358024691359,
+          "centroid_shift_mm": 4.586761392111038
+        },
+        "mask_strip": {
+          "mask_pixels": 1122,
+          "point_count": 1120,
+          "retention_fraction": 0.8641975308641975,
+          "centroid_shift_mm": 1.9359218493600108
+        },
+        "depth_strip": {
+          "mask_pixels": 1298,
+          "point_count": 1120,
+          "retention_fraction": 0.8641975308641975,
+          "centroid_shift_mm": 1.9359218493600108
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000350/000000",
+      "im_id": 350,
+      "baseline_points": 1774,
+      "baseline_mask_pixels": 1774,
+      "baseline_valid_depth_pixels": 281173,
+      "strip_target_pixels_removed": 227,
+      "strip_left": 126,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1542,
+          "point_count": 1542,
+          "retention_fraction": 0.8692220969560316,
+          "centroid_shift_mm": 2.856444126037962
+        },
+        "dilate": {
+          "mask_pixels": 1999,
+          "point_count": 1998,
+          "retention_fraction": 1.1262683201803834,
+          "centroid_shift_mm": 4.698253280957325
+        },
+        "mask_strip": {
+          "mask_pixels": 1547,
+          "point_count": 1547,
+          "retention_fraction": 0.8720405862457723,
+          "centroid_shift_mm": 1.5035625390860359
+        },
+        "depth_strip": {
+          "mask_pixels": 1774,
+          "point_count": 1547,
+          "retention_fraction": 0.8720405862457723,
+          "centroid_shift_mm": 1.5035625390860359
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    },
+    {
+      "sample_id": "lm/test/000001/000358/000000",
+      "im_id": 358,
+      "baseline_points": 1441,
+      "baseline_mask_pixels": 1485,
+      "baseline_valid_depth_pixels": 259276,
+      "strip_target_pixels_removed": 182,
+      "strip_left": 201,
+      "strip_width": 4,
+      "variants": {
+        "erode": {
+          "mask_pixels": 1280,
+          "point_count": 1262,
+          "retention_fraction": 0.8757807078417765,
+          "centroid_shift_mm": 2.086880453103542
+        },
+        "dilate": {
+          "mask_pixels": 1695,
+          "point_count": 1624,
+          "retention_fraction": 1.126995142262318,
+          "centroid_shift_mm": 0.5347096271267193
+        },
+        "mask_strip": {
+          "mask_pixels": 1287,
+          "point_count": 1259,
+          "retention_fraction": 0.8736988202637057,
+          "centroid_shift_mm": 1.4600582368240682
+        },
+        "depth_strip": {
+          "mask_pixels": 1485,
+          "point_count": 1259,
+          "retention_fraction": 0.8736988202637057,
+          "centroid_shift_mm": 1.4600582368240682
+        }
+      },
+      "strip_outputs_identical": true,
+      "mask_strip_source": "MASK_REMOVAL",
+      "depth_strip_source": "DEPTH_ZEROED"
+    }
+  ],
+  "reference_kind": "CONTROLLED_GEOMETRY_SENSITIVITY_NOT_POSE_ACCURACY",
+  "simulated_occlusion_not_physical_capture": true,
+  "physical_accuracy_claimed": false,
+  "pose_accuracy_claimed": false,
+  "publishable": false
+}

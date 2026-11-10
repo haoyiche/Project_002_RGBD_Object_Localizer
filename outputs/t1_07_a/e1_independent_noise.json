@@ -1,0 +1,44 @@
+{
+  "schema": "t1-07-a-e1-independent-noise-v1",
+  "seed": 20261109,
+  "trials": 20000,
+  "noise_model": "IID_ZERO_MEAN_GAUSSIAN",
+  "results": [
+    {
+      "sigma_mm": 2.0,
+      "point_count": 100,
+      "predicted_std_mm": 0.2,
+      "measured_std_mm": 0.19936962988857806,
+      "measured_mean_error_mm": 0.0007036528697823915,
+      "relative_std_error": 0.003151850557109759
+    },
+    {
+      "sigma_mm": 4.0,
+      "point_count": 100,
+      "predicted_std_mm": 0.4,
+      "measured_std_mm": 0.3983693251660792,
+      "measured_mean_error_mm": -0.00182555328323132,
+      "relative_std_error": 0.004076687084802022
+    },
+    {
+      "sigma_mm": 2.0,
+      "point_count": 400,
+      "predicted_std_mm": 0.1,
+      "measured_std_mm": 0.0993411977977536,
+      "measured_mean_error_mm": -0.0007587589796212761,
+      "relative_std_error": 0.006588022022464002
+    },
+    {
+      "sigma_mm": 4.0,
+      "point_count": 400,
+      "predicted_std_mm": 0.2,
+      "measured_std_mm": 0.19985950023308094,
+      "measured_mean_error_mm": 0.001439730431779692,
+      "relative_std_error": 0.0007024988345953886
+    }
+  ],
+  "observed_sigma_ratio": 1.9981444786185154,
+  "observed_n_ratio": 0.4982764819961422,
+  "physical_sensor_noise_measured": false,
+  "physical_accuracy_claimed": false
+}

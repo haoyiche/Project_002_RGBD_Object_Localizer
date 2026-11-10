@@ -475,3 +475,107 @@ Assets: `configs/level2_final_cases.json`, `failure_cases/Level2_final_failures.
 - Final stage's documentation/diagram, two generated reports and the new code/tests must be reviewed, committed and pushed before **Level 2 basic Boss** may be marked `LEVEL COMPLETE`.
 
 **Level 2 currently CONTINUE; final Boss understanding and implementation PASS, Git/GitHub closure pending.**
+
+<!-- T1-07-A-20261110 -->
+
+## 14. T1-07-A：3D Vision 误差敏感性与鲁棒性审计
+
+### 14.1 本关状态
+
+当前阶段：Level 2 / T1-07-A。
+
+已完成理论学习、运行前预测、受控实验、
+主动修改、综合 Boss 和工程测试。
+
+全仓回归结果：
+- 919 passed
+- 106 subtests passed
+- Python 3.11.17 / Windows / ai_3d
+
+T1-07-A 的 Git/GitHub 交付仍待最终确认。
+
+注意：本关实验通过不等于整个 T1 职业级
+80 分验收通过，也不代表真实工业物理精度已验证。
+
+### 14.2 E1：深度噪声实验
+
+已完成三类模型：
+
+- E1-A：独立高斯噪声与 sigma/sqrt(N)。
+- E1-B：固定偏置、整帧共享噪声和独立噪声。
+- E1-C：随深度变化的异方差噪声。
+
+全部为受控合成噪声实验，
+不构成真实深度传感器的物理噪声标定。
+
+### 14.3 E2：相机内参敏感性
+
+完成 cx +5px 的解析预测、最小实验
+与真实 BOP LM 50 帧几何敏感性验证。
+
+50 帧的 X 质心均向负方向移动。
+
+本实验报告的是几何变化，
+不是相对于 GT 的定位准确率。
+
+### 14.4 E3：Mask 与 Depth 鲁棒性
+
+固定 BOP LM 50 帧，对输入进行：
+
+- Mask 腐蚀
+- Mask 膨胀
+- Mask 局部删除
+- Depth 局部置零
+
+已验证 Mask 删除与 Depth 置零
+可以产生完全相同的最终点云。
+
+V2 已采用显式异常进行关键契约检查，
+并包含 python -O 下的故障注入测试。
+
+V2 源码 SHA-256：
+7f44aac3bb2a88adaddc4349c70c55135250af697431edf59070397a005a104d
+
+V2 报告 SHA-256：
+ee82ff84c545f83466b92146094ed482be9fee780d1876ed3952b1b7e27aff95
+
+### 14.5 代码与复现入口
+
+正式证据笔记：
+experiments/T1_07_A_T1_80point_evidence_audit_v0_3.md
+
+主要源码：
+- src/experiments/t1_07_a_e1_b_shared_noise.py
+- src/experiments/t1_07_a_e1_c_depth_noise.py
+- src/experiments/t1_07_a_e3_mask_depth.py
+
+测试：
+- tests/test_t1_07_a_e1_c_depth_noise.py
+- tests/test_t1_07_a_e3_mask_depth.py
+
+全仓测试命令：
+python -m pytest -q
+
+Conda 环境快照：
+environment.yml
+
+50 帧实验依赖单独获取的 BOP LM 数据。
+FoundationPose GPU 基线依赖此前 T1-06-A
+记录的 Docker、模型和运行环境。
+
+实验报告位于 outputs/t1_07_a/。
+已有报告采用冻结保存策略，重新运行前
+必须规划新输出路径，不得覆盖历史报告。
+
+E1-A 与 E2-3 的独立生成脚本尚未归档，
+不能宣称所有实验均支持一键重新生成。
+
+### 14.6 当前限制
+
+- 尚未完成真实相机物理标定验收。
+- 当前 50 帧不是独立 held-out 测试集。
+- 原始旋转误差不能冒充对称性感知精度。
+- 尚未验证全新环境的一键重建。
+- 不得将实验中的几何质心位移
+  解释成工业 6D Pose 物理准确率。
+- T1 职业级 80 分总验收仍需单独完成。
