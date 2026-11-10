@@ -579,3 +579,11 @@ E1-A 与 E2-3 的独立生成脚本尚未归档，
 - 不得将实验中的几何质心位移
   解释成工业 6D Pose 物理准确率。
 - T1 职业级 80 分总验收仍需单独完成。
+
+## 15. T1 80-point reproducibility audit
+
+- Reproducibility evidence: [T1 report](experiments/T1_80_reproducibility_evidence_v1.md)
+- Clean Git source snapshot: 15 tests passed in the existing ai_3d environment.
+- Full regression: 924 passed, 106 subtests passed.
+- Frozen 50-frame ADD evaluation: mean 5.0533 mm, P95 8.6343 mm.
+- Limits: not held-out, no physical calibration certification, no verified fresh GPU rebuild.
