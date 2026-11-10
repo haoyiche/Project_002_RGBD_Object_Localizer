@@ -476,6 +476,23 @@ Assets: `configs/level2_final_cases.json`, `failure_cases/Level2_final_failures.
 
 **Level 2 currently CONTINUE; final Boss understanding and implementation PASS, Git/GitHub closure pending.**
 
+
+## Current status | 2026-11-10 Level 2 Final Archive
+
+**Level 2 / T1：COMPLETE，导师职业级 80/100（限定基础验收范围）。**
+截至 2026-11-10，OS-01 与 T1 工程、50 帧 6D Pose 评价、T1 综合 Boss、GitHub 证据交付均已完成。
+
+- [Level 2 完整学习与工程成果报告](experiments/LEVEL2_FINAL_REPORT.md)
+- [Level 2 所有代码、实验、指标及 Git 提交的证据索引](experiments/LEVEL2_EVIDENCE_INDEX.md)
+- [Level 2 Final Archive 清单及本地资产保留策略](experiments/LEVEL2_ARCHIVE_MANIFEST.md)
+- [T1 可复现性证据与未验证边界](experiments/T1_80_reproducibility_evidence_v1.md)
+
+> **范围声明：** 80/100 是项目导师针对第 33 章 T1 基线的限定评审，非工业认证。
+> 50 帧为 BOP LINEMOD 单场景/单物体、已知 CAD + Oracle Mask；未验证跨场景 held-out、
+> 真实物理标定、全新 Conda/GPU 端到端重建，也没有授权机器人执行。
+> 下文早期章节的 `CONTINUE`、`Git pending` 属于当时历史快照，不代表当前总状态。
+
+---
 <!-- T1-07-A-20261110 -->
 
 ## 14. T1-07-A：3D Vision 误差敏感性与鲁棒性审计
